@@ -4,10 +4,12 @@ import Partecipate from "./Partecipate/Partecipate";
 import WhoWeAre from "./WhoWeAre";
 
 export default function Homepage() {
-    return <main>
-        <Hero />
-        <WhoWeAre />
-        <Community />
-        <Partecipate />
+  return (
+    <main>
+      <Hero />
+      <WhoWeAre />
+      <Community />
+      <Partecipate />
     </main>
+  );
 }

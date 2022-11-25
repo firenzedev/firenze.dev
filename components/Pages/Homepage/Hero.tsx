@@ -1,13 +1,14 @@
 import Image from "next/image";
-import logo from "../../assets/images/firenzedev_darkbkg_shadow.svg";
+import logo from "../../../assets/images/firenzedev_darkbkg_shadow.svg";
+import H1 from "../../Heading/H1";
 
 export default function Hero() {
   return (
     <div className="grid lg:grid-cols-2 gap-2 bg-gradient-to-r from-blue-700 to-indigo-900">
       <div className="text-white p-2 lg:p-24">
-        <h1 className="text-4xl font-bold">
+        <H1>
           firenze<strong>.dev</strong> developer community
-        </h1>
+        </H1>
         <h2 className="text-2xl font-sans font-extralight tracking-wider my-4">
           <em>La community degli sviluppatori a Firenze</em>
         </h2>

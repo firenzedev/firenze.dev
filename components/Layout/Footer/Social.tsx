@@ -23,13 +23,13 @@ const socials = [
 
 export default function Social() {
   return (
-    <div className="bg-slate-200 text-center p-4">
+    <div className="bg-slate-200 text-center">
       {socials.map((social) => (
         <span key={`social-${social.name}`}>
           <a
             href={social.url}
             title={`firenze.dev ${social.name}`}
-            className="inline-block m-4"
+            className="inline-block my-3 mx-6"
             target="_blank"
             rel="noreferrer"
           >

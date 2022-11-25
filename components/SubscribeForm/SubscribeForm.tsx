@@ -8,12 +8,7 @@ export default function SubscribeForm() {
         frameBorder="0"
         scrolling="auto"
         allowFullScreen
-        // style={{
-        //   display: "block",
-        //   marginLeft: "auto",
-        //   marginRight: "auto",
-        //   maxWidth: "100%",
-        // }}
+        className="w-full"
       ></iframe>
     </div>
   );

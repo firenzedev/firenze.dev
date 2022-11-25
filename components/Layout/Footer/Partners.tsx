@@ -29,11 +29,7 @@ export default function Partners() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image
-              src={partner.icon}
-              height={50}
-              alt={`${partner.name}`}
-            />
+            <Image src={partner.icon} height={50} alt={`${partner.name}`} />
           </a>
         </span>
       ))}

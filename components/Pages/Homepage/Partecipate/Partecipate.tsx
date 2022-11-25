@@ -1,5 +1,5 @@
-import H3 from "../../Heading/H3";
-import SubscribeForm from "../../SubscribeForm/SubscribeForm";
+import H3 from "../../../Heading/H3";
+import SubscribeForm from "../../../SubscribeForm/SubscribeForm";
 
 export default function Partecipate() {
   return (

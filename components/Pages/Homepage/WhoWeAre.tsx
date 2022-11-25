@@ -1,12 +1,10 @@
-import PrimaryButton from "../Button/PrimaryButton";
-import H3 from "../Heading/H3";
+import PrimaryButton from "../../Button/PrimaryButton";
+import H3 from "../../Heading/H3";
 
 export default function WhoWeAre() {
   return (
     <section className="lg:my-12 container lg:px-48 mx-auto p-2">
-      <H3>
-        Chi siamo
-      </H3>
+      <H3>Chi siamo</H3>
       <p>
         <strong>firenze.dev è una community</strong> aperta a tutti gli
         appassionati di sviluppo software, legati a Firenze e al suo territorio.

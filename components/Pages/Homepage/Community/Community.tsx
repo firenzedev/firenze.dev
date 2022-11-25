@@ -1,4 +1,4 @@
-import H3 from "../../Heading/H3";
+import H3 from "../../../Heading/H3";
 import Feature from "./Feature";
 import { FEATURES } from "./features";
 
