@@ -13,8 +13,8 @@ export default function WhatWeBelieve() {
         agli altri. Facciamo tutto questo su base volontaria perché crediamo in
         questi valori:
       </p>
-      <div className="grid grid-cols-3 gap-1 mt-8">
-        <div className="col-span-2">
+      <div className="grid lg:grid-cols-3 gap-1 mt-8">
+        <div className="lg:col-span-2">
           <ul className="list-disc list-inside">
             <li className="mt-4">
               ci appassiona imparare cose nuove e approfondire le nostre

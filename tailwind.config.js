@@ -8,8 +8,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       serif: ["Gelasio", "serif"],
-      "sans": ["Roboto", "sans-serif"],
+      sans: ["Roboto", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

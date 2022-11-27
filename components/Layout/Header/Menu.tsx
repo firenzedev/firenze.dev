@@ -1,21 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { XMarkIcon as CloseIcon } from "@heroicons/react/24/outline";
-import { useRouter } from "next/router";
+import { SiteLink } from "./Navigation";
+import Logo from "./Logo";
 
-export default function Menu({ isOpen, toggleMenu, links, navigation }) {
-  const router = useRouter();
+interface MenuProps {
+  isOpen: boolean;
+  toggleMenu: () => void;
+  navigation: SiteLink[];
+}
+
+export default function Menu({ isOpen, toggleMenu, navigation }: MenuProps) {
   return (
     <main
       className={
-        " fixed overflow-hidden z-50 bg-gray-600 bg-opacity-25 inset-0 transform ease-in-out " +
+        " fixed overflow-hidden z-50 bg-gray-100 bg-opacity-60 inset-0 transform ease-in-out " +
         (isOpen
           ? " transition-opacity opacity-100 duration-200 translate-x-0"
           : " transition-all delay-300 opacity-0 translate-x-full")
       }
     >
       <section
-        style={{ backdropFilter: "blur(10px)" }}
+        style={{ backdropFilter: "blur(4px)" }}
         className={
           "w-screen max-w-lg left-0 absolute bg-white bg-opacity-25 h-screen shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
           (isOpen ? " translate-x-0 " : " translate-x-full ")
@@ -28,38 +34,21 @@ export default function Menu({ isOpen, toggleMenu, links, navigation }) {
               onClick={toggleMenu}
             />
           </div>
+          <Logo />
           <div className="p-2 h-full">
-            <nav className="ml-24 text-3xl">
+            <nav className="text-3xl font-bold">
               <div>
                 {navigation.map((item) => (
                   <MenuLink
+                    onClick={toggleMenu}
                     key={`nva-${item.name}`}
                     item={item}
-                    router={router}
-                    toggleMenu={toggleMenu}
                   />
                 ))}
-              </div>
-
-              <div>
-                {links.map((link) => (
-                  <a
-                    key={link.name}
-                    className="inline-flex m-2 rounded-full p-2 border border-zinc-800 justify-center items-center shadow hover:shadow-md"
-                    href={link.href}
-                    target="_blank"
-                    title={link.name}
-                    rel="noreferrer"
-                  >
-                    <img
-                      loading="lazy"
-                      src={`/images/${link.icon}`}
-                      width={15}
-                      height={15}
-                      alt={link.name}
-                    ></img>
-                  </a>
-                ))}
+                <MenuLink
+                  onClick={toggleMenu}
+                  item={{ href: "/contatti", name: "Contatti" }}
+                />
               </div>
             </nav>
           </div>
@@ -73,45 +62,14 @@ export default function Menu({ isOpen, toggleMenu, links, navigation }) {
   );
 }
 
-function MenuLink({ item, router, toggleMenu, external }) {
-  function goTo(e) {
-    if (item.external) {
-      //don't prevent defautl
-    } else {
-      toggleMenu();
-      if (e.target.href && e.target.href.indexOf("#") > -1) {
-        e.preventDefault();
-      }
-    }
-  }
-
+function MenuLink({ item, onClick }: { item: SiteLink; onClick: () => void }) {
   return (
     <Link
+      onClick={onClick}
       href={item.href}
-      target={item.target}
-      onClick={goTo}
-      className={classNames(
-        "text-2xl uppercase",
-        router.asPath === item.href ? "font-bold shadow-xl" : "",
-        "px-3 py-2 rounded-md text-sm font-medium"
-      )}
-      rel="noreferrer"
+      className="text-2xl text-black uppercase block p-3 my-5 underline"
     >
-      <div className="cursor-pointer flex items-center">
-        {item.icon && (
-          <img
-            loading="lazy"
-            src={`/images/icons/${item.icon}`}
-            width={48}
-            height={48}
-            alt={item.name}
-          ></img>
-        )}{" "}
-        {!item.icon && item.name}
-      </div>
+      {item.name}
     </Link>
   );
-}
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
 }

@@ -2,7 +2,7 @@ import H2 from "../../Heading/H2";
 
 export default function ToWhoAreWeAddressed() {
   return (
-    <section className="p-4">
+    <section className="lg:p-4">
       <H2>A chi siamo rivolti</H2>
       <p className="pt-8">
         L&apos;interesse comune di chi partecipa alla nostra community è per il

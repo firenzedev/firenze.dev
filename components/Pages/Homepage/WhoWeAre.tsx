@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PrimaryButton from "../../Button/PrimaryButton";
 import H3 from "../../Heading/H3";
 
@@ -19,7 +20,9 @@ export default function WhoWeAre() {
         fornendo strumenti e supporto per imparare e migliorarsi costantemente.
       </p>
       <div className="text-center my-10">
-        <PrimaryButton>Scopri di più</PrimaryButton>
+        <Link href="/community">
+          <PrimaryButton>Scopri di più</PrimaryButton>
+        </Link>
       </div>
     </section>
   );

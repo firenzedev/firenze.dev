@@ -3,7 +3,7 @@ import SubscribeForm from "../../../SubscribeForm/SubscribeForm";
 
 export default function Partecipate() {
   return (
-    <section className="container mx-auto lg:px-24 flex">
+    <section className="container mx-auto p-2 lg:px-24 lg:flex">
       <div className="lg:w-1/2 leading-8">
         <H3>Partecipa</H3>
         <ul>
@@ -35,7 +35,7 @@ export default function Partecipate() {
           altri membri e collaborare all’organizzazione degli eventi.
         </p>
       </div>
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2" id="subscribe">
         <SubscribeForm />
       </div>
     </section>

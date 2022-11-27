@@ -24,8 +24,9 @@ export default function HowToPartecipate() {
         Iscriviti ed entra a far parte di firenze.dev, altri sviluppatori come
         ti stanno aspettando.
       </p>
-
-      <SubscribeForm />
+      <div id="subscribe">
+        <SubscribeForm />
+      </div>
     </section>
   );
 }

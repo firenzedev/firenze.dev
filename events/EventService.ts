@@ -1,0 +1,159 @@
+import moduleFederationImage from "./images/thumb/moduleFederationImage.png";
+import rabbitImage from "./images/thumb/rabbit.png";
+import graphqlImage from "./images/thumb/graphql.png";
+import anotherifImage from "./images/thumb/anotherif.png";
+import anotherifImageBig from "./images/solo-un-altro-if.png";
+import { StaticImageData } from "next/image";
+import nextEventImage from "./images/thumb/3-150x150.png";
+import rabbitImageFull from "./images/Applicazioni-piu-semplici-robuste-e-performanti-con-RabbitMQ-min.png";
+import searchEngine from "./images/building-a-full-text-search-engine-from-scratch-in-typescript.png";
+import fontendApps from "./images/rendere-applicazioni-front-end-scalabitli.png";
+import graphqlImageBig from "./images/graphql-2014-min.png";
+import dayjs from "dayjs";
+
+const events: EventType[] = [
+  {
+    title: "Building a full-text search engine from scratch in TypeScript",
+    subtitle:
+      "In questo nuovo evento della community di firenze.dev, Michele Riva ci mostrerà come costruire da zero un motore di ricerca full-text.",
+    icon: nextEventImage,
+    image: searchEngine,
+    abstract: `In questo nuovo evento della community di firenze.dev, [Michele Riva](https://twitter.com/MicheleRivaCode), Staff Engineer @ NearForm, autore e speaker di fama internazionale oltre che Google Developer Expert e Microsoft MVP, ci mostrerà come costruire da zero un motore di ricerca full-text RESTful, spiegandoci quali siano gli algoritmi e le strutture dati più adatti per questo tipo di applicazioni.
+
+
+Vedremo come mantenere prestazioni incredibilmente elevate pur lavorando con un'enorme quantità di dati e capiremo perché è così importante scegliere i giusti algoritmi e le strutture dati più adeguate per questo tipo di sistemi.
+
+Dopo il talk ci sarà il consueto aperitivo di networking.`,
+    current: true,
+    date: dayjs("2022-11-30 18:30").toDate(),
+    sponsor: "Extendi",
+    place: "Le Murate",
+    address: "Piazza Madonna della Neve 50122 Firenze",
+    eventbriteId: "462656256317",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-building-a-full-text-search-engine-from-scratch-in-typescript-462656256317",
+  },
+  {
+    title: "Rendere scalabili le moderne applicazioni di front-end",
+    subtitle:
+      "Scopriremo tecniche e tool per far evolvere le nostre applicazioni di front-end, da una semplice Single Page Application fino a utilizzare la Module Federation.",
+    icon: moduleFederationImage,
+    image: fontendApps,
+    abstract: `Come superare le nuove sfide che ci pone lo sviluppo di applicazioni front-end, quali ad esempio performance, SEO e dinamicità?
+    
+Partendo da una piccola app, fino ad arrivare a progetti più grandi con la Module Federation, ti forniremo dei consigli su come orientarti tra la mole di informazioni disponibili sul web.
+    
+Ti aiuteremo ad identificare i giusti tools, i frameworks e le librerie per far scalare il tuo applicativo.
+    
+Tutto questo riportando la nostra esperienza nello sviluppo in React di applicazioni web e native.`,
+    date: dayjs("2022-10-25 18:30").toDate(),
+    sponsor: "Extendi",
+    place: "Le Murate",
+    address: "Piazza Madonna della Neve 50122 Firenze",
+    eventbriteId: "430942198717",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-rendere-scalabili-le-moderne-applicazioni-di-front-end-430942198717",
+  },
+  {
+    title: "Applicazioni più semplici, robuste e performanti con RabbitMQ",
+    subtitle:
+      "L'evento di firenze.dev per imparare come utilizzare RabbitMQ per semplificare l'architettura dei sistemi e renderli scalabili.",
+    icon: rabbitImage,
+    image: rabbitImageFull,
+    abstract: `
+    Il tuo nuovissimo servizio in Go non riesce a comunicare con la tua vecchia applicazione Java? Nei tuoi servizi una singola feature si trasforma in un ingestibile groviglio di chiamate? E cosa succede quando una di queste chiamate fallisce? Come è possibile gestire gli errori in un sistema distribuito?
+
+A queste e ad altre domande risponderà per noi [Gabriele Santomaggio](https://twitter.com/gsantomaggio), Staff Software Engineer nel RabbitMQ team in VMware, speaker e autore di libri e articoli di tecnologia.
+
+Vedremo insieme come RabbitMQ risolve questi problemi, ma anche come sia possibile sfruttarlo per semplificare l'architettura dei nostri sistemi e in che modo si possano affrontare i temi della scalabilità e della sicurezza nella gestione dei flussi di dati.
+
+Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.it.`,
+    sponsor: "Register.it",
+    place: "Register.it",
+    address: "Viale della giovine Italia 17, 50122 Firenze",
+    eventbriteId: "347290865327",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-applicazioni-piu-semplici-robuste-e-performanti-con-rabbitmq-347290865327",
+    date: dayjs("2022-06-17 18:30").toDate(),
+  },
+  {
+    title: "Next level API con GraphQL",
+    subtitle:
+      "Cos'è GraphQL, quali sono i suoi vantaggi, come utilizzarlo al meglio e quali sono le cose da evitare assolutamente.",
+    icon: graphqlImage,
+    image: graphqlImageBig,
+    abstract: `Si sente dire in giro che con GraphQL si possono creare API performanti, scalabili e flessibili, che se non lo usi sei un dinosauro e che adesso il REST non serve più.
+
+Noi, dopo anni che lo utilizziamo in produzione, abbiamo imparato a sfruttarne le potenzialità e ad affrontare le sfide che questa tecnologica ci pone
+
+In questo talk vedremo che cos'è GraphQL, quali sono i suoi vantaggi, come utilizzarlo al meglio e quali sono le cose da evitare assolutamente.
+    
+Oltre a imparare i concetti di base, affronteremo alcuni scenari più avanzati e concluderemo l'incontro con una sessione interattiva in cui potrete porre agli speaker qualsiasi domanda sull'argomento (anche quelle più scomode!).
+    
+Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.it.`,
+    sponsor: "Register.it",
+    place: "Register.it",
+    address: "Viale della giovine Italia 17, 50122 Firenze",
+    eventbriteId: "324349707707",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
+    date: dayjs("2022-05-11 18:30").toDate(),
+  },
+  {
+    title: "È solo un altro IF",
+    subtitle: "Come scrivere codice migliore nella metà del tempo",
+    icon: anotherifImage,
+    image: anotherifImageBig,
+    abstract: `Ti è mai capitato che la cosa più veloce sul momento si sia rivelata un boomerang a lungo termine, facendoti perdere talmente tanto tempo da farti maledire il giorno in cui hai deciso di fare lo sviluppatore?
+
+È successo anche a noi, ma con l'esperienza abbiamo imparato che basta applicare alcune semplici regole per scrivere un codice migliore e più manutenibile. E vogliamo condividerle con te.
+    
+Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.it.`,
+    sponsor: "Register.it",
+    place: "Register.it",
+    address: "Viale della giovine Italia 17, 50122 Firenze",
+    eventbriteId: "204947703097",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
+    date: dayjs("2021-12-01 18:30").toDate(),
+  },
+];
+
+export interface EventType {
+  title: string;
+  subtitle: string;
+  icon: string | StaticImageData;
+  image: string | StaticImageData;
+  current?: boolean;
+  abstract: string;
+  date: Date;
+  place: string;
+  sponsor: string;
+  address: string;
+  eventbriteId: string;
+  eventbriteLink: string;
+}
+
+class EventService {
+  getEvents(): EventType[] {
+    return events;
+  }
+
+  getPastEvents(): EventType[] {
+    return events.filter((event) => !event.current);
+  }
+
+  getNextEvent(): EventType | undefined {
+    return events.find((event) => event.current);
+  }
+
+  getEvent(slug: string): EventType | undefined {
+    return events.find((event) => toSlug(event.title) === slug);
+  }
+}
+
+export function toSlug(name: string) {
+  return name.toLowerCase().replaceAll(" ", "-");
+}
+
+export const eventService = new EventService();
