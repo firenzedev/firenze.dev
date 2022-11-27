@@ -27,21 +27,21 @@ class MyDocument extends Document {
 
           <link
             rel="icon"
-            href={`${domain}/favicon-1-150x150.png`}
+            href={`https://${domain}/favicon-1-150x150.png`}
             sizes="32x32"
           />
           <link
             rel="icon"
-            href={`${domain}/favicon-1-300x300.png"`}
+            href={`https://${domain}/favicon-1-300x300.png"`}
             sizes="192x192"
           />
           <link
             rel="apple-touch-icon"
-            href={`${domain}/favicon-1-300x300.png"`}
+            href={`https://${domain}/favicon-1-300x300.png"`}
           />
           <meta
             name="msapplication-TileImage"
-            content={`${domain}/favicon-1-300x300.png"`}
+            content={`https://${domain}/favicon-1-300x300.png"`}
           />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
