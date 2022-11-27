@@ -153,10 +153,15 @@ function AboutSection({
     <section className="mt-16">
       <H2>{title}</H2>
       <div className="my-8 lg:flex">
-        <div className="lg:min-w-40">
-          <Image src={image} width={160} height={160} alt="code flag" />
+        <div className="lg:w-1/3">
+          <Image
+            src={image}
+            width={160}
+            height={160}
+            alt="section icon"
+          />
         </div>
-        {mainText}
+        <div>{mainText}</div>
       </div>
       {secondaryText}
 
