@@ -68,7 +68,7 @@ class MyDocument extends Document {
           {process.env.NODE_ENV === "production" && (
             <link rel="dns-prefetch" href="//www.googletagmanager.com" />
           )}
-          <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+          <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
           {process.env.NODE_ENV === "production" && (
             <Script
