@@ -6,8 +6,6 @@ import useScrollPosition from "@react-hook/window-scroll";
 import { navigation } from "./Navigation";
 import Logo from "./Logo";
 
-
-
 export const LINKS = [];
 
 function classNames(...classes: string[]) {
@@ -31,12 +29,9 @@ export default function Header() {
         <MenuIcon
           className="h-10 w-10 cursor-pointer mt-2 text-black "
           onClick={toggleMenu}
-        /> Menu
-        <Menu
-          isOpen={isOpen}
-          toggleMenu={toggleMenu}
-          navigation={navigation}
-        />
+        />{" "}
+        Menu
+        <Menu isOpen={isOpen} toggleMenu={toggleMenu} navigation={navigation} />
       </div>
       <div className={scrollY > treshold ? "lg:min-h-[80px]" : ""}></div>
       <div
@@ -58,7 +53,6 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
-          
         </div>
         <div className="hidden px-8 sm:flex items-center justify-center">
           <Link

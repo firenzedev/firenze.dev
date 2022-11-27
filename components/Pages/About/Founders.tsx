@@ -14,7 +14,7 @@ const founders = [
     linkedin: "https://www.linkedin.com/in/tizianopessa/",
     medium: "https://medium.com/@tizianopessa",
     email: "tiziano@firenze.dev",
-    image: tiziano
+    image: tiziano,
   },
   {
     name: "Lorenzo Spinelli",
@@ -24,7 +24,7 @@ const founders = [
     linkedin: "https://www.linkedin.com/in/lorenzospinelli/",
     medium: "https://medium.com/@spyna",
     email: "lorenzo@firenze.dev",
-    image: lorenzo
+    image: lorenzo,
   },
 ];
 
@@ -51,7 +51,7 @@ interface FounderProps {
   linkedin: string;
   medium: string;
   email: string;
-  image: any
+  image: any;
 }
 
 function Founder({
@@ -62,7 +62,11 @@ function Founder({
   reverse: boolean;
 }) {
   return (
-    <div className={"lg:flex border-b-2 py-8 " + (reverse ? "flex-row-reverse" : "")}>
+    <div
+      className={
+        "lg:flex border-b-2 py-8 " + (reverse ? "flex-row-reverse" : "")
+      }
+    >
       <div className="lg:w-3/4">
         <H3>{founder.name}</H3>
         <div>

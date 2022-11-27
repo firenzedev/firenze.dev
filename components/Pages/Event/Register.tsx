@@ -7,7 +7,7 @@ interface RegisterProps {
 }
 
 export default function Register({ eventId, eventLink }: RegisterProps) {
-  const elementId = (Math.random()).toString(16);
+  const elementId = Math.random().toString(16);
   return (
     <>
       <noscript>
@@ -24,7 +24,11 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
 
       <Script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></Script>
 
-      <Script type="text/javascript" id={`eventbrite-signup-script-${elementId}`} strategy="lazyOnload">
+      <Script
+        type="text/javascript"
+        id={`eventbrite-signup-script-${elementId}`}
+        strategy="lazyOnload"
+      >
         {`var exampleCallback = function() {
         console.log('Order complete!');
     };

@@ -59,9 +59,12 @@ export default function EventIntro() {
         </Link>{" "}
         e seguici sui canali social per sapere quando sarà il prossimo evento.
       </p>
-      <p className="mt-8">Vuoi parlare di un argomento in particolare? Vorresti fare lo speaker ad uno degli eventi? Sei un’azienda che vuole sponsorizzare o ospitare un evento? Scrivici e faccelo sapere, saremo contenti di conoscerti e ascoltare le tue proposte.
-
-</p>
+      <p className="mt-8">
+        Vuoi parlare di un argomento in particolare? Vorresti fare lo speaker ad
+        uno degli eventi? Sei un’azienda che vuole sponsorizzare o ospitare un
+        evento? Scrivici e faccelo sapere, saremo contenti di conoscerti e
+        ascoltare le tue proposte.
+      </p>
     </section>
   );
 }

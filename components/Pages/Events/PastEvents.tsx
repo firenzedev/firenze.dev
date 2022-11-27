@@ -1,9 +1,6 @@
-import {eventService} from "../../../events/EventService";
+import { eventService } from "../../../events/EventService";
 import H3 from "../../Heading/H3";
 import Event from "./Event";
-
-
-
 
 export default function PastEvents() {
   return (

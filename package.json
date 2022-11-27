@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pretty": "yarn prettier --write components pages"
+    "pretty": "yarn prettier --write components pages events"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.13",

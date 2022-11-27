@@ -154,12 +154,7 @@ function AboutSection({
       <H2>{title}</H2>
       <div className="my-8 lg:flex">
         <div className="lg:w-1/3">
-          <Image
-            src={image}
-            width={160}
-            height={160}
-            alt="section icon"
-          />
+          <Image src={image} width={160} height={160} alt="section icon" />
         </div>
         <div>{mainText}</div>
       </div>
