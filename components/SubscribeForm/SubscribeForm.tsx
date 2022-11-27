@@ -8,7 +8,9 @@ export default function SubscribeForm() {
         frameBorder="0"
         scrolling="auto"
         allowFullScreen
+        loading="lazy"
         className="w-full"
+        title="Iscriviti a firenze.dev"
       ></iframe>
     </div>
   );

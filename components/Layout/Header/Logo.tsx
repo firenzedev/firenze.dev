@@ -7,7 +7,13 @@ export default function Logo() {
     <div className="sm:flex justify-evenly items-center p-2 lg:px-8">
       <Link href="/" className="block text-black no-underline">
         <div className="flex">
-          <Image src={logo} alt="firenze.dev logo" width={47} height={47} />
+          <Image
+            src={logo}
+            alt="firenze.dev logo"
+            width={47}
+            height={47}
+            priority
+          />
           <div className="ml-2">
             <span className="text-xl">
               firenze<strong>.dev</strong>
