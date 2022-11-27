@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import logo from "../../../assets/images/firenzedev_darkbkg_shadow.svg";
 import H1 from "../../Heading/H1";
@@ -6,9 +5,6 @@ import H1 from "../../Heading/H1";
 export default function Hero() {
   return (
     <div className="grid lg:grid-cols-2 gap-2 bg-gradient-to-r from-blue-700 to-indigo-900">
-      <Head>
-        <link rel="preload" href={logo} as="image" />
-      </Head>
       <div className="text-white p-2 pt-6 lg:p-24 text-center lg:text-left">
         <H1 className="text-white">
           firenze<strong>.dev</strong> developer community

@@ -111,14 +111,14 @@ gtag("config", "G-VN97D6JYJZ");`}
                   alt="facebook pixel"
                   height="1"
                   width="1"
-                  style="display:none"
+                  style={{ display: "none" }}
                   src="https://www.facebook.com/tr?id=411993527211522&ev=PageView&noscript=1"
                 />
                 <img
                   alt="facebook pixel"
                   height="1"
                   width="1"
-                  style="display:none"
+                  style={{ display: "none" }}
                   src="https://www.facebook.com/tr?id=895145221386091&ev=PageView&noscript=1"
                 />
               </noscript>
