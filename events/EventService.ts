@@ -140,11 +140,13 @@ class EventService {
   }
 
   getPastEvents(): EventType[] {
-    return events.filter((event) => !event.current);
+    return events.filter((event) => dayjs(event.date).isBefore(new Date()));
   }
 
   getNextEvent(): EventType | undefined {
-    return events.find((event) => event.current);
+    return events.find(
+      (event) => event.current && dayjs(event.date).isAfter(new Date())
+    );
   }
 
   getEvent(slug: string): EventType | undefined {

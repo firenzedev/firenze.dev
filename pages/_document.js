@@ -65,21 +65,18 @@ class MyDocument extends Document {
           <meta name="twitter:label1" content="Tempo di lettura stimato" />
           <meta name="twitter:data1" content="3 minuti" />
 
-          {process.env.NODE_ENV === "production" && (
-            <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-          )}
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
           {process.env.NODE_ENV === "production" && (
             <Script
               async
               id="google-analytics-import"
-              strategy="lazyOnload"
+              strategy="afterInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=UA-206629030-1"
             ></Script>
           )}
           {process.env.NODE_ENV === "production" && (
-            <Script id="google-analytics" strategy="lazyOnload">
+            <Script id="google-analytics" strategy="afterInteractive">
               {` window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
 gtag('set', 'linker', {"domains":["firenze.dev"]} );
 gtag("js", new Date());
@@ -91,7 +88,7 @@ gtag("config", "G-VN97D6JYJZ");`}
 
           {process.env.NODE_ENV === "production" && (
             <>
-              <Script id="fb-analytics" strategy="lazyOnload">
+              <Script id="fb-analytics" strategy="afterInteractive">
                 {`
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -108,6 +105,7 @@ gtag("config", "G-VN97D6JYJZ");`}
 
               <noscript>
                 <img
+                  loading="lazy"
                   alt="facebook pixel"
                   height="1"
                   width="1"
@@ -115,6 +113,7 @@ gtag("config", "G-VN97D6JYJZ");`}
                   src="https://www.facebook.com/tr?id=411993527211522&ev=PageView&noscript=1"
                 />
                 <img
+                  loading="lazy"
                   alt="facebook pixel"
                   height="1"
                   width="1"
