@@ -13,7 +13,6 @@ export default function EventIntro() {
         width={1024}
         height={627}
       />
-      <H3>Eventi di firenze.dev</H3>
       <p className="mt-8">
         Gli sviluppatori, più di qualsiasi altra figura professionale, hanno un
         bisogno costante di aggiornare le proprie competenze e di mantenersi in
