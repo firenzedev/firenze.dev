@@ -8,7 +8,7 @@ interface FeatureProps {
 export default function Feature({ feature }: FeatureProps) {
   return (
     <div className="shadow-md flex p-3 bg-white items-start">
-      <div>
+      <div className="print:hidden">
         <Image src={feature.icon} alt={feature.title} width={50} height={50} />
       </div>
       <div className="ml-4 pb-10">
