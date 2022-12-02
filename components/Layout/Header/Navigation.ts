@@ -7,4 +7,5 @@ export const navigation: SiteLink[] = [
   { name: "Eventi", href: "/eventi" },
   { name: "Community", href: "/community" },
   { name: "About", href: "/about" },
+  { name: "Contatti", href: "/contatti" },
 ];

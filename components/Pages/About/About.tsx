@@ -23,7 +23,7 @@ export default function About() {
       </section>
       <div className="text-center mb-16">
         <Link href="/community">
-          <PrimaryButton>SCopri di più</PrimaryButton>
+          <PrimaryButton>Scopri di più</PrimaryButton>
         </Link>
       </div>
     </main>
