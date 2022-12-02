@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# firenze.dev 
+
+> the website https://firenze.dev
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It uses React and TypeScript.
 
 ## Getting Started
 
@@ -22,3 +26,7 @@ npm run pretty
 ```
 
 format source code
+
+## Contribute 
+
+Non vediamo l'ora che tu contribuisca a questo progetto.

@@ -45,10 +45,6 @@ export default function Menu({ isOpen, toggleMenu, navigation }: MenuProps) {
                     item={item}
                   />
                 ))}
-                <MenuLink
-                  onClick={toggleMenu}
-                  item={{ href: "/contatti", name: "Contatti" }}
-                />
               </div>
             </nav>
           </div>

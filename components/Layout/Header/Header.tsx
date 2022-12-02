@@ -54,14 +54,6 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div className="hidden px-8 sm:flex items-center justify-center">
-          <Link
-            className="rounded px-6 py-3 bg-zinc-800 text-white hover:shadow"
-            href="/contatti"
-          >
-            Contatti
-          </Link>
-        </div>
       </div>
     </>
   );
