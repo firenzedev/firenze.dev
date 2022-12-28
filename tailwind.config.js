@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      serif: ["Gelasio", "serif"],
+      serif: ["var(--font-gelasio)"],
       sans: ["Roboto", "sans-serif"],
     },
   },

@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-      @apply text-gray-600;
-    } 
-    h1,h2,h3,h4,h5,h6 {
-        @apply text-black;
-    }
-
-    a {
-      @apply text-blue-600;
-      @apply underline;
-    }
-
+  html {
+    @apply text-gray-600;
   }
-
-
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black;
+  }
   
+  a {
+    @apply text-blue-600;
+    @apply underline;
+  }
+}
