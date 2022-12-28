@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Analytics from "../components/Analytics/Analytics"
+import Analytics from "../components/Analytics/Analytics";
 
 const domain = "staging.firenze.dev";
 
@@ -64,8 +64,6 @@ class MyDocument extends Document {
           <meta name="twitter:description" content={description} />
           <meta name="twitter:label1" content="Tempo di lettura stimato" />
           <meta name="twitter:data1" content="3 minuti" />
-
-          <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
           <Analytics />
         </Head>
