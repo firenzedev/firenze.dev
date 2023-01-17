@@ -36,15 +36,13 @@ export default function FAQ() {
   return (
     <section>
       <H3>F.A.Q.</H3>
-      <p className="my-4 mb-16">
-        <ul>
-          {FAQS.map((faq, index) => (
-            <li key={`faq-${faq.question}`} className="mb-4">
-              <strong>{faq.question}</strong> <p>{faq.answer}</p>
-            </li>
-          ))}
-        </ul>
-      </p>
+      <ul>
+        {FAQS.map((faq, index) => (
+          <li key={`faq-${faq.question}`} className="mb-4">
+            <strong>{faq.question}</strong> <p>{faq.answer}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
