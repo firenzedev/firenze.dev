@@ -95,7 +95,10 @@ export default function Sponsorship() {
             </li>
             <li>A seguire ascoltiamo il talk.</li>
             <li>L&apos;host di firenze.dev fa una chiusura.</li>
-            <li>L&apos;azienda che sponsorizza chiude l&apos;incontro &quot;tecnico&quot;.</li>
+            <li>
+              L&apos;azienda che sponsorizza chiude l&apos;incontro
+              &quot;tecnico&quot;.
+            </li>
             <li>
               Intorno alle 20:00 Inizia il momento di networking fino alle 21
               circa.
@@ -124,8 +127,8 @@ export default function Sponsorship() {
             </li>
             <li>
               Non accettiamo argomenti poco interessanti e/o marchette pure.
-              L&apos;azienda ha uno spazio per parlare durante l&apos;evento, dedicato a
-              farsi pubblicità.
+              L&apos;azienda ha uno spazio per parlare durante l&apos;evento,
+              dedicato a farsi pubblicità.
             </li>
           </ul>
         </p>
@@ -135,8 +138,8 @@ export default function Sponsorship() {
         <p className="my-4 mb-16">
           <ul className="list-inside list-disc">
             <li>
-              Il costo del luogo per svolgere l&apos;evento. Può essere anche la sede
-              dell&apos;azienda
+              Il costo del luogo per svolgere l&apos;evento. Può essere anche la
+              sede dell&apos;azienda
             </li>
             <li>
               Il costo per l&apos;aperitivo. Riteniamo che il networking sia

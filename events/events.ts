@@ -8,8 +8,8 @@ import rabbitImageFull from "./images/Applicazioni-piu-semplici-robuste-e-perfor
 import searchEngine from "./images/building-a-full-text-search-engine-from-scratch-in-typescript.png";
 import fontendApps from "./images/rendere-applicazioni-front-end-scalabitli.png";
 import graphqlImageBig from "./images/graphql-2014-min.png";
-import christmasBeer from "./images/christmas-beer-firenze-dev.png"
-import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp"
+import christmasBeer from "./images/christmas-beer-firenze-dev.png";
+import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
