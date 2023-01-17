@@ -7,6 +7,7 @@ import lorenzo from "./images/lorenzo-300x300.png";
 
 const founders = [
   {
+    anchor: "tiziano",
     name: "Tiziano Pessa",
     intro:
       "Full stack developer, lavoro in questo settore da diversi anni, ma sono ancora appassionato e curioso come il primo giorno. Sono un corridore amatoriale, amo viaggiare e leggere. Mi piace scoprire come funzionano gli ingranaggi nascosti dietro ogni meccanismo e non mi stanco mai di imparare cose nuove. Ah, e naturalmente non rifiuto mai una birra con gli amici!",
@@ -17,6 +18,7 @@ const founders = [
     image: tiziano,
   },
   {
+    anchor: "lorenzo",
     name: "Lorenzo Spinelli",
     intro:
       "Fullstack, scrivo codice ormai da circa un migliaio di anni. Cerco di farlo il più “clean” possibile (ma ho ancora tanta strada da fare). Mi piace fare domande e scoprire come funzionano davvero le cose. Ma soprattto condividere le cose che imparo con gli altri. Sono convinto che il mondo (dello sviluppo) possa diventare un posto migliore. Fuori dal lavoro potete incontrarmi a rincorrere i miei figli o su qualche tavola da surf, snowboard o skateboard.",
@@ -52,6 +54,7 @@ interface FounderProps {
   medium: string;
   email: string;
   image: any;
+  anchor: string;
 }
 
 function Founder({
@@ -62,7 +65,7 @@ function Founder({
   reverse: boolean;
 }) {
   return (
-    <div
+    <div id={founder.anchor}
       className={
         "lg:flex border-b-2 py-8 " + (reverse ? "flex-row-reverse" : "")
       }
