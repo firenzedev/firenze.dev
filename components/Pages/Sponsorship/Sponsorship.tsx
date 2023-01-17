@@ -19,7 +19,7 @@ const followers = {
 export default function Sponsorship() {
   return (
     <main className="container mx-auto p-2 pt-6 lg:px-36">
-      <section>
+      <section className="mt-8">
         <H1>Diventa sponsor di firenze.dev</H1>
         <p className="my-8">
           La community di firenze.dev è nata nel settembre 2021. Abbiamo fatto
@@ -36,9 +36,9 @@ export default function Sponsorship() {
           relazioni professionali sane e costruttive.
         </p>
       </section>
-      <section>
+      <section className="mt-8">
         <H2>Perchè sponsorizzare un evento</H2>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           La nostra offerta di sponsorizzazione è dedicata alle aziende a cui
           interessa:
           <ul className="list-inside list-disc">
@@ -48,9 +48,9 @@ export default function Sponsorship() {
           </ul>
         </p>
       </section>
-      <section>
+      <section className="mt-8">
         <H2>Alcuni numeri</H2>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           <ul className="list-inside list-disc">
             <li>
               Agli eventi di firenze.dev partecipano solitamente{" "}
@@ -82,9 +82,9 @@ export default function Sponsorship() {
         alt="numero di iscritti agli eventi di firenze.dev"
         className="mb-16"
       />
-      <section>
+      <section className="mt-8">
         <H2>Struttura di un evento</H2>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           Gli eventi di firenze.dev si svolgono in questo modo:
           <ul className="list-inside list-disc">
             <li>L&apos;evento inizia alle 18:30.</li>
@@ -110,11 +110,12 @@ export default function Sponsorship() {
           </ul>
         </p>
       </section>
-      <section>
+      <section className="mt-8">
         <H2>Requirements</H2>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           Per poter sponsorizzare uno o più eventi di firenze.dev ci sono delle
           regole da rispettare:
+        </p>
           <ul className="list-inside list-disc">
             <li>
               Puoi proporre un argomento o un talk, valuteremo insieme la
@@ -131,11 +132,10 @@ export default function Sponsorship() {
               dedicato a farsi pubblicità.
             </li>
           </ul>
-        </p>
       </section>
-      <section>
+      <section className="mt-8">
         <H2>Costi</H2>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           <ul className="list-inside list-disc">
             <li>
               Il costo del luogo per svolgere l&apos;evento. Può essere anche la
@@ -152,7 +152,7 @@ export default function Sponsorship() {
           </ul>
         </p>
       </section>
-      <section>
+      <section className="mt-8">
         <H2>Come diventare sponsor</H2>
         <p className="my-4">
           Puoi scriverci una mail a{" "}
@@ -162,7 +162,7 @@ export default function Sponsorship() {
           firenze.dev.
         </p>
         <H3>Donazioni</H3>
-        <p className="my-4 mb-16">
+        <p className="my-4">
           firenze.dev è anche una associazione senza scopo di lucro, possiamo
           ricevere donazioni (non detraibili) ma non possiamo emettere fattura.
         </p>
