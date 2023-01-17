@@ -3,7 +3,7 @@ import Analytics from "../components/Analytics/Analytics";
 
 const domain = "staging.firenze.dev";
 
-const title = "firenze.dev, la community di svilupaptori a firenze";
+const title = "firenze.dev, la community di sviluppatori a firenze";
 const description =
   "firenze.dev è la community degli sviluppatori a Firenze: organizziamo incontri ed eventi gratuiti per favorire l&#039;apprendimento e il miglioramento continuo";
 const image = "https://staging.firenze.dev/social_preview.png";
