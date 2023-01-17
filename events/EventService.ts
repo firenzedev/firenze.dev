@@ -1,9 +1,6 @@
-
 import { StaticImageData } from "next/image";
 import dayjs from "dayjs";
 import { events } from "./events";
-
-
 
 export interface EventType {
   title: string;
@@ -21,7 +18,7 @@ export interface EventType {
 }
 
 class EventService {
-  events: EventType[]
+  events: EventType[];
 
   constructor(events: EventType[]) {
     this.events = events;
@@ -32,7 +29,9 @@ class EventService {
   }
 
   getPastEvents(): EventType[] {
-    return this.events.filter((event) => dayjs(event.date).isBefore(new Date()));
+    return this.events.filter((event) =>
+      dayjs(event.date).isBefore(new Date())
+    );
   }
 
   getNextEvent(): EventType | undefined {

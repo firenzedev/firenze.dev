@@ -30,3 +30,8 @@ format source code
 ## Contribute 
 
 Non vediamo l'ora che tu contribuisca a questo progetto.
+
+### Technical information
+
+The branch develop is auto deployed to https://staging.firenze.dev 
+
