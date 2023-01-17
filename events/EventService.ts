@@ -14,7 +14,7 @@ export interface EventType {
   abstract: string;
   date: Date;
   place: string;
-  sponsor: string;
+  sponsor?: string;
   address: string;
   eventbriteId: string;
   eventbriteLink: string;

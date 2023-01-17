@@ -8,10 +8,32 @@ import rabbitImageFull from "./images/Applicazioni-piu-semplici-robuste-e-perfor
 import searchEngine from "./images/building-a-full-text-search-engine-from-scratch-in-typescript.png";
 import fontendApps from "./images/rendere-applicazioni-front-end-scalabitli.png";
 import graphqlImageBig from "./images/graphql-2014-min.png";
+import christmasBeer from "./images/christmas-beer-firenze-dev.png"
+import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp"
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: EventType[] = [
+  {
+    title: "Christmas beer",
+    subtitle:
+      "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
+    icon: christmasBeerThumb,
+    image: christmasBeer,
+    abstract: `Un evento informale per celebrare il primo anno di firenze.dev, ma anche per conoscerci meglio, bere una birra insieme e gettare uno sguardo al futuro della community.
+
+Niente speaker, niente talk, solo un gruppo di amici che si incontrano davanti a un bicchiere di birra per parlare di cosa ci piacerebbe fare nell'anno che sta per iniziare e raccontarci le nostre aspettative sulle attività della community per il 2023.
+    
+La serata è aperta a tutti i membri della community di firenze.dev e si svolgerà presso la Manifattura Tabacchi, in via delle Cascine 35 a Firenze. Ci ritroveremo a partire dalle 21.30, avremo un tavolo riservato, quindi è richiesta la prenotazione del biglietto per poterci organizzare meglio.`,
+    current: true,
+    date: dayjs("2022-12-15 21:30").toDate(),
+    sponsor: undefined,
+    place: "Manifattura Tabacchi",
+    address: "Manifattura Tabacchi, Via delle Cascine 35, 50144 Firenze",
+    eventbriteId: "482058017507",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
+  },
   {
     title: "Building a full-text search engine from scratch in TypeScript",
     subtitle:
@@ -24,7 +46,7 @@ export const events: EventType[] = [
   Vedremo come mantenere prestazioni incredibilmente elevate pur lavorando con un'enorme quantità di dati e capiremo perché è così importante scegliere i giusti algoritmi e le strutture dati più adeguate per questo tipo di sistemi.
   
   Dopo il talk ci sarà il consueto aperitivo di networking.`,
-    current: true,
+    current: false,
     date: dayjs("2022-11-30 18:30").toDate(),
     sponsor: "Extendi",
     place: "Le Murate",

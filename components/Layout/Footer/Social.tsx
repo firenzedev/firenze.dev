@@ -23,7 +23,7 @@ const socials = [
 
 export default function Social() {
   return (
-    <div className="bg-slate-200 text-center">
+    <div className="bg-slate-200 text-center print:hidden">
       {socials.map((social) => (
         <span key={`social-${social.name}`}>
           <a
