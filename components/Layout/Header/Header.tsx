@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 rounded bg-white shadow-md">
+      <div className="fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 rounded bg-white shadow-md print:hidden">
         <MenuIcon
           className="h-10 w-10 cursor-pointer mt-2 text-black "
           onClick={toggleMenu}
