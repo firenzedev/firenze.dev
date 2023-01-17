@@ -9,18 +9,16 @@ export default function PastSponsors() {
   return (
     <section>
       <H3>Sponsor passati</H3>
-      <p className="my-4 mb-16">
-        <ul className="list-inside list-disc">
-          {sponsors.map((sponsor) => (
-            <li key={`sponsor-${sponsor.name}`}>
-              <a href={sponsor.link} target="_blank" rel="noreferrer">
-                {sponsor.name}
-              </a>
-              : {sponsor.events} eventi
-            </li>
-          ))}
-        </ul>
-      </p>
+      <ul className="list-inside list-disc">
+        {sponsors.map((sponsor) => (
+          <li key={`sponsor-${sponsor.name}`}>
+            <a href={sponsor.link} target="_blank" rel="noreferrer">
+              {sponsor.name}
+            </a>
+            : {sponsor.events} eventi
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
