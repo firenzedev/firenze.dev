@@ -33,5 +33,21 @@ Non vediamo l'ora che tu contribuisca a questo progetto.
 
 ### Technical information
 
+The technolgies used in this project are: 
+* Next.js
+* TypeScript
+* Tailwind css
+* Preact (only in production)
+
+### Deploy
+
 The branch develop is auto deployed to https://staging.firenze.dev 
+
+when you open a Pull request, we make a preview deployement. So you can view anche check it from the pull request page.
+
+### Commit style
+
+You should use conventional commit messages: https://www.conventionalcommits.org/en/v1.0.0/ 
+
+
 
