@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
       <Head>
         <title>Privacy Policy </title>
       </Head>
-     
+
       <Privacy />
     </>
   );

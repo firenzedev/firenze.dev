@@ -116,22 +116,22 @@ export default function Sponsorship() {
           Per poter sponsorizzare uno o più eventi di firenze.dev ci sono delle
           regole da rispettare:
         </p>
-          <ul className="list-inside list-disc">
-            <li>
-              Puoi proporre un argomento o un talk, valuteremo insieme la
-              qualità e se è interessante per la community.
-            </li>
-            <li>
-              Puoi proporre uno speaker. Ci assicureremo della sua abilità di
-              speaking ad un pubblico e della qualità delle slide e del talk. Su
-              questo siamo tassativi e possiamo mettere il veto.
-            </li>
-            <li>
-              Non accettiamo argomenti poco interessanti e/o marchette pure.
-              L&apos;azienda ha uno spazio per parlare durante l&apos;evento,
-              dedicato a farsi pubblicità.
-            </li>
-          </ul>
+        <ul className="list-inside list-disc">
+          <li>
+            Puoi proporre un argomento o un talk, valuteremo insieme la qualità
+            e se è interessante per la community.
+          </li>
+          <li>
+            Puoi proporre uno speaker. Ci assicureremo della sua abilità di
+            speaking ad un pubblico e della qualità delle slide e del talk. Su
+            questo siamo tassativi e possiamo mettere il veto.
+          </li>
+          <li>
+            Non accettiamo argomenti poco interessanti e/o marchette pure.
+            L&apos;azienda ha uno spazio per parlare durante l&apos;evento,
+            dedicato a farsi pubblicità.
+          </li>
+        </ul>
       </section>
       <section className="mt-8">
         <H2>Costi</H2>

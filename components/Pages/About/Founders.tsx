@@ -65,7 +65,8 @@ function Founder({
   reverse: boolean;
 }) {
   return (
-    <div id={founder.anchor}
+    <div
+      id={founder.anchor}
       className={
         "lg:flex border-b-2 py-8 " + (reverse ? "flex-row-reverse" : "")
       }
