@@ -39,6 +39,16 @@ The technolgies used in this project are:
 * Tailwind css
 * Preact (only in production)
 
+### Before commit
+
+Before committing run the command
+
+```
+npm run prettier
+```
+
+to format the source code.
+
 ### Deploy
 
 The branch develop is auto deployed to https://staging.firenze.dev 
