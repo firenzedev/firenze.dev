@@ -7,7 +7,7 @@ import SecondaryButton from "../../Button/SecondaryButton";
 export default function FourOrFour() {
   return (
     <main className="container mx-auto p-2 pt-6 lg:px-56">
-      <div className="lg:border flex justify-center  ">
+      <div className="flex justify-center  ">
         <Image src={ErrorImage} alt="Error Icon" />
       </div>
 
