@@ -29,7 +29,9 @@ format source code
 
 ## Contribute 
 
-Non vediamo l'ora che tu contribuisca a questo progetto.
+Non vediamo l'ora che tu contribuisca a questo progetto. 
+
+Per ogni informazione puoi contattarci su discord, ti risponderemo e ti daremo supporto, puoi usare questo invito: https://discord.com/invite/fZMUd9KCQA
 
 ### Technical information
 
