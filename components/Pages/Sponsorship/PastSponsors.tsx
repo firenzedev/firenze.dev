@@ -1,8 +1,8 @@
 import H3 from "../../Heading/H3";
 
 const sponsors = [
-  { name: "Register.it", link: "https://register.it", events: 3 },
-  { name: "Extendi", link: "https://extendi.it", events: 2 },
+  { name: "Register.it", link: "https://register.it" },
+  { name: "Extendi", link: "https://extendi.it" },
 ];
 
 export default function PastSponsors() {
@@ -15,7 +15,6 @@ export default function PastSponsors() {
             <a href={sponsor.link} target="_blank" rel="noreferrer">
               {sponsor.name}
             </a>
-            : {sponsor.events} eventi
           </li>
         ))}
       </ul>
