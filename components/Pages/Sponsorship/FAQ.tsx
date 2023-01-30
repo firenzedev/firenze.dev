@@ -4,12 +4,12 @@ const FAQS = [
   {
     question: "Dove si svolgono gli eventi?",
     answer:
-      "Gli eventi si possono svolgere nella sede dell'azienda se è facilmente raggiungibile e ha spazi adeguati. Altrimenti si tengono in luoghi appositi, ad esempio le murate, lo students hotel, ecc...",
+      "Gli eventi si possono svolgere nella sede dell'azienda se è facilmente raggiungibile e ha spazi adeguati. Altrimenti è possibile noleggiare una sala della capienza adeguata, possiamo fornirti a richiesta maggiori dettagli sui costi",
   },
   {
     question: "Posso sponsorizzare solo una parte dell'evento?",
     answer:
-      "Puoi decidere di occuparti solo di una parte, ad esempio la sala, l'aperitivo, lo speaker. In questo caso ti consideriamo un collaboratore e non uno sponsor.",
+      "Puoi decidere di occuparti solo di una parte, ad esempio la sala, l'aperitivo, lo speaker. In questo caso verrai citato come sponsor della serata, ma non avrai diritto a uno spazio dedicato",
   },
   {
     question: "Posso eseguire una donazione e pensate voi al resto?",
@@ -19,16 +19,15 @@ const FAQS = [
   {
     question:
       "Posso ospitare firenze.dev nella mia azienda per un corso di formazione?",
-    answer: "Si, l'abbiamo già fatto e siamo molto felici di farlo.",
+    answer: "Si, ci piace fare formazione, l'abbiamo già fatto in passato e siamo molto felici di farlo",
   },
   {
     question: "Avete dei tier di sponsorship?",
-    answer: "No. ",
+    answer: "No",
   },
   {
-    question: "Come posso eseguire una donazione?",
-    answer:
-      "Puoi eseguire la donazione tramite bonifico bancario intestato all'associazione no profit firenze.dev",
+    question: "Come posso fare se ho delle altre domande a cui non ho trovato risposta in questa pagina?",
+    answer: "Scrivi una mail a staff@firenze.dev, saremo felici di fissare una call di approfondimento",
   },
 ];
 
