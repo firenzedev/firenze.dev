@@ -2,19 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import H1 from "../../Heading/H1";
 import H2 from "../../Heading/H2";
-import H3 from "../../Heading/H3";
 import FAQ from "./FAQ";
-import numberAtEventImage from "./numero-di-iscritti-agli-eventi-di-firenze.dev.png";
 import PastSponsors from "./PastSponsors";
-
-const numbers = { events: 6, other: 5 };
-
-const followers = {
-  linkedin: 189,
-  newsletter: 294,
-  discord: 112,
-  twitter: 45,
-};
 
 export default function Sponsorship() {
   return (
@@ -22,135 +11,119 @@ export default function Sponsorship() {
       <section className="mt-8">
         <H1>Diventa sponsor di firenze.dev</H1>
         <p className="my-8">
-          La community di firenze.dev è nata nel settembre 2021. Abbiamo fatto
-          il primo piccolo evento a dicembre, proprio a fine dell&apos;emergenza
-          covid. E Nel corso del 2022 la commnity è cresciuta molto,
-          organizzando un totale di {numbers.events} eventi al quale si sono
-          iscritti più di 200 sviluppatori e sviluppatrici.
+          La community di firenze.dev è nata nel settembre 2021 e sin dall&apos;inizio
+          uno dei suoi punti di forza è stata l&apos;organizzazione periodica di <strong>eventi 
+          gratuiti</strong>, in presenza e aperti a tutti. 
+          L&apos;obiettivo dei nostri meetup è creare uno
+          spazio in cui tutti gli appassionati possano incontrarsi e condividere le
+          proprie esperienze in un ambiente informale e amichevole, dove poter costruire
+          relazioni stimolanti sia a livello umano che professionale.
         </p>
         <p className="my-8">
-          Agli eventi di firenze.dev partecipano sviluppatori da tutto il
-          territorio fiorentino. L&apos;obiettivo dei nostri eventi è creare uno
-          spazio in cui gli sviluppatori possano incontrarsi, condividere le
-          loro esperienze e conoscenze, stare a proprio agio e costruire delle
-          relazioni professionali sane e costruttive.
+          Evento dopo evento, la community è cresciuta velocemente e aggrega ormai <strong>centinaia 
+          di sviluppatrici e sviluppatori</strong> su tutto il territorio
+          fiorentino. Ai nostri incontri partecipano persone curiose, animate dalla passione
+          per lo sviluppo software e la tecnologia, che hanno voglia di imparare cose nuove
+          e mettersi in gioco.
         </p>
       </section>
       <section className="mt-8">
-        <H2>Perchè sponsorizzare un evento</H2>
+        <H2>Perché sponsorizzare un evento</H2>
         <p className="my-4">
-          La nostra offerta di sponsorizzazione è dedicata alle aziende a cui
-          interessa:
-          <ul className="list-inside list-disc">
-            <li>Entrare in contatto diretto con sviluppatori</li>
-            <li>Creare brand recognition sul territorio</li>
-            <li>Parlare di tecnologie a loro care</li>
-          </ul>
-        </p>
+          Le aziende che sponsorizzano un evento di firenze.dev hanno la possibilità di:
+        </p>          
+        <ul className="list-inside list-disc">
+          <li>Entrare in <strong>contatto diretto con un gruppo di sviluppatori</strong> appassionati e curiosi</li>
+          <li>Creare o rafforzare la propria <strong>brand recognition</strong> sul territorio</li>
+          <li>Parlare delle proprie <strong>tecnologie di punta</strong> e contribuire alla loro diffusione</li>
+          <li>Supportare una realtà che <strong>promuove la cultura</strong> legata allo sviluppo software</li>
+        </ul>
       </section>
       <section className="mt-8">
-        <H2>Alcuni numeri</H2>
-        <p className="my-4">
-          <ul className="list-inside list-disc">
-            <li>
-              Agli eventi di firenze.dev partecipano solitamente{" "}
-              <strong>dalle 20 alle 60 persone</strong>.
-            </li>
-            <li>
-              Abbiamo circa <strong>{countPeople()} persone</strong> che ruotano
-              intorno alla community e partecipano agli eventi. Divisi tra la
-              newsletter, linkedin, discord e i social network.
-            </li>
-            <li>
-              Abbiamo organizzato <strong>{numbers.events} eventi</strong> dal
-              vivo in presenza
-            </li>
-            <li>
-              Partecipato come speaker a{" "}
-              <strong>{numbers.other} conferenze</strong> e workshop italiani ed
-              internazionali
-            </li>
-            <li>
-              Abbiamo <strong>realizzato corsi</strong> online per sviluppatori
-              e in presenza nelle aziende.
-            </li>
-          </ul>
-        </p>
+        <H2>In dettaglio</H2>
+        <ul className="list-inside list-disc my-4">
+          <li>
+            Agli eventi in presenza di firenze.dev partecipano solitamente{" "}
+            <strong>dalle 30 alle 60 persone</strong>
+          </li>
+          <li>
+            Abbiamo <strong>diverse centinaia di persone</strong> che ruotano
+            intorno alla community, ricevono la newsletter e ci seguono 
+            sui nostri canali social
+          </li>
+          <li>
+            Organizziamo in media <strong>una decina di eventi all&apos;anno</strong>, 
+            tutti gratuiti e in presenza
+          </li>
+          <li>
+            Partecipiamo periodicamente come speaker a{" "}
+            <strong>conferenze e workshop</strong> italiani ed
+            internazionali
+          </li>
+          <li>
+            Organizziamo <strong>attività di formazione</strong> nelle aziende, 
+            sia online che in presenza 
+          </li>
+        </ul>
       </section>
-      <Image
-        src={numberAtEventImage}
-        alt="numero di iscritti agli eventi di firenze.dev"
-        className="mb-16"
-      />
       <section className="mt-8">
         <H2>Struttura di un evento</H2>
         <p className="my-4">
           Gli eventi di firenze.dev si svolgono in questo modo:
-          <ul className="list-inside list-disc">
-            <li>L&apos;evento inizia alle 18:30.</li>
-            <li>Alle 18:45 facciamo un intro alla serata.</li>
-            <li>
-              Poi, l&apos;azienda che sponsoriza ha a disposizione 10 minuti per
-              parlare.
-            </li>
-            <li>A seguire ascoltiamo il talk.</li>
-            <li>L&apos;host di firenze.dev fa una chiusura.</li>
-            <li>
-              L&apos;azienda che sponsorizza chiude l&apos;incontro
-              &quot;tecnico&quot;.
-            </li>
-            <li>
-              Intorno alle 20:00 Inizia il momento di networking fino alle 21
-              circa.
-            </li>
-            <li>
-              Lo staff di firenze.dev e chi si vuole aggregare vanno a cena
-              insieme.
-            </li>
-          </ul>
         </p>
+        <ul className="list-inside list-disc">
+          <li>l&apos;appuntamento è intorno alle <strong>18:30</strong>, fuori dall&apos;orario lavorativo</li>
+          <li>diamo inizio all&apos;evento facendo una breve introduzione</li>
+          <li><strong>lasciamo la parola all&apos;azienda sponsor, che ha a disposizione una decina di minuti</strong></li>
+          <li>segue poi il <strong>talk</strong> vero e proprio, che può durare tra i 30 e i 60 minuti circa</li>
+          <li>dopo la sessione di Q&A, l&apos;host di firenze.dev chiude l&apos;incontro tecnico</li>
+          <li><strong>all&apos;azienda sponsor viene lasciato un breve spazio finale</strong></li>
+          <li>intorno alle 20:00 inizia il momento di <strong>networking</strong> accompagnato da un leggero aperitivo</li>
+        </ul>
       </section>
       <section className="mt-8">
-        <H2>Requirements</H2>
+        <H2>Agreement</H2>
         <p className="my-4">
-          Per poter sponsorizzare uno o più eventi di firenze.dev ci sono delle
+          Per poter sponsorizzare uno o più eventi di firenze.dev ci sono alcune
           regole da rispettare:
         </p>
-          <ul className="list-inside list-disc">
-            <li>
-              Puoi proporre un argomento o un talk, valuteremo insieme la
-              qualità e se è interessante per la community.
-            </li>
-            <li>
-              Puoi proporre uno speaker. Ci assicureremo della sua abilità di
-              speaking ad un pubblico e della qualità delle slide e del talk. Su
-              questo siamo tassativi e possiamo mettere il veto.
-            </li>
-            <li>
-              Non accettiamo argomenti poco interessanti e/o marchette pure.
-              L&apos;azienda ha uno spazio per parlare durante l&apos;evento,
-              dedicato a farsi pubblicità.
-            </li>
-          </ul>
+        <ul className="list-inside list-disc">
+          <li>
+            l&apos;azienda sponsor ha uno spazio per parlare durante l&apos;evento,
+            dedicato a farsi conoscere e pubblicizzare le proprie attività, i propri
+            prodotti o le posizioni aperte ai fini del recruitment
+          </li>
+          <li>
+            al di là di questo spazio, l&apos;azienda sponsor ha facoltà di proporre 
+            un argomento o un talk, ma verranno accettati solamente speech di qualità e
+            di interesse per la community
+          </li>
+          <li>
+            qualora l&apos;azienda sponsor proponesse uno speaker, potrà essere preso in considerazione
+            solo dopo un&apos;attenta analisi del suo curriculum, delle capacità di public speaking
+            e di produrre contenuti di qualità
+          </li>
+        </ul>
       </section>
       <section className="mt-8">
-        <H2>Costi</H2>
-        <p className="my-4">
-          <ul className="list-inside list-disc">
-            <li>
-              Il costo del luogo per svolgere l&apos;evento. Può essere anche la
-              sede dell&apos;azienda
-            </li>
-            <li>
-              Il costo per l&apos;aperitivo. Riteniamo che il networking sia
-              importante come il talk, e ci teniamo che sia ben fatto.
-            </li>
-            <li>
-              Se è presente uno speaker che viene da fuori, i costi di trasporto
-              e alloggio{" "}
-            </li>
-          </ul>
-        </p>
+        <H2>Cosa significa sponsorizzare un evento</H2>
+        <ul className="list-inside list-disc my-4">
+          <li>
+            Abbiamo bisogno di un <strong>luogo</strong> dove tenere l&apos;evento: può essere una sala
+            a noleggio o anche la sede dell&apos;azienda sponsor, se adeguata
+          </li>
+          <li>
+            Il networking è forse la parte più importante dei nostri eventi, ci piace offrire
+            un <strong>leggero aperitivo</strong> ai nostri ospiti: l&apos;azienda sponsor si prende in carico
+            il costo del catering
+          </li>
+          <li>
+            Siamo in contatto con speaker di fama nazionale e internazionale: a richiesta 
+            dell&apos;azienda sponsor è possibile organizzare un evento di grande richiamo:
+            in questo caso lo sponsor deve occuparsi dei costi di <strong>trasporto e di alloggio
+            per lo speaker</strong>
+          </li>
+        </ul>
       </section>
       <section className="mt-8">
         <H2>Come diventare sponsor</H2>
@@ -161,25 +134,9 @@ export default function Sponsorship() {
           chiedere maggiori informazioni o fissare una call con lo staff di
           firenze.dev.
         </p>
-        <H3>Donazioni</H3>
-        <p className="my-4">
-          firenze.dev è anche una associazione senza scopo di lucro, possiamo
-          ricevere donazioni (non detraibili) ma non possiamo emettere fattura.
-        </p>
       </section>
       <FAQ />
       <PastSponsors />
     </main>
   );
 }
-
-function countPeople(): number {
-  return Object.values(followers).reduce(
-    (total, partial) => total + partial,
-    0
-  );
-}
-
-/**
- * sponsor passati: register, extendi
- */
