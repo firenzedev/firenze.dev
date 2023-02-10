@@ -4,6 +4,10 @@ import H3 from "../../Heading/H3";
 import quoteImage from "./images/quote_open.svg";
 import tiziano from "./images/tiziano-300x300.jpg";
 import lorenzo from "./images/lorenzo-300x300.png";
+import github from "./images/github.svg";
+import medium from "./images/medium.svg";
+import linkedin from "./images/linkedin.svg";
+import email from "./images/email.svg";
 
 const founders = [
   {
@@ -65,9 +69,11 @@ function Founder({
   reverse: boolean;
 }) {
   return (
-    <div id={founder.anchor}
+    <div
+      id={founder.anchor}
       className={
-        "lg:flex border-b-2 py-8 " + (reverse ? "flex-row-reverse" : "")
+        "lg:flex flex-wrap border-b-2 py-6 " +
+        (reverse ? "flex-row-reverse" : "")
       }
     >
       <div className="lg:w-3/4">
@@ -83,6 +89,47 @@ function Founder({
             />
           </div>
           <p className="italic inline-flex text-black">{founder.intro}</p>
+          <div className="flex space-x-3 mt-1">
+            <a href={founder.github} target="_blank" rel="noreferrer">
+              <Image
+                decoding="async"
+                src={github}
+                alt="github"
+                width="56"
+                height="56"
+              />
+            </a>
+
+            <a href={founder.linkedin} target="_blank" rel="noreferrer">
+              <Image
+                decoding="async"
+                src={linkedin}
+                alt="linkedin"
+                width="56"
+                height="56"
+              />
+            </a>
+
+            <a href={founder.medium} target="_blank" rel="noreferrer">
+              <Image
+                decoding="async"
+                src={medium}
+                alt="medium"
+                width="56"
+                height="56"
+              />
+            </a>
+
+            <a href={"mailto:" + founder.email}>
+              <Image
+                decoding="async"
+                src={email}
+                alt="medium"
+                width="56"
+                height="56"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="lg:w-1/4 p-2">
