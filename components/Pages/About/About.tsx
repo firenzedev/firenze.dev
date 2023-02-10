@@ -12,6 +12,7 @@ export default function About() {
       <H1>About firenze.dev</H1>
       <AboutMainContent />
       <Founders />
+
       <section>
         <H2>Cosa facciamo</H2>
         <p className="py-8">
