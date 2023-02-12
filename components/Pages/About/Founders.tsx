@@ -25,7 +25,7 @@ const founders = [
     anchor: "lorenzo",
     name: "Lorenzo Spinelli",
     intro:
-      "Fullstack, scrivo codice ormai da circa un migliaio di anni. Cerco di farlo il più “clean” possibile (ma ho ancora tanta strada da fare). Mi piace fare domande e scoprire come funzionano davvero le cose. Ma soprattto condividere le cose che imparo con gli altri. Sono convinto che il mondo (dello sviluppo) possa diventare un posto migliore. Fuori dal lavoro potete incontrarmi a rincorrere i miei figli o su qualche tavola da surf, snowboard o skateboard.",
+      "Fullstack, scrivo codice ormai da circa un migliaio di anni. Cerco di farlo il più “clean” possibile (ma ho ancora tanta strada da fare). Mi piace fare domande e scoprire come funzionano davvero le cose. Ma sopratutto condividere le cose che imparo con gli altri. Sono convinto che il mondo (dello sviluppo) possa diventare un posto migliore. Fuori dal lavoro potete incontrarmi a rincorrere i miei figli o su qualche tavola da surf, snowboard o skateboard.",
     github: "https://github.com/spyna",
     linkedin: "https://www.linkedin.com/in/lorenzospinelli/",
     medium: "https://medium.com/@spyna",
