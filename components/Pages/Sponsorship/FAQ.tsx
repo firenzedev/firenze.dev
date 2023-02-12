@@ -14,20 +14,23 @@ const FAQS = [
   {
     question: "Posso eseguire una donazione e pensate voi al resto?",
     answer:
-      "Si, puoi fare una donazione e penseremo noi all'organizzazione dell'evento. Per essere considerato sponsor, la donazione dovà coprire i costi dell'evento",
+      "Si, puoi fare una donazione e penseremo noi all'organizzazione dell'evento. Per essere considerato sponsor, la donazione dovrà coprire i costi dell'evento",
   },
   {
     question:
       "Posso ospitare firenze.dev nella mia azienda per un corso di formazione?",
-    answer: "Si, ci piace fare formazione, l'abbiamo già fatto in passato e siamo molto felici di farlo",
+    answer:
+      "Si, ci piace fare formazione, l'abbiamo già fatto in passato e siamo molto felici di farlo",
   },
   {
     question: "Avete dei tier di sponsorship?",
     answer: "No",
   },
   {
-    question: "Come posso fare se ho delle altre domande a cui non ho trovato risposta in questa pagina?",
-    answer: "Scrivi una mail a staff@firenze.dev, saremo felici di fissare una call di approfondimento",
+    question:
+      "Come posso fare se ho delle altre domande a cui non ho trovato risposta in questa pagina?",
+    answer:
+      "Scrivi una mail a staff@firenze.dev, saremo felici di fissare una call di approfondimento",
   },
 ];
 
@@ -36,7 +39,7 @@ export default function FAQ() {
     <section>
       <H3>F.A.Q.</H3>
       <ul>
-        {FAQS.map((faq, index) => (
+        {FAQS.map((faq) => (
           <li key={`faq-${faq.question}`} className="mb-4">
             <strong>{faq.question}</strong> <p>{faq.answer}</p>
           </li>
