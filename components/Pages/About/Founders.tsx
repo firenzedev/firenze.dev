@@ -68,6 +68,7 @@ function Founder({
   founder: FounderProps;
   reverse: boolean;
 }) {
+  const imageSize = 48;
   return (
     <div
       id={founder.anchor}
@@ -89,14 +90,14 @@ function Founder({
             />
           </div>
           <p className="italic inline-flex text-black">{founder.intro}</p>
-          <div className="flex space-x-3 mt-1">
+          <div className="flex space-x-3 mt-4">
             <a href={founder.github} target="_blank" rel="noreferrer">
               <Image
                 decoding="async"
                 src={github}
                 alt="github"
-                width="56"
-                height="56"
+                width={imageSize}
+                height={imageSize}
               />
             </a>
 
@@ -105,8 +106,8 @@ function Founder({
                 decoding="async"
                 src={linkedin}
                 alt="linkedin"
-                width="56"
-                height="56"
+                width={imageSize}
+                height={imageSize}
               />
             </a>
 
@@ -115,8 +116,8 @@ function Founder({
                 decoding="async"
                 src={medium}
                 alt="medium"
-                width="56"
-                height="56"
+                width={imageSize}
+                height={imageSize}
               />
             </a>
 
@@ -125,8 +126,8 @@ function Founder({
                 decoding="async"
                 src={email}
                 alt="medium"
-                width="56"
-                height="56"
+                width={imageSize}
+                height={imageSize}
               />
             </a>
           </div>
