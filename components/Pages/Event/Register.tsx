@@ -23,13 +23,6 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
       </PrimaryButton>
 
       <Script
-        src="https://www.eventbrite.it/static/widgets/eb_widgets.js"
-        id={`eventbrite-import-script-${elementId}`}
-        type="text/javascript"
-        strategy="afterInteractive"
-      ></Script>
-
-      <Script
         type="text/javascript"
         strategy="lazyOnload"
         id={`eventbrite-signup-script-${elementId}`}
