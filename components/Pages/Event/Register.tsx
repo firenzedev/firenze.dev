@@ -3,6 +3,7 @@ import PrimaryButton from "../../Button/PrimaryButton";
 interface RegisterProps {
   eventId: string;
   eventLink: string;
+  buttonNumber: number;
 }
 
 declare global {
@@ -11,8 +12,12 @@ declare global {
   }
 }
 
-export default function Register({ eventId, eventLink }: RegisterProps) {
-  const elementId = Math.random().toString(16);
+export default function Register({
+  eventId,
+  eventLink,
+  buttonNumber,
+}: RegisterProps) {
+  const elementId = `eventbrite-widget-modal-trigger-${buttonNumber}`;
 
   function orderCallback() {
     console.log("order complete, thank you");
@@ -23,7 +28,7 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
       widgetType: "checkout",
       eventId: eventId,
       modal: true,
-      modalTriggerElementId: `eventbrite-widget-modal-trigger-${elementId}`,
+      modalTriggerElementId: elementId,
       onOrderComplete: orderCallback,
     });
   }
@@ -35,11 +40,7 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
           Iscriviti su Eventbrite
         </a>
       </noscript>
-      <PrimaryButton
-        onClick={register}
-        id={`eventbrite-widget-modal-trigger-${elementId}`}
-        type="button"
-      >
+      <PrimaryButton onClick={register} id={elementId} type="button">
         Iscriviti adesso
       </PrimaryButton>
     </>
