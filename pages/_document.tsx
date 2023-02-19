@@ -7,7 +7,6 @@ import Document, {
   NextScript,
 } from "next/document";
 import {GTM_ID} from '../lib/gtm'
-import GTM from "../components/Analytics/GTM";
 
 const domain = process.env.DOMAIN;
 
