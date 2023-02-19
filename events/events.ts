@@ -10,8 +10,8 @@ import fontendApps from "./images/rendere-applicazioni-front-end-scalabitli.png"
 import graphqlImageBig from "./images/graphql-2014-min.png";
 import christmasBeer from "./images/christmas-beer-firenze-dev.png";
 import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp";
-import devExpThumb from "./images/thumb/evento_devex-150x150.png"
-import devExp from "./images/evento_devex.png"
+import devExpThumb from "./images/thumb/evento_devex-150x150.png";
+import devExp from "./images/evento_devex.png";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
