@@ -1,9 +1,10 @@
 import Script from "next/script";
+import { runningInProduction } from "../../config/Config";
 
 export default function CookieConsent() {
   return (
     <>
-      {process.env.NODE_ENV === "production" && (
+      {runningInProduction() && (
         <>
           <Script
             async
