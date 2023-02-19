@@ -1,7 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import Analytics from "../components/Analytics/Analytics";
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
 
-const domain = "staging.firenze.dev";
+const domain = process.env.DOMAIN;
 
 const title = "firenze.dev, la community di sviluppatori a firenze";
 const description =
@@ -9,7 +15,9 @@ const description =
 const image = "https://staging.firenze.dev/social_preview.png";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
   }
@@ -64,8 +72,6 @@ class MyDocument extends Document {
           <meta name="twitter:description" content={description} />
           <meta name="twitter:label1" content="Tempo di lettura stimato" />
           <meta name="twitter:data1" content="3 minuti" />
-
-          <Analytics />
         </Head>
         <body>
           <Main />
