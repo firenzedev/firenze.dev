@@ -14,10 +14,17 @@ import H2 from "../../Heading/H2";
 import H3 from "../../Heading/H3";
 import ReactMarkdown from "react-markdown";
 import Register from "./Register";
+import Script from "next/script";
 
 export default function Event({ event }: { event: EventType }) {
   return (
     <div>
+      <Script
+        src="https://www.eventbrite.it/static/widgets/eb_widgets.js"
+        id="eventbrite-import-script"
+        type="text/javascript"
+        strategy="afterInteractive"
+      ></Script>
       <div className="lg:border">
         <Image src={event.image} alt={event.title} width={1120} height={560} />
       </div>

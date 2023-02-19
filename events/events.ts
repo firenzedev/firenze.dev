@@ -38,7 +38,7 @@ Vedremo cosa sono e come vengono applicati i modelli di riferimento e andremo al
     
 Dopo il talk ci sarà il consueto aperitivo di networking.`,
     current: true,
-    date: dayjs("2023-03-02 21:30").toDate(),
+    date: dayjs("2023-03-02 18:30").toDate(),
     sponsor: undefined,
     place: "Camplus Firenze",
     address: "via del Romito 5-7, 50134, Firenze",

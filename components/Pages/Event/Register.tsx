@@ -22,12 +22,10 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
         Iscriviti adesso
       </PrimaryButton>
 
-      <Script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></Script>
-
       <Script
         type="text/javascript"
-        id={`eventbrite-signup-script-${elementId}`}
         strategy="lazyOnload"
+        id={`eventbrite-signup-script-${elementId}`}
       >
         {`var exampleCallback = function() {
         console.log('Order complete!');
