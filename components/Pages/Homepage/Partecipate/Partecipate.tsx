@@ -3,8 +3,8 @@ import SubscribeForm from "../../../SubscribeForm/SubscribeForm";
 
 export default function Partecipate() {
   return (
-    <section className="container mx-auto p-2 lg:px-24 lg:flex">
-      <div className="lg:w-1/2 leading-8">
+    <section className=" mx-auto lg:flex">
+      <div className="lg:w-1/2 p-2 px-24 leading-8">
         <H3>Partecipa</H3>
         <ul>
           <li>
