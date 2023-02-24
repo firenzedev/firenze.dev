@@ -15,7 +15,7 @@ export default function Bubble({ children, direction }: BubbleProps) {
           <div className="h-6 bg-gray-100 -rotate-45 transform origin-top-right"></div>
         </div>
       }
-      <div className={`${direction === 'left' ? "mr-auto bg-gray-100 p-4 my-6 rounded-xl " : "ml-auto bg-slate-200 p-4 my-6 rounded-xl"}`}>
+      <div className={`${direction === 'left' ? "mr-auto bg-gray-100 p-4 my-3 rounded-md " : "ml-auto bg-slate-200 p-4 my-3 rounded-md"}`}>
           {children}
       </div>
       {

@@ -37,26 +37,29 @@ const FAQS = [
 export default function FAQ() {
   return (
     <section>
-      <div className="text-center">
-      <H2>F.A.Q.</H2>
+      <div className="text-center my-6">
+        <H2>F.A.Q.</H2>
       </div>
       <ul>
         {FAQS.map((faq) => (
-          <li key={`faq-${faq.question}`}>
-            <div className="flex items-center">
-              <div className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-700 text-lg text-white uppercase">Q</div>
-              <Bubble direction="left">
-                <strong>
-                  {faq.question}
-                </strong>
-              </Bubble>
+          <li key={`faq-${faq.question}`} >
+            <div className="max-w-3xl mx-auto my-3 p-3">
+              <div className="flex items-center">
+                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-blue-700 text-lg text-white uppercase">Q</div>
+                <Bubble direction="left">
+                  <strong>
+                    {faq.question}
+                  </strong>
+                </Bubble>
+              </div>
+              <div className="flex items-center justify-end">
+                <Bubble direction="right">
+                  {faq.answer}
+                </Bubble>
+                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-indigo-900 text-lg text-white uppercase">a</div>
+              </div>
             </div>
-            <div className="flex items-center justify-end">
-              <Bubble direction="right">
-                {faq.answer}
-              </Bubble>
-              <div className="flex-none m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-indigo-900 text-lg text-white uppercase">a</div>
-            </div>
+            <hr />
           </li>
         ))}
       </ul>
