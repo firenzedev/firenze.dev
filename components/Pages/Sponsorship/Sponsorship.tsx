@@ -51,10 +51,11 @@ export default function Sponsorship() {
       </section>
       <section className="container mx-auto p-2 py-6 lg:px-36 mt-8">
         <H2>Perché sponsorizzare un evento</H2>
-        <p className="my-4">
+        <p className="my-4 text-xl">
           Le aziende che sponsorizzano un evento di firenze.dev hanno la
           possibilità di:
         </p>
+        <br />
         <ul className="list-outside ml-4 list-disc">
           <li className="mb-4">
             Entrare in{" "}
@@ -104,7 +105,7 @@ export default function Sponsorship() {
       <section className="bg-gray-50">
         <div className="container mx-auto p-2 py-12 lg:px-36 mt-8">
           <H2>Struttura di un evento</H2>
-          <p className="my-4">
+          <p className="my-4 text-xl">
             Gli eventi di firenze.dev si svolgono in questo modo:
           </p>
           <ul className="list-outside ml-4 list-disc">
@@ -141,7 +142,7 @@ export default function Sponsorship() {
       </section>
       <section className="container mx-auto p-2 pt-6 lg:px-36 mt-8">
         <H2>Agreement</H2>
-        <p className="my-4">
+        <p className="my-4 text-xl">
           Per poter sponsorizzare uno o più eventi di firenze.dev ci sono alcune
           regole da rispettare:
         </p>
