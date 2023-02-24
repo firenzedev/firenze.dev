@@ -1,12 +1,13 @@
 import Community from "./Community/Community";
-import Hero from "./Hero";
+import HeroHome from "./Hero";
+
 import Partecipate from "./Partecipate/Partecipate";
 import WhoWeAre from "./WhoWeAre";
 
 export default function Homepage() {
   return (
     <main>
-      <Hero />
+      <HeroHome />
       <WhoWeAre />
       <Community />
       <Partecipate />
