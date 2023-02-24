@@ -24,7 +24,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="it" dir="ltr">
+      <Html lang="it" dir="ltr" className="scroll-smooth scroll-pt-24">
         <Head>
           <meta charSet="utf-8" />
           <meta property="og:locale" content="it_IT" />

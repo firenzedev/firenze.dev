@@ -20,6 +20,13 @@ export default function Sponsorship() {
             in presenza e aperti a tutti.
           </p>
         }
+        actions={
+          <a href="#sponsor-us">
+            <button className="border border-white px-16 py-4 rounded text-white">
+              Sponsorizza un evento
+            </button>
+          </a>
+        }
         image={
           <Image
             src={logo}
@@ -190,21 +197,22 @@ export default function Sponsorship() {
             dei costi di <strong>trasporto e di alloggio per lo speaker</strong>
           </li>
         </ul>
-        <div className="p-16 lg:px-24 mt-16 mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 md:rounded-md">
-          <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide"> Come diventare sponsor </h3>
-          <p className="text-white">
-            Puoi scriverci una mail a{" "}
-            <a className="text-white" href="mailto:staff@firenze.dev"><b>staff@firenze.dev</b></a> oppure
-            scriverci dalla <Link className="text-white" href="/contatti"><b>pagina dei contatti</b></Link> per
-            chiedere maggiori informazioni o fissare una call con lo staff di
-            firenze.dev.
-          </p>
-        </div>
+       
+          <div id="sponsor-us" className="p-16 lg:px-24 mt-16 mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 md:rounded-md scroll-py-24">
+            <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide"> Come diventare sponsor </h3>
+            <p className="text-white">
+              Puoi scriverci una mail a{" "}
+              <a className="text-white" href="mailto:staff@firenze.dev"><b>staff@firenze.dev</b></a> oppure
+              scriverci dalla <Link className="text-white" href="/contatti"><b>pagina dei contatti</b></Link> per
+              chiedere maggiori informazioni o fissare una call con lo staff di
+              firenze.dev.
+            </p>
+          </div>
+     
       </section>
-      <section className=" lg:px-36 ">
+      <section className="lg:px-36 ">
         <FAQ />
       </section>
-
       <section className="container mx-auto p-2 lg:px-36 ">
         <PastSponsors />
       </section>
