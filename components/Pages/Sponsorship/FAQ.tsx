@@ -37,7 +37,9 @@ const FAQS = [
 export default function FAQ() {
   return (
     <section>
+      <div className="text-center">
       <H2>F.A.Q.</H2>
+      </div>
       <ul>
         {FAQS.map((faq) => (
           <li key={`faq-${faq.question}`}>
