@@ -1,5 +1,5 @@
-import H3 from "../../Heading/H3";
-
+import Bubble from "../../Bubble/Bubble";
+import H2 from "../../Heading/H2";
 const FAQS = [
   {
     question: "Dove si svolgono gli eventi?",
@@ -37,11 +37,24 @@ const FAQS = [
 export default function FAQ() {
   return (
     <section>
-      <H3>F.A.Q.</H3>
+      <H2>F.A.Q.</H2>
       <ul>
         {FAQS.map((faq) => (
-          <li key={`faq-${faq.question}`} className="mb-4">
-            <strong>{faq.question}</strong> <p>{faq.answer}</p>
+          <li key={`faq-${faq.question}`}>
+            <div className="flex items-center">
+              <div className="m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-blue-700 text-lg text-white uppercase">Q</div>
+              <Bubble direction="left">
+                <strong>
+                  {faq.question}
+                </strong>
+              </Bubble>
+            </div>
+            <div className="flex items-center justify-end">
+              <Bubble direction="right">
+                {faq.answer}
+              </Bubble>
+              <div className="flex-none m-1 mr-2 w-12 h-12 relative flex justify-center items-center rounded-full bg-indigo-900 text-lg text-white uppercase">a</div>
+            </div>
           </li>
         ))}
       </ul>
