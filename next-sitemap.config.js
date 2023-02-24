@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://staging.firenze.dev',
+    siteUrl: process.env.DOMAIN || 'https://staging.firenze.dev',
     generateRobotsTxt: true,
   }
