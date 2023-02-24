@@ -12,7 +12,7 @@ const domain = process.env.DOMAIN;
 const title = "firenze.dev, la community di sviluppatori a firenze";
 const description =
   "firenze.dev è la community degli sviluppatori a Firenze: organizziamo incontri ed eventi gratuiti per favorire l&#039;apprendimento e il miglioramento continuo";
-const image = "https://staging.firenze.dev/social_preview.png";
+const image = "https://firenze.dev/social_preview.png";
 
 class MyDocument extends Document {
   static async getInitialProps(
@@ -28,7 +28,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta property="og:locale" content="it_IT" />
-          <link rel="canonical" href="https://staging.firenze.dev" />
+          <link rel="canonical" href="https://firenze.dev" />
           <meta name="apple-mobile-web-app-title" content={title} />
           <meta name="description" content={description} />
           <meta name="apple-mobile-web-app-title" content={title} />
