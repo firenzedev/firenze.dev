@@ -6,6 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
+import {GTM_ID} from '../lib/gtm'
 
 const domain = process.env.DOMAIN;
 
@@ -74,6 +75,14 @@ class MyDocument extends Document {
           <meta name="twitter:data1" content="3 minuti" />
         </Head>
         <body>
+        <noscript>
+          <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{display: 'none', visibility: 'hidden'}}
+          />
+        </noscript>
           <Main />
           <NextScript />
         </body>
