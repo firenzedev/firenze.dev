@@ -23,7 +23,7 @@ export default function Event({ event }: { event: EventType }) {
         src="https://www.eventbrite.it/static/widgets/eb_widgets.js"
         id="eventbrite-import-script"
         type="text/javascript"
-        strategy="afterInteractive"
+        async
       ></Script>
       <div className="lg:border">
         <Image src={event.image} alt={event.title} width={1120} height={560} />
@@ -55,6 +55,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            buttonNumber={1}
           />
         </div>
       )}
@@ -71,6 +72,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            buttonNumber={2}
           />
         </div>
       )}
@@ -147,6 +149,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            buttonNumber={3}
           />
         </div>
       )}

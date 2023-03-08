@@ -1,13 +1,38 @@
-import Script from "next/script";
 import PrimaryButton from "../../Button/PrimaryButton";
 
 interface RegisterProps {
   eventId: string;
   eventLink: string;
+  buttonNumber: number;
 }
 
-export default function Register({ eventId, eventLink }: RegisterProps) {
-  const elementId = Math.random().toString(16);
+declare global {
+  interface Window {
+    EBWidgets: any;
+  }
+}
+
+export default function Register({
+  eventId,
+  eventLink,
+  buttonNumber,
+}: RegisterProps) {
+  const elementId = `eventbrite-widget-modal-trigger-${buttonNumber}`;
+
+  function orderCallback() {
+    console.log("order complete, thank you");
+  }
+
+  function register() {
+    window.EBWidgets.createWidget({
+      widgetType: "checkout",
+      eventId: eventId,
+      modal: true,
+      modalTriggerElementId: elementId,
+      onOrderComplete: orderCallback,
+    });
+  }
+
   return (
     <>
       <noscript>
@@ -15,30 +40,9 @@ export default function Register({ eventId, eventLink }: RegisterProps) {
           Iscriviti su Eventbrite
         </a>
       </noscript>
-      <PrimaryButton
-        id={`eventbrite-widget-modal-trigger-${elementId}`}
-        type="button"
-      >
+      <PrimaryButton onClick={register} id={elementId} type="button">
         Iscriviti adesso
       </PrimaryButton>
-
-      <Script
-        type="text/javascript"
-        strategy="lazyOnload"
-        id={`eventbrite-signup-script-${elementId}`}
-      >
-        {`var exampleCallback = function() {
-        console.log('Order complete!');
-    };
-
-    window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: '${eventId}',
-        modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-${elementId}',
-        onOrderComplete: exampleCallback
-    });`}
-      </Script>
     </>
   );
 }

@@ -7,13 +7,17 @@ import WhatWeBelieve from "./WhatWeBelieve";
 
 export default function Community() {
   return (
-    <main className="container mx-auto p-2 pt-6 lg:px-36">
-      <H1>La community degli sviluppatori a Firenze</H1>
-      <Intro />
-      <WhatWeBelieve />
-      <ToWhoAreWeAddressed />
-      <Goals />
-      <HowToPartecipate />
+    <main>
+      <section className="container mx-auto p-2 pt-6 lg:px-36">
+        <H1>La community degli sviluppatori a Firenze</H1>
+        <Intro />
+        <WhatWeBelieve />
+        <ToWhoAreWeAddressed />
+        <Goals />
+      </section>
+      <section>
+        <HowToPartecipate />
+      </section>
     </main>
   );
 }

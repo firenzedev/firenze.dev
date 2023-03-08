@@ -5,7 +5,7 @@ export default function SponsorshipPage() {
   return (
     <>
       <Head>
-        <title>Divanta sponsor di firenze.dev</title>
+        <title>Diventa sponsor di firenze.dev</title>
       </Head>
       <Sponsorship />
     </>
