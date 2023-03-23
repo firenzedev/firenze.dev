@@ -5,11 +5,11 @@ export default function HeroHome() {
   return (
     <Hero
       title={
-        <>firenze<strong>.dev</strong> developer community</>
+        <>
+          firenze<strong>.dev</strong> developer community
+        </>
       }
-      subtitle={
-        <em>La community degli sviluppatori a Firenze</em>
-      }
+      subtitle={<em>La community degli sviluppatori a Firenze</em>}
       actions={
         <a href="#subscribe">
           <button className="border border-white px-16 py-4 rounded text-white">

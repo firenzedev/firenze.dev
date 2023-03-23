@@ -41,20 +41,20 @@ export default function Sponsorship() {
         <div className="container grid lg:grid-cols-2 gap-12 content-start mx-auto p-6 py-24 lg:px-36">
           <div>
             <h2 className="text-xl leading-8">
-              L&apos;obiettivo dei nostri meetup è
-              creare uno spazio in cui tutti gli appassionati possano incontrarsi e
-              condividere le proprie esperienze in un ambiente informale e
-              amichevole, dove poter costruire relazioni stimolanti sia a livello
-              umano che professionale.
+              L&apos;obiettivo dei nostri meetup è creare uno spazio in cui
+              tutti gli appassionati possano incontrarsi e condividere le
+              proprie esperienze in un ambiente informale e amichevole, dove
+              poter costruire relazioni stimolanti sia a livello umano che
+              professionale.
             </h2>
           </div>
 
           <p className="mt-8 md:mt-0 leading-loose">
             Evento dopo evento, la community è cresciuta velocemente e aggrega
             ormai <strong>centinaia di sviluppatrici e sviluppatori</strong> su
-            tutto il territorio fiorentino. Ai nostri incontri partecipano persone
-            curiose, animate dalla passione per lo sviluppo software e la
-            tecnologia, che hanno voglia di imparare cose nuove e mettersi in
+            tutto il territorio fiorentino. Ai nostri incontri partecipano
+            persone curiose, animate dalla passione per lo sviluppo software e
+            la tecnologia, che hanno voglia di imparare cose nuove e mettersi in
             gioco.
           </p>
         </div>
@@ -123,11 +123,13 @@ export default function Sponsorship() {
               l&apos;appuntamento è intorno alle <strong>18:30</strong>, fuori
               dall&apos;orario lavorativo
             </li>
-            <li className="mb-4">diamo inizio all&apos;evento facendo una breve introduzione</li>
+            <li className="mb-4">
+              diamo inizio all&apos;evento facendo una breve introduzione
+            </li>
             <li className="mb-4">
               <strong>
-                lasciamo la parola all&apos;azienda sponsor, che ha a disposizione
-                una decina di minuti
+                lasciamo la parola all&apos;azienda sponsor, che ha a
+                disposizione una decina di minuti
               </strong>
             </li>
             <li className="mb-4">
@@ -144,8 +146,8 @@ export default function Sponsorship() {
               </strong>
             </li>
             <li className="mb-4">
-              intorno alle 20:00 inizia il momento di <strong>networking</strong>{" "}
-              accompagnato da un leggero aperitivo
+              intorno alle 20:00 inizia il momento di{" "}
+              <strong>networking</strong> accompagnato da un leggero aperitivo
             </li>
           </ul>
         </div>
@@ -197,18 +199,28 @@ export default function Sponsorship() {
             dei costi di <strong>trasporto e di alloggio per lo speaker</strong>
           </li>
         </ul>
-       
-          <div id="sponsor-us" className="p-16 lg:px-24 mt-16 mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 md:rounded-md scroll-py-24">
-            <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide"> Come diventare sponsor </h3>
-            <p className="text-white">
-              Puoi scriverci una mail a{" "}
-              <a className="text-white" href="mailto:staff@firenze.dev"><b>staff@firenze.dev</b></a> oppure
-              scriverci dalla <Link className="text-white" href="/contatti"><b>pagina dei contatti</b></Link> per
-              chiedere maggiori informazioni o fissare una call con lo staff di
-              firenze.dev.
-            </p>
-          </div>
-     
+
+        <div
+          id="sponsor-us"
+          className="p-16 lg:px-24 mt-16 mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 md:rounded-md scroll-py-24"
+        >
+          <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide">
+            {" "}
+            Come diventare sponsor{" "}
+          </h3>
+          <p className="text-white">
+            Puoi scriverci una mail a{" "}
+            <a className="text-white" href="mailto:staff@firenze.dev">
+              <b>staff@firenze.dev</b>
+            </a>{" "}
+            oppure scriverci dalla{" "}
+            <Link className="text-white" href="/contatti">
+              <b>pagina dei contatti</b>
+            </Link>{" "}
+            per chiedere maggiori informazioni o fissare una call con lo staff
+            di firenze.dev.
+          </p>
+        </div>
       </section>
       <section className="lg:px-36 ">
         <FAQ />

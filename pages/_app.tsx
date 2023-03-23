@@ -6,14 +6,14 @@ import GTM from "../components/Analytics/GTM";
 import Analytics from "../components/Analytics/Analytics";
 
 export default function App({ Component, pageProps }: AppProps) {
-    return (
-        <>
-            <GTM/>
-            <Layout>
-                <PageTransitionLoader/>
-                <Component {...pageProps} />
-                <Analytics />
-            </Layout>
-        </>
-    );
+  return (
+    <>
+      <GTM />
+      <Layout>
+        <PageTransitionLoader />
+        <Component {...pageProps} />
+        <Analytics />
+      </Layout>
+    </>
+  );
 }

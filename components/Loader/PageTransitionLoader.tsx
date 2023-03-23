@@ -2,8 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import "nprogress/nprogress.css";
 import NProgress from "nprogress";
-import { pageview } from '../../lib/gtm'
-
+import { pageview } from "../../lib/gtm";
 
 export default function PageTransitionLoader() {
   const router = useRouter();
@@ -14,7 +13,7 @@ export default function PageTransitionLoader() {
     };
     const handleComplete = (url: string) => {
       NProgress.done();
-      pageview()
+      pageview();
     };
 
     router.events.on("routeChangeStart", handleStart);
@@ -25,7 +24,6 @@ export default function PageTransitionLoader() {
       router.events.off("routeChangeStart", handleStart);
       router.events.off("routeChangeComplete", handleComplete);
       router.events.off("routeChangeError", handleComplete);
-
     };
   });
 

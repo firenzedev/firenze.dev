@@ -42,21 +42,21 @@ export default function FAQ() {
       </div>
       <ul>
         {FAQS.map((faq) => (
-          <li key={`faq-${faq.question}`} >
+          <li key={`faq-${faq.question}`}>
             <div className="max-w-3xl mx-auto my-3 p-3">
               <div className="flex items-center">
-                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-blue-700 text-lg text-white uppercase">Q</div>
+                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-blue-700 text-lg text-white uppercase">
+                  Q
+                </div>
                 <Bubble direction="left">
-                  <strong>
-                    {faq.question}
-                  </strong>
+                  <strong>{faq.question}</strong>
                 </Bubble>
               </div>
               <div className="flex items-center justify-end">
-                <Bubble direction="right">
-                  {faq.answer}
-                </Bubble>
-                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-indigo-900 text-lg text-white uppercase">a</div>
+                <Bubble direction="right">{faq.answer}</Bubble>
+                <div className="shrink-0 m-1 mr-2 w-12 h-12 flex justify-center items-center rounded-full bg-indigo-900 text-lg text-white uppercase">
+                  a
+                </div>
               </div>
             </div>
             <hr />
