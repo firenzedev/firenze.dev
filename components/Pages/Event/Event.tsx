@@ -57,7 +57,7 @@ export default function Event({ event }: { event: EventType }) {
         />
       </Head>
       <div className="lg:border">
-        <Image src={event.image} alt={event.title} width={1120} height={560} />
+        <Image quality={90} src={event.image} alt={event.title} width={1120} height={560} />
       </div>
       <div className="mt-8 p-2">
         <H1>{event.title}</H1>
