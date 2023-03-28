@@ -12,10 +12,32 @@ import christmasBeer from "./images/christmas-beer-firenze-dev.png";
 import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp";
 import devExpThumb from "./images/thumb/evento_devex-150x150.png";
 import devExp from "./images/evento_devex.png";
+import monolite from "./images/dal-monolite-ai-microservizi.png";
+import monoliteThumb from "./images/thumb/dal-monolite-ai-microservizi.png";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: EventType[] = [
+  {
+    title: "Dal monolite ai microservizi, una storia vera",
+    subtitle:
+      "Approcciare il cambiamento e le sue sfide in un sistema business critical di una grande realtà internazionale",
+    icon: monoliteThumb,
+    image: monolite,
+    abstract: `A chi non è capitato di dover mettere in produzione un&apos;applicazione critica per sistemare un piccolo bug, con il rischio di bloccare tutta la produzione? E chi di noi non ha un&apos;applicazione che consuma moltissime risorse, ma ne sfrutta solo una piccola parte?
+
+Forse è il momento giusto per passare ai microservizi! In questo talk, Luca Lorenzon, senior software engineer di Gucci, ci racconterà il percorso per trasformare un monolite in un&apos;architettura a microservizi scalabile e flessibile. Non sarà solo una storia di successo, ma vedremo tutti i retroscena di un progetto con vari step di complessità.
+    
+Scopriremo come è stato gestito il cambiamento e come una grande realtà internazionale ha affrontato l&apos;adattamento a queste nuove tecnologie, in un contesto di business altamente sfidante.`,
+    current: true,
+    date: dayjs("2023-04-20 18:30").toDate(),
+    sponsor: "Gucci",
+    place: "Gucci ArtLab",
+    address: "via delle nazioni unite 1, Scandicci, 50018",
+    eventbriteId: "593998735207",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
+  },
   {
     title: "La Developer Experience nelle Big Tech",
     subtitle:
@@ -46,6 +68,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     eventbriteLink:
       "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
   },
+
   {
     title: "Christmas beer",
     subtitle:
