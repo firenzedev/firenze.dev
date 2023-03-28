@@ -1,5 +1,6 @@
 import { GetServerSidePropsContext } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import Event from "../../components/Pages/Event/Event";
 import { eventService } from "../../events/EventService";
 
@@ -17,7 +18,7 @@ export default function EventPage({ title, id }: EventPageProps) {
         <title>Evento: {title} - firenze.dev</title>
       </Head>
       <main className="container mx-auto lg:pt-6 lg:px-44">
-        {!event && <div>Event not found</div>}
+        {!event && <div className="lg:p-6 p-2">Non siamo riusciti a trovare questo evento <Link href="/eventi">Torna agli eventi</Link></div>}
         {event && <Event event={event} />}
       </main>
     </>
