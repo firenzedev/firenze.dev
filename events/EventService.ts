@@ -46,7 +46,7 @@ class EventService {
 }
 
 export function toSlug(name: string) {
-  return name.toLowerCase().replaceAll(" ", "-");
+  return name.toLowerCase().replaceAll(" ", "-").replaceAll(",", "");
 }
 
 export const eventService = new EventService(events);

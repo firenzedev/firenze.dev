@@ -6,7 +6,7 @@ import {
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/solid";
 import dayjs from "dayjs";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { EventType } from "../../../events/EventService";
 import H1 from "../../Heading/H1";
@@ -15,8 +15,16 @@ import H3 from "../../Heading/H3";
 import ReactMarkdown from "react-markdown";
 import Register from "./Register";
 import Script from "next/script";
+import Head from "next/head";
 
 export default function Event({ event }: { event: EventType }) {
+  const title = event.title;
+  const description = `firenze.dev presenta l'evento: ${event.title} - ${
+    event.subtitle
+  }. Il ${dayjs(event.date).format("DD MMMM, ore HH:mm")} presso ${
+    event.place
+  }, in ${event.address} `;
+
   return (
     <div>
       <Script
@@ -25,6 +33,29 @@ export default function Event({ event }: { event: EventType }) {
         type="text/javascript"
         async
       ></Script>
+      <Head>
+        <meta property="og:description" content={description} />
+        <meta property="description" content={description} />
+        <meta
+          property="og:image"
+          content={(event.image as StaticImageData).src}
+        />
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:image:width"
+          content={`${(event.image as StaticImageData).width}`}
+        />
+        <meta
+          property="og:image:height"
+          content={`${(event.image as StaticImageData).height}`}
+        />
+        <meta name="twitter:title" content={title}></meta>
+        <meta name="twitter:description" content={description} />
+        <meta
+          name="twitter:image"
+          content={(event.image as StaticImageData).src}
+        />
+      </Head>
       <div className="lg:border">
         <Image src={event.image} alt={event.title} width={1120} height={560} />
       </div>
