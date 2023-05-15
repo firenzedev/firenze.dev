@@ -1,8 +1,9 @@
 import PrimaryButton from "../../Button/PrimaryButton";
 
 interface RegisterProps {
-  eventId: string;
-  eventLink: string;
+  eventId?: string;
+  eventLink?: string;
+  externalLink?: string;
   buttonNumber: number;
 }
 
@@ -15,6 +16,7 @@ declare global {
 export default function Register({
   eventId,
   eventLink,
+  externalLink,
   buttonNumber,
 }: RegisterProps) {
   const elementId = `eventbrite-widget-modal-trigger-${buttonNumber}`;
@@ -24,13 +26,17 @@ export default function Register({
   }
 
   function register() {
-    window.EBWidgets.createWidget({
-      widgetType: "checkout",
-      eventId: eventId,
-      modal: true,
-      modalTriggerElementId: elementId,
-      onOrderComplete: orderCallback,
-    });
+    if (eventId) {
+      window.EBWidgets.createWidget({
+        widgetType: "checkout",
+        eventId: eventId,
+        modal: true,
+        modalTriggerElementId: elementId,
+        onOrderComplete: orderCallback,
+      });
+    } else {
+      window.open(externalLink, "_blank");
+    }
   }
 
   return (

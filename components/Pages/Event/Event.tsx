@@ -86,6 +86,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            externalLink={event.externalLink}
             buttonNumber={1}
           />
         </div>
@@ -103,6 +104,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            externalLink={event.externalLink}
             buttonNumber={2}
           />
         </div>
@@ -180,6 +182,7 @@ export default function Event({ event }: { event: EventType }) {
           <Register
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
+            externalLink={event.externalLink}
             buttonNumber={3}
           />
         </div>
