@@ -13,8 +13,9 @@ export interface EventType {
   place: string;
   sponsor?: string;
   address: string;
-  eventbriteId: string;
-  eventbriteLink: string;
+  eventbriteId?: string;
+  eventbriteLink?: string;
+  externalLink?: string;
 }
 
 class EventService {
