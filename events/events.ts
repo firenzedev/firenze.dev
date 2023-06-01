@@ -16,8 +16,6 @@ import monolite from "./images/dal-monolite-ai-microservizi.png";
 import monoliteThumb from "./images/thumb/dal-monolite-ai-microservizi.png";
 import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
 import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
-import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
-import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
 import summerBeer from "./images/EventBrite_summer.png";
 import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
 import { EventType } from "./EventService";
