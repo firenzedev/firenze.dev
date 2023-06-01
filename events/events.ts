@@ -16,6 +16,10 @@ import monolite from "./images/dal-monolite-ai-microservizi.png";
 import monoliteThumb from "./images/thumb/dal-monolite-ai-microservizi.png";
 import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
 import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
+import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
+import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
+import summerBeer from "./images/EventBrite_summer.png";
+import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
@@ -28,25 +32,81 @@ export const events: EventType[] = [
     image: meetUpCodemotion,
     abstract: `
 Ecco gli interventi della serata:
-    
+
 Un viaggio alla scoperta di Three.js
-Sei appassionat* di videogiochi o semplicemente di animazioni grafiche? 
-Allora la libreria Three.js è lo strumento che fa per te! Insieme esploreremo questo mondo virtuale, 
+Sei appassionat* di videogiochi o semplicemente di animazioni grafiche?
+Allora la libreria Three.js è lo strumento che fa per te! Insieme esploreremo questo mondo virtuale,
 scopriremo le sue funzioni principali e vedremo quali applicazioni possiamo mettere in pratica per dare sfogo alla nostra creatività nel fantastico mondo della grafica 3D.
 
 Schrodinger Hat - Angela Busato
-    
+
 WebGPU, a new dawn for web graphics
-WebGPU è una tecnologia emergente che mira a fornire un'API grafica a basso livello per il web, simile a DirectX e Vulkan. 
-In questo talk verrà fornita un'introduzione all'API WebGPU, i suoi vantaggi, e come iniziare a utilizzarlo. Discuteremo le prestazioni e la portabilità su diverse piattaforme, 
-e mostreremo alcuni esempi di applicazioni WebGPU. Se sei un sviluppatore web interessato a costruire applicazioni grafiche avanzate, 
+WebGPU è una tecnologia emergente che mira a fornire un'API grafica a basso livello per il web, simile a DirectX e Vulkan.
+In questo talk verrà fornita un'introduzione all'API WebGPU, i suoi vantaggi, e come iniziare a utilizzarlo. Discuteremo le prestazioni e la portabilità su diverse piattaforme,
+e mostreremo alcuni esempi di applicazioni WebGPU. Se sei un sviluppatore web interessato a costruire applicazioni grafiche avanzate,
 o un appassionato di GPU alla ricerca delle ultime tendenze in tecnologia grafica, questo talk fa al caso tuo.
 
 Full Stack Florence - Andrea Gherardi, Chief Technical Officer @ Mirror
-   
+
 Real world GraphQL subscriptions
-Le subscription sono una delle feature più interessanti di GraphQL perché permettono di ricevere dati dal server verso il client in tempo reale, 
-ma ci sono alcuni aspetti importanti da considerare per poterle utilizzare: come si gestiscono le sessioni persistenti? di quali componenti aggiuntivi avremo bisogno? come funzionano l'autenticazione e l'uso della cache? 
+Le subscription sono una delle feature più interessanti di GraphQL perché permettono di ricevere dati dal server verso il client in tempo reale,
+ma ci sono alcuni aspetti importanti da considerare per poterle utilizzare: come si gestiscono le sessioni persistenti? di quali componenti aggiuntivi avremo bisogno? come funzionano l'autenticazione e l'uso della cache?
+In questo talk vedremo quali accorgimenti dobbiamo usare quando si usano le subscription in un vero ambiente di produzione, elencheremo gli errori più comuni nei quali possiamo incorrere e valuteremo in quali casi conviene utilizzarle per sfruttare al meglio le loro potenzialità.
+
+Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
+   `,
+    current: true,
+    date: dayjs("2023-05-24 18:30").toDate(),
+    sponsor: "Codemotion",
+    place: "Impact Hub - Firenze",
+    address: "Via Panciatichi, 16, 50141 Firenze FI",
+    externalLink:"https://docs.google.com/forms/d/1xL0EKFvb4jpXfwFU47qSlqBPgZmdtwZa4BOQSqtZEnc/viewform?edit_requested=true#responses",
+  },
+  {
+    title: "Summer Beer Meetup",
+    subtitle:
+      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    icon: summerBeerThumb,
+    image: summerBeer,
+    abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
+    Ci piacerebbe approfittare dell’ occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
+    Puoi portare con te chi vuoi, per partecipare è sufficiente prenotare un biglietto gratuito per ogni persona, così che possiamo riservare un posto per tutti!
+    Ti aspettiamo!`,
+    current: true,
+    date: dayjs("2023-06-08 21:30").toDate(),
+    sponsor: "",
+    place: "Fabbrica in Pedavena",
+    address: "Via Generale C. A. dalla Chiesa, 1, 50136 Firenze FI",
+    eventbriteId: "646533919357",
+    eventbriteLink:"https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+  },
+  {
+    title: "Dev Florence Meetup",
+    subtitle:
+      "La community di developer fiorentina si ritrova a Firenze presso Impact Hub il 24 maggio 2023 per un meetup organizzato da Codemotion, Firenze.dev, Full Stack Florence e Schrodinger Hat",
+    icon: meetUpCodemotionThumb,
+    image: meetUpCodemotion,
+    abstract: `
+Ecco gli interventi della serata:
+
+Un viaggio alla scoperta di Three.js
+Sei appassionat* di videogiochi o semplicemente di animazioni grafiche?
+Allora la libreria Three.js è lo strumento che fa per te! Insieme esploreremo questo mondo virtuale,
+scopriremo le sue funzioni principali e vedremo quali applicazioni possiamo mettere in pratica per dare sfogo alla nostra creatività nel fantastico mondo della grafica 3D.
+
+Schrodinger Hat - Angela Busato
+
+WebGPU, a new dawn for web graphics
+WebGPU è una tecnologia emergente che mira a fornire un'API grafica a basso livello per il web, simile a DirectX e Vulkan.
+In questo talk verrà fornita un'introduzione all'API WebGPU, i suoi vantaggi, e come iniziare a utilizzarlo. Discuteremo le prestazioni e la portabilità su diverse piattaforme,
+e mostreremo alcuni esempi di applicazioni WebGPU. Se sei un sviluppatore web interessato a costruire applicazioni grafiche avanzate,
+o un appassionato di GPU alla ricerca delle ultime tendenze in tecnologia grafica, questo talk fa al caso tuo.
+
+Full Stack Florence - Andrea Gherardi, Chief Technical Officer @ Mirror
+
+Real world GraphQL subscriptions
+Le subscription sono una delle feature più interessanti di GraphQL perché permettono di ricevere dati dal server verso il client in tempo reale,
+ma ci sono alcuni aspetti importanti da considerare per poterle utilizzare: come si gestiscono le sessioni persistenti? di quali componenti aggiuntivi avremo bisogno? come funzionano l'autenticazione e l'uso della cache?
 In questo talk vedremo quali accorgimenti dobbiamo usare quando si usano le subscription in un vero ambiente di produzione, elencheremo gli errori più comuni nei quali possiamo incorrere e valuteremo in quali casi conviene utilizzarle per sfruttare al meglio le loro potenzialità.
 
 Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
