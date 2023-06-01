@@ -16,10 +16,30 @@ import monolite from "./images/dal-monolite-ai-microservizi.png";
 import monoliteThumb from "./images/thumb/dal-monolite-ai-microservizi.png";
 import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
 import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
+import summerBeer from "./images/EventBrite_summer.png";
+import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: EventType[] = [
+  {
+    title: "Summer Beer Meetup",
+    subtitle:
+      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    icon: summerBeerThumb,
+    image: summerBeer,
+    abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
+    Ci piacerebbe approfittare dell’ occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
+    Puoi portare con te chi vuoi, per partecipare è sufficiente prenotare un biglietto gratuito per ogni persona, così che possiamo riservare un posto per tutti! 
+    Ti aspettiamo!`,
+    current: true,
+    date: dayjs("2023-06-08 21:30").toDate(),
+    sponsor: "",
+    place: "Fabbrica in Pedavena",
+    address: "Via Generale C. A. dalla Chiesa, 1, 50136 Firenze FI",
+    eventbriteId: "646533919357",
+    eventbriteLink:"https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+  },
   {
     title: "Dev Florence Meetup",
     subtitle:
