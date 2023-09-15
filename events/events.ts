@@ -18,10 +18,31 @@ import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
 import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
 import summerBeer from "./images/EventBrite_summer.png";
 import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
+import blockchain101Thumb from "./images/thumb/blockchain101-thumb.webp";
+import blockchain101 from "./images/blockchain101.webp";
 import { EventType } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: EventType[] = [
+{
+    title: "Blockchain 101, from zero to developer",
+    subtitle:
+      "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
+    icon: blockchain101Thumb,
+    image: blockchain101,
+    abstract: `Hai sempre considerato la blockchain un mistero insondabile? Sei ancora incerto sugli ambiti in cui può essere applicata? È ora di svelare i segreti di questa tecnologia rivoluzionaria!
+
+Dalla crittografia all' utilizzo dei wallet, dagli smart contract agli NFT, in questo evento Lorenzo Spinelli e Tiziano Pessa ci mostreranno gli aspetti tecnici che ogni programmatore deve conoscere per capire questa tecnologia e sviluppare applicazioni decentralizzate su blockchain.
+
+Non preoccuparti se è la prima volta che ti avvicini a questo argomento, saranno affrontati in modo chiaro e semplice tutti gli aspetti essenziali, per consentire anche a chi non conosce questa tecnologia, non solo di seguire il talk, ma anche di iniziare a svilupparci fin da subito.`,
+    current: true,
+    date: dayjs("2023-10-12 18:30").toDate(),
+    sponsor: "",
+    place: "Frame School",
+    address: "via di Scandicci 88, Firenze, FI",
+    eventbriteId: "719618035917",
+    eventbriteLink:"https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
+  },
   {
     title: "Dev Florence Meetup",
     subtitle:
@@ -67,8 +88,8 @@ Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
     icon: summerBeerThumb,
     image: summerBeer,
     abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
-    Ci piacerebbe approfittare dell’ occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
-    Puoi portare con te chi vuoi, per partecipare è sufficiente prenotare un biglietto gratuito per ogni persona, così che possiamo riservare un posto per tutti!
+    Ci piacerebbe approfittare dell' occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
+    Puoi portare con te chi vuoi, per partecipare è sufficiente prenotare un biglietto gratuito per ogni persona, così che possiamo riservare un posto per tutti! 
     Ti aspettiamo!`,
     current: true,
     date: dayjs("2023-06-08 21:30").toDate(),
@@ -86,25 +107,25 @@ Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
     image: meetUpCodemotion,
     abstract: `
 Ecco gli interventi della serata:
-
+    
 Un viaggio alla scoperta di Three.js
-Sei appassionat* di videogiochi o semplicemente di animazioni grafiche?
-Allora la libreria Three.js è lo strumento che fa per te! Insieme esploreremo questo mondo virtuale,
+Sei appassionat* di videogiochi o semplicemente di animazioni grafiche? 
+Allora la libreria Three.js è lo strumento che fa per te! Insieme esploreremo questo mondo virtuale, 
 scopriremo le sue funzioni principali e vedremo quali applicazioni possiamo mettere in pratica per dare sfogo alla nostra creatività nel fantastico mondo della grafica 3D.
 
 Schrodinger Hat - Angela Busato
-
+    
 WebGPU, a new dawn for web graphics
-WebGPU è una tecnologia emergente che mira a fornire un'API grafica a basso livello per il web, simile a DirectX e Vulkan.
-In questo talk verrà fornita un'introduzione all'API WebGPU, i suoi vantaggi, e come iniziare a utilizzarlo. Discuteremo le prestazioni e la portabilità su diverse piattaforme,
-e mostreremo alcuni esempi di applicazioni WebGPU. Se sei un sviluppatore web interessato a costruire applicazioni grafiche avanzate,
+WebGPU è una tecnologia emergente che mira a fornire un'API grafica a basso livello per il web, simile a DirectX e Vulkan. 
+In questo talk verrà fornita un'introduzione all'API WebGPU, i suoi vantaggi, e come iniziare a utilizzarlo. Discuteremo le prestazioni e la portabilità su diverse piattaforme, 
+e mostreremo alcuni esempi di applicazioni WebGPU. Se sei un sviluppatore web interessato a costruire applicazioni grafiche avanzate, 
 o un appassionato di GPU alla ricerca delle ultime tendenze in tecnologia grafica, questo talk fa al caso tuo.
 
 Full Stack Florence - Andrea Gherardi, Chief Technical Officer @ Mirror
-
+   
 Real world GraphQL subscriptions
-Le subscription sono una delle feature più interessanti di GraphQL perché permettono di ricevere dati dal server verso il client in tempo reale,
-ma ci sono alcuni aspetti importanti da considerare per poterle utilizzare: come si gestiscono le sessioni persistenti? di quali componenti aggiuntivi avremo bisogno? come funzionano l'autenticazione e l'uso della cache?
+Le subscription sono una delle feature più interessanti di GraphQL perché permettono di ricevere dati dal server verso il client in tempo reale, 
+ma ci sono alcuni aspetti importanti da considerare per poterle utilizzare: come si gestiscono le sessioni persistenti? di quali componenti aggiuntivi avremo bisogno? come funzionano l'autenticazione e l'uso della cache? 
 In questo talk vedremo quali accorgimenti dobbiamo usare quando si usano le subscription in un vero ambiente di produzione, elencheremo gli errori più comuni nei quali possiamo incorrere e valuteremo in quali casi conviene utilizzarle per sfruttare al meglio le loro potenzialità.
 
 Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
