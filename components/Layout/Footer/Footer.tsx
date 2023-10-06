@@ -6,8 +6,10 @@ export default function Footer() {
   return (
     <footer className="text-center">
       <Social />
-      <Partners />
-      <Copyright />
+      <div className="flex">
+        <Partners />
+        <Copyright />
+      </div>
     </footer>
   );
 }
