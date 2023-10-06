@@ -7,10 +7,10 @@ const gelasio = Gelasio({
   weight: ["400", "700"],
 });
 
-export default function H2({ children }: HeadingProps) {
+export default function H2({ children, className }: HeadingProps) {
   return (
     <h2
-      className={`${gelasio.variable} text-2xl lg:text-3xl font-serif font-bold tracking-wider`}
+      className={`${gelasio.variable} text-2xl lg:text-3xl font-serif font-bold tracking-wider ${className}`}
     >
       {children}
     </h2>
