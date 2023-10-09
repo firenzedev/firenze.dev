@@ -1,7 +1,7 @@
 import Image from "next/image";
 import facebookIcon from "./icons/facebook.svg";
 import discordIcon from "./icons/discord.svg";
-import twitterIcon from "./icons/twitter.svg";
+import xIcon from "./icons/x.svg";
 import linkedinIcon from "./icons/linkedin.svg";
 
 const socials = [
@@ -16,9 +16,9 @@ const socials = [
     icon: linkedinIcon,
   },
   {
-    name: "Twitter",
+    name: "X",
     url: "https://twitter.com/firenzeDev",
-    icon: twitterIcon,
+    icon: xIcon,
   },
   {
     name: "Facebook",
@@ -29,7 +29,7 @@ const socials = [
 
 export default function Social() {
   return (
-    <div className="bg-slate-200 print:hidden pt-2">
+    <div className="bg-slate-200 print:hidden pt-2 text-black">
       Restiamo in contatto. Scrivici, ci fa molto piacere!<br></br>
       <small>Puoi trovarci su queste piattaforme:</small>
       <div className="text-center">

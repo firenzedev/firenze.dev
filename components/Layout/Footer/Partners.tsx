@@ -24,7 +24,7 @@ const partners = [
 
 export default function Partners() {
   return (
-    <div className="bg-slate-100 p-4 print:hidden">
+    <div className="bg-slate-100 p-4 print:hidden md:w-1/2">
       <H4>Partners</H4>
       {partners.map((partner) => (
         <span key={`partner-${partner.name}`}>

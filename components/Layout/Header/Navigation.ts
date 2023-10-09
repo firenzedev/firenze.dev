@@ -3,7 +3,7 @@ export interface SiteLink {
   href: string;
 }
 export const navigation: SiteLink[] = [
-  { name: "Homepage", href: "/" },
+  { name: "Home", href: "/" },
   { name: "Eventi", href: "/eventi" },
   { name: "Community", href: "/community" },
   { name: "About", href: "/about" },
