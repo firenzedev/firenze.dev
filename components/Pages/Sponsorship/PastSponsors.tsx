@@ -1,6 +1,8 @@
 import H3 from "../../Heading/H3";
-import register from "../../../assets/images/sponsor/registerit_logo_notagline_2016_color_positive.png";
-import extendi from "../../../assets/images/sponsor/extendi_logo_dark.svg";
+import register from "./registerit_logo.png";
+import extendi from "./extendi_logo.svg";
+import gucci from "./gucci-logo.png";
+import frameSchool from "./frame-school-logo.png";
 import Image from "next/image";
 const sponsors = [
   {
@@ -12,6 +14,16 @@ const sponsors = [
     name: "Extendi",
     link: "https://extendi.it",
     logo: extendi,
+  },
+  {
+    name: "Gucci",
+    link: "https://www.gucci.com",
+    logo: gucci,
+  },
+  {
+    name: "Frame school",
+    link: "https://www.frameschool.net/",
+    logo: frameSchool,
   },
 ];
 
