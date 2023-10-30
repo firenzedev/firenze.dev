@@ -29,15 +29,12 @@ const socials = [
 
 export default function Social() {
   return (
-    <div className="bg-slate-200 print:hidden pt-2 text-black">
-      Restiamo in contatto. Scrivici, ci fa molto piacere!<br></br>
-      <small>Puoi trovarci su queste piattaforme:</small>
       <div className="text-center">
         {socials.map((social) => (
           <span key={`social-${social.name}`}>
             <a
               href={social.url}
-              title={`firenze.dev ${social.name}`}
+              title={`${social.name}`}
               className="inline-block my-3 mx-6"
               target="_blank"
               rel="noreferrer"
@@ -47,11 +44,11 @@ export default function Social() {
                 width={30}
                 height={30}
                 alt={social.name}
+                className="hover:bg-slate-300 hover:rounded p-1"
               />
             </a>
           </span>
         ))}
       </div>
-    </div>
   );
 }
