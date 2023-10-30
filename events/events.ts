@@ -36,7 +36,39 @@ export const events: FDevEvent[] = [
 
 Si tratterà di un vero e proprio workshop, guidato da Tiziano Pessa e Lorenzo Spinelli, nel quale ognuno sarà attivamente coinvolto e affiancato nello sviluppo della dApp. Al termine, i partecipanti saranno in grado di scrivere uno smart contract, effettuare il deploy sulla blockchain e sviluppare una dApp utilizzabile da un comune browser.
     
-Per poter garantire un supporto attivo per tutta la durata dell'evento, i posti disponibili saranno molto limitati e solo i primi a prendere il biglietto potranno partecipare. I biglietti saranno gratuiti per i membri della community, ma saranno disponibili anche dei posti per chi non è iscritto, che però per motivi organizzativi dovrà versare una quota di partecipazione.`,
+Per poter garantire un supporto attivo per tutta la durata dell'evento, i posti disponibili saranno molto limitati e solo i primi a prendere il biglietto potranno partecipare. I biglietti saranno gratuiti per i membri della community, ma saranno disponibili anche dei posti per chi non è iscritto, che però per motivi organizzativi dovrà versare una quota di partecipazione.
+
+# Info
+
+L'evento si terrà presso Frame School, in via di Scandicci 88/A. Si può raggiungere con i mezzi pubblici (in tramvia fermata T1 Arcipressi oppure con la linea 6 dell'autobus). Per chi viene in auto, è facile trovare parcheggio nelle vie adiacenti, di fronte all'Istituto Meucci o in via del Filarete, davanti al campo di atletica.
+
+L'evento inizierà alle 18.30 e avrà una durata di circa 2 ore; al termine, con chi vuole, andremo a cena insieme.
+
+
+# FAQ
+
+**Cosa devo portare?** 
+
+Devi avere con te un laptop, con Node.js e git già installati, oltre al tuo IDE preferito per poter lavorare sul progetto.
+
+**Quali conoscenze pregresse devo avere per partecipare?**
+
+E' sufficiente che tu conosca la sintassi di base del linguaggio JavaScript e che tu sia in grado di utilizzare un progetto Node.js con un package manager (npm o yarn).
+
+**Come faccio a sapere se sono iscritto alla community e ho diritto al biglietto gratuito?**
+
+E' sufficiente che tu ti sia iscritto tramite il form che trovi nella home page del sito di firenze.dev e che di conseguenza ricevi regolarmente la nostra newsletter. Quando prenoti il biglietto, assicurati di utilizzare la stessa email che hai usato per l'iscrizione alla community.
+
+**Vorrei partecipare ma non sono certo di farcela. Posso prendere lo stesso il biglietto?**
+
+Il numero di posti disponibili per questo evento è limitatissimo: siamo contenti che tu voglia partecipare e ti consigliamo di prendere il biglietto. Ma ti preghiamo di avvertirci immediatamente se sei sicuro di non riuscire a venire, così potremo assegnare il tuo biglietto a qualcun altro.
+
+
+**Come funziona la lista d'attesa?**
+
+Le persone in lista d'attesa riceveranno il biglietto in caso qualcuno degli iscritti dovesse rinunciare. In tal caso vi arriverà una comunicazione direttamente da EventBrite, ma attenzione: quello non è il biglietto! Per avere il biglietto dovete seguire le istruzioni e riscattarlo entro 24 ore!
+
+`,
     current: true,
     date: dayjs("2023-11-23 18:30").toDate(),
     sponsor: "",
