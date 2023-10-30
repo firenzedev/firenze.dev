@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { EventType, toSlug } from "../../../events/EventService";
+import { FDevEvent, toSlug } from "../../../events/EventService";
 import H4 from "../../Heading/H4";
 
 interface EventProps {
-  event: EventType;
+  event: FDevEvent;
 }
 
 export default function Event({ event }: EventProps) {

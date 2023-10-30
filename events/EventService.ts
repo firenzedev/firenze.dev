@@ -2,7 +2,9 @@ import { StaticImageData } from "next/image";
 import dayjs from "dayjs";
 import { events } from "./events";
 
-export interface EventType {
+type eventType = "meetup" | "workshop"
+
+export interface FDevEvent {
   title: string;
   subtitle: string;
   icon: string | StaticImageData;
@@ -16,32 +18,33 @@ export interface EventType {
   eventbriteId?: string;
   eventbriteLink?: string;
   externalLink?: string;
+  type: eventType
 }
 
 class EventService {
-  events: EventType[];
+  events: FDevEvent[];
 
-  constructor(events: EventType[]) {
+  constructor(events: FDevEvent[]) {
     this.events = events;
   }
 
-  getEvents(): EventType[] {
+  getEvents(): FDevEvent[] {
     return this.events;
   }
 
-  getPastEvents(): EventType[] {
+  getPastEvents(): FDevEvent[] {
     return this.events.filter((event) =>
       dayjs(event.date).isBefore(new Date())
     );
   }
 
-  getNextEvent(): EventType | undefined {
+  getNextEvent(): FDevEvent | undefined {
     return this.events.find(
       (event) => event.current && dayjs(event.date).isAfter(new Date())
     );
   }
 
-  getEvent(slug: string): EventType | undefined {
+  getEvent(slug: string): FDevEvent | undefined {
     return this.events.find((event) => toSlug(event.title) === slug);
   }
 }

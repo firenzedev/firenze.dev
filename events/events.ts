@@ -20,10 +20,33 @@ import summerBeer from "./images/EventBrite_summer.png";
 import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
 import blockchain101Thumb from "./images/thumb/blockchain101-thumb.webp";
 import blockchain101 from "./images/blockchain101.webp";
-import { EventType } from "./EventService";
+import workshopBlockchain101 from "./images/workshop-blockchain.png";
+import workshopBlockchain101Thumb from "./images/thumb/workshop-blockchain-thumb.png";
+import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
-export const events: EventType[] = [
+export const events: FDevEvent[] = [
+  {
+    title: "Workshop: sviluppare una dApp su blockchain",
+    subtitle:
+      "Scopriremo insieme come scrivere uno smart contract, effettuare il deploy sulla blockchain e sviluppare una dApp",
+    icon: workshopBlockchain101Thumb,
+    image: workshopBlockchain101,
+    abstract: `La blockchain è un argomento così vasto che, dopo il nostro ultimo evento, in molti ci avete chiesto di entrare maggiormente nel dettaglio di questa tecnologia. È proprio per passare dalla teoria alla pratica che abbiamo ideato il primo workshop di firenze.dev. In questo evento svilupperemo insieme un'applicazione decentralizzata basata sulla blockchain: partiremo dalla creazione di uno smart contract, vedremo come inviarlo sulla blockchain e infine come invocare le sue funzioni da un comune browser, sviluppando il codice di una dApp. Non è necessario avere conoscenze pregresse: vedremo insieme i concetti fondamentali che ci serviranno per scrivere il codice.
+
+Si tratterà di un vero e proprio workshop, guidato da Tiziano Pessa e Lorenzo Spinelli, nel quale ognuno sarà attivamente coinvolto e affiancato nello sviluppo della dApp. Al termine, i partecipanti saranno in grado di scrivere uno smart contract, effettuare il deploy sulla blockchain e sviluppare una dApp utilizzabile da un comune browser.
+    
+Per poter garantire un supporto attivo per tutta la durata dell'evento, i posti disponibili saranno molto limitati e solo i primi a prendere il biglietto potranno partecipare. I biglietti saranno gratuiti per i membri della community, ma saranno disponibili anche dei posti per chi non è iscritto, che però per motivi organizzativi dovrà versare una quota di partecipazione.`,
+    current: true,
+    date: dayjs("2023-11-23 18:30").toDate(),
+    sponsor: "",
+    place: "Frame School",
+    address: "via di Scandicci 88, Firenze, FI",
+    eventbriteId: "746333071307",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    type: "workshop",
+  },
   {
     title: "Blockchain 101, from zero to developer",
     subtitle:
@@ -41,7 +64,9 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Frame School",
     address: "via di Scandicci 88, Firenze, FI",
     eventbriteId: "719618035917",
-    eventbriteLink:"https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
+    type: "meetup",
   },
   {
     title: "Summer Beer Meetup",
@@ -59,7 +84,9 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Fabbrica in Pedavena",
     address: "Via Generale C. A. dalla Chiesa, 1, 50136 Firenze FI",
     eventbriteId: "646533919357",
-    eventbriteLink:"https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+    type: "meetup",
   },
   {
     title: "Dev Florence Meetup",
@@ -97,7 +124,9 @@ Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
     sponsor: "Codemotion",
     place: "Impact Hub - Firenze",
     address: "Via Panciatichi, 16, 50141 Firenze FI",
-    externalLink:"https://docs.google.com/forms/d/1xL0EKFvb4jpXfwFU47qSlqBPgZmdtwZa4BOQSqtZEnc/viewform?edit_requested=true#responses",
+    externalLink:
+      "https://docs.google.com/forms/d/1xL0EKFvb4jpXfwFU47qSlqBPgZmdtwZa4BOQSqtZEnc/viewform?edit_requested=true#responses",
+    type: "meetup",
   },
   {
     title: "Dal monolite ai microservizi, una storia vera",
@@ -118,6 +147,7 @@ Scopriremo come è stato gestito il cambiamento e come una grande realtà intern
     eventbriteId: "593998735207",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
+    type: "meetup",
   },
   {
     title: "La Developer Experience nelle Big Tech",
@@ -148,6 +178,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     eventbriteId: "532054077067",
     eventbriteLink:
       "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
+    type: "meetup",
   },
 
   {
@@ -169,6 +200,7 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     eventbriteId: "482058017507",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
+    type: "meetup",
   },
   {
     title: "Building a full-text search engine from scratch in TypeScript",
@@ -190,6 +222,7 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     eventbriteId: "462656256317",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-building-a-full-text-search-engine-from-scratch-in-typescript-462656256317",
+    type: "meetup",
   },
   {
     title: "Rendere scalabili le moderne applicazioni di front-end",
@@ -211,6 +244,7 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     eventbriteId: "430942198717",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-rendere-scalabili-le-moderne-applicazioni-di-front-end-430942198717",
+    type: "meetup",
   },
   {
     title: "Applicazioni più semplici, robuste e performanti con RabbitMQ",
@@ -232,6 +266,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-applicazioni-piu-semplici-robuste-e-performanti-con-rabbitmq-347290865327",
     date: dayjs("2022-06-17 18:30").toDate(),
+    type: "meetup",
   },
   {
     title: "Next level API con GraphQL",
@@ -255,6 +290,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
     date: dayjs("2022-05-11 18:30").toDate(),
+    type: "meetup",
   },
   {
     title: "È solo un altro IF",
@@ -273,5 +309,6 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
     date: dayjs("2021-12-01 18:30").toDate(),
+    type: "meetup",
   },
 ];
