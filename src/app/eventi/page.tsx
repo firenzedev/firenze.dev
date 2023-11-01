@@ -3,6 +3,7 @@ import NextEvents from "./_components/NextEvents";
 import EventIntro from "./_components/EventIntro";
 import PastEvents from "./_components/PastEvents";
 import { Metadata } from "next";
+import image from "./_components/images/eventi.webp";
 
 const description =
   "Eventi per programmatori a Firenze, organizzati dalla community di svilupaptori firenze.dev. Scopri i nostri eventi per svilupaptori";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     description,
     title,
+    images: [image.src],
   },
 };
 const jsonLd = {

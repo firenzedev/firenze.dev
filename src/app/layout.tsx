@@ -47,16 +47,16 @@ export default function RootLayout({
         />
         <link
           rel="icon"
-          href={`${protocol}://${domain}/favicon-1-300x300.png"`}
+          href={`${protocol}://${domain}/favicon-1-300x300.png`}
           sizes="192x192"
         />
         <link
           rel="apple-touch-icon"
-          href={`${protocol}://${domain}/favicon-1-300x300.png"`}
+          href={`${protocol}://${domain}/favicon-1-300x300.png`}
         />
         <meta
           name="msapplication-TileImage"
-          content={`${protocol}://${domain}/favicon-1-300x300.png"`}
+          content={`${protocol}://${domain}/favicon-1-300x300.png`}
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />

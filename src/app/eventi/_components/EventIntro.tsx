@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import eventImage from "./images/eventi.jpg";
+import eventImage from "./images/eventi.webp";
 import { H4 } from "@/components/ui/Heading";
 
 export default function EventIntro() {
