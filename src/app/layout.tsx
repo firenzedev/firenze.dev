@@ -7,7 +7,7 @@ import { GTM_ID } from "@/lib/gtm";
 
 const font = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 const domain = process.env.DOMAIN ?? "firenze.dev";
-const protocol = process.env.PROTOCOL ?? "${protocol}";
+const protocol = process.env.PROTOCOL ?? "https";
 
 const title = "firenze.dev, la community di sviluppatori a firenze";
 const description =
@@ -36,7 +36,7 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta property="og:locale" content="it_IT" />
-        <link rel="canonical" href="${protocol}://firenze.dev" />
+        <link rel="canonical" href={`${protocol}://firenze.dev`} />
         <meta name="apple-mobile-web-app-title" content={title} />
         <meta name="apple-mobile-web-app-title" content={title} />
 
@@ -72,7 +72,7 @@ export default function RootLayout({
       <body className={font.className}>
         <noscript>
           <iframe
-            src={`${protocol}://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
