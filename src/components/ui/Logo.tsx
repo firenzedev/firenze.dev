@@ -9,6 +9,7 @@ export function Logo() {
       width={256}
       height={256}
       priority
+      fetchPriority="high"
     />
   );
 }
