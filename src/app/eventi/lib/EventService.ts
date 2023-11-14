@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import dayjs from "dayjs";
 import { events } from "./events-db";
 
-type eventType = "meetup" | "workshop";
+type eventType = "meetup" | "workshop" | "cfp";
 
 export interface FDevEvent {
   title: string;
@@ -12,7 +12,7 @@ export interface FDevEvent {
   current?: boolean;
   abstract: string;
   date: Date;
-  place: string;
+  place: string | null;
   sponsor?: string;
   address: string;
   eventbriteId?: string;
@@ -38,10 +38,10 @@ class EventService {
     );
   }
 
-  getNextEvent(): FDevEvent | undefined {
-    return this.events.find(
-      (event) => event.current && dayjs(event.date).isAfter(new Date()),
-    );
+  getNextEvents(): FDevEvent[] {
+    return this.events.filter(
+      (event) => dayjs(event.date).isAfter(new Date()),
+    ).sort(byDate);
   }
 
   getEvent(slug: string): FDevEvent | undefined {
@@ -52,9 +52,13 @@ class EventService {
 export function toSlug(name: string) {
   return name
     .toLowerCase()
+    .replace(/[\W_]+/g," ")
+    .trim()
     .replaceAll(" ", "-")
-    .replaceAll(",", "")
-    .replaceAll(":", "");
 }
 
 export const eventService = new EventService(events);
+
+function byDate(a: FDevEvent, b: FDevEvent) {
+  return dayjs(a.date).valueOf() - dayjs(b.date).valueOf();
+}

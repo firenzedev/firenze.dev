@@ -9,28 +9,79 @@ import searchEngine from "./images/building-a-full-text-search-engine-from-scrat
 import fontendApps from "./images/rendere-applicazioni-front-end-scalabitli.png";
 import graphqlImageBig from "./images/graphql-2014-min.png";
 import christmasBeer from "./images/christmas-beer-firenze-dev.png";
-import christmasBeerThumb from "./images/thumb/christmas-beer-firenze-dev.webp";
-import devExpThumb from "./images/thumb/evento_devex-150x150.png";
+import christmasBeerIcon from "./images/thumb/christmas-beer-firenze-dev.webp";
+import devExpIcon from "./images/thumb/evento_devex-150x150.png";
 import devExp from "./images/evento_devex.png";
 import monolite from "./images/dal-monolite-ai-microservizi.png";
-import monoliteThumb from "./images/thumb/dal-monolite-ai-microservizi.png";
+import monoliteIcon from "./images/thumb/dal-monolite-ai-microservizi.png";
 import meetUpCodemotion from "./images/meet-up-codemotion-05-2023.png";
-import meetUpCodemotionThumb from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
+import meetUpCodemotionIcon from "./images/thumb/meet-up-codemotion-05-2023-thumb.png";
 import summerBeer from "./images/EventBrite_summer.png";
-import summerBeerThumb from "./images/thumb/summer-beer-thumb-150x150.png";
-import blockchain101Thumb from "./images/thumb/blockchain101-thumb.webp";
+import summerBeerIcon from "./images/thumb/summer-beer-thumb-150x150.png";
+import blockchain101Icon from "./images/thumb/blockchain101-thumb.webp";
 import blockchain101 from "./images/blockchain101.webp";
 import workshopBlockchain101 from "./images/workshop-blockchain.png";
-import workshopBlockchain101Thumb from "./images/thumb/workshop-blockchain-thumb.png";
+import workshopBlockchain101Icon from "./images/thumb/workshop-blockchain-thumb.png";
+import openMicNightIcon from "./images/thumb/open-mic-night-icon.png";
+import openMicNight from "./images/open-mic-night.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
   {
+    title: "🚀 Call for Papers: Open Mic Night 🎤",
+    subtitle:
+      "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
+    icon: openMicNightIcon,
+    image: openMicNight,
+    abstract: `
+Firenze.dev crede fortemente nell'aggregazione, nello scambio di idee e nella condivisione, da parte di chiunque sia un appassionato dello sviluppo software e di tutti gli argomenti che orbitano intorno a questo fantastico mondo! 🪐.
+
+### 🫵 We want you! 
+    
+Ti piacerebbe parlare della tecnologia per cui stai in fissa in questo momento, raccontare un progetto che ti ha appassionato o semplicemente condividere un'esperienza, ma non hai ancora trovato l'occasione giusta per farlo? Bene, Open Mic Night potrebbe proprio fare al caso tuo!💪
+    
+    
+La community sta organizzando un evento dedicato a te, che sarà composto da 4/5 speech della durata di circa 15' ciascuno, l'ambiente ideale per chi si trova a voler fare il suo primo talk.
+    
+    
+### 🤩 Perché partecipare?
+    
+Potrai creare delle connessioni con altri appassionati del mondo tech.
+
+Farai un esperienza di public speaking che ti porterà notevoli vantaggi anche nel mondo professionale
+
+Ti divertirai! Firenze.dev  è una community accogliente e aperta a nuove idee.
+    
+    
+### 📝 Come partecipare:
+
+Compila quest form [https://forms.gle/qqNZGx9BCiAbVXds8](https://forms.gle/qqNZGx9BCiAbVXds8) con un breve abstract (circa 200 parole) e il tuo profilo entro il 20 novembre. I talk selezionati saranno annunciati il 30 novembre.
+    
+    
+🚨 Attenzione: Se pensi che preparare un talk sia paragonabile a una delle sette fatiche di Ercole, non ti preoccupare, lo staff di firenze.dev, composto da vecchi lupi di mare 🏴‍☠️ che hanno affrontato le acque impervie di molteplici conferenze , sarà a tua disposizione per darti qualche dritta!
+    
+    
+👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee!
+    
+    
+Unisciti a noi e fai sentire la tua voce! 💪😎
+`,
+    current: true,
+    date: dayjs("2023-12-14 18:30").toDate(),
+    sponsor: "",
+    place: null,
+    address: "",
+    eventbriteId: "746333071307",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    type: "cfp",
+  },
+  {
     title: "Workshop: sviluppare una dApp su blockchain",
     subtitle:
       "Scopriremo insieme come scrivere uno smart contract, effettuare il deploy sulla blockchain e sviluppare una dApp",
-    icon: workshopBlockchain101Thumb,
+    icon: workshopBlockchain101Icon, 
     image: workshopBlockchain101,
     abstract: `La blockchain è un argomento così vasto che, dopo il nostro ultimo evento, in molti ci avete chiesto di entrare maggiormente nel dettaglio di questa tecnologia. È proprio per passare dalla teoria alla pratica che abbiamo ideato il primo workshop di firenze.dev. In questo evento svilupperemo insieme un'applicazione decentralizzata basata sulla blockchain: partiremo dalla creazione di uno smart contract, vedremo come inviarlo sulla blockchain e infine come invocare le sue funzioni da un comune browser, sviluppando il codice di una dApp. Non è necessario avere conoscenze pregresse: vedremo insieme i concetti fondamentali che ci serviranno per scrivere il codice.
 
@@ -83,7 +134,7 @@ Le persone in lista d'attesa riceveranno il biglietto in caso qualcuno degli isc
     title: "Blockchain 101, from zero to developer",
     subtitle:
       "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
-    icon: blockchain101Thumb,
+    icon: blockchain101Icon, 
     image: blockchain101,
     abstract: `Hai sempre considerato la blockchain un mistero insondabile? Sei ancora incerto sugli ambiti in cui può essere applicata? È ora di svelare i segreti di questa tecnologia rivoluzionaria!
 
@@ -104,7 +155,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     title: "Summer Beer Meetup",
     subtitle:
       "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
-    icon: summerBeerThumb,
+    icon: summerBeerIcon, 
     image: summerBeer,
     abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
     Ci piacerebbe approfittare dell' occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
@@ -124,7 +175,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     title: "Dev Florence Meetup",
     subtitle:
       "La community di developer fiorentina si ritrova a Firenze presso Impact Hub il 24 maggio 2023 per un meetup organizzato da Codemotion, Firenze.dev, Full Stack Florence e Schrodinger Hat",
-    icon: meetUpCodemotionThumb,
+    icon: meetUpCodemotionIcon, 
     image: meetUpCodemotion,
     abstract: `
 Ecco gli interventi della serata:
@@ -164,7 +215,7 @@ Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
     title: "Dal monolite ai microservizi, una storia vera",
     subtitle:
       "Approcciare il cambiamento e le sue sfide in un sistema business critical di una grande realtà internazionale",
-    icon: monoliteThumb,
+    icon: monoliteIcon, 
     image: monolite,
     abstract: `A chi non è capitato di dover mettere in produzione un&apos;applicazione critica per sistemare un piccolo bug, con il rischio di bloccare tutta la produzione? E chi di noi non ha un&apos;applicazione che consuma moltissime risorse, ma ne sfrutta solo una piccola parte?
 
@@ -185,7 +236,7 @@ Scopriremo come è stato gestito il cambiamento e come una grande realtà intern
     title: "La Developer Experience nelle Big Tech",
     subtitle:
       "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
-    icon: devExpThumb,
+    icon: devExpIcon, 
     image: devExp,
     abstract: `Ogni developer ha pensato almeno una volta nella propria carriera a come sarebbe lavorare per una Big Company, su un progetto figo e in un contesto internazionale, con tecnologie all'avanguardia e modalità di lavoro innovative.
 
@@ -217,7 +268,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     title: "Christmas beer",
     subtitle:
       "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
-    icon: christmasBeerThumb,
+    icon: christmasBeerIcon, 
     image: christmasBeer,
     abstract: `Un evento informale per celebrare il primo anno di firenze.dev, ma anche per conoscerci meglio, bere una birra insieme e gettare uno sguardo al futuro della community.
 

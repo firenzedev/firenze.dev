@@ -36,21 +36,23 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
         <p className="text-xl font-semibold">
           {dayjs(event.date).format("DD MMMM, ore HH:mm")}
         </p>
-        <p>
-          L&apos;evento inizierà alle {dayjs(event.date).format("HH:mm")} e si
-          terrà presso{" "}
-          <a
-            className="text-blue-800"
-            title="View on google maps"
-            target="_blank"
-            rel="noreferrer"
-            href={`https://www.google.com/maps/search/${event.place} ${event.address}`}
-          >
-            {event.place}, in {event.address}
-          </a>
-        </p>
+        {event.place && (
+          <p>
+            L&apos;evento inizierà alle {dayjs(event.date).format("HH:mm")} e si
+            terrà presso{" "}
+            <a
+              className="text-blue-800"
+              title="View on google maps"
+              target="_blank"
+              rel="noreferrer"
+              href={`https://www.google.com/maps/search/${event.place} ${event.address}`}
+            >
+              {event.place}, in {event.address}
+            </a>
+          </p>
+        )}
       </div>
-      {!isPast(event.date) && (
+      {!isPast(event.date) && event.type !== "cfp" && (
         <div className="my-8 text-center">
           <Register
             eventId={event.eventbriteId}
@@ -62,13 +64,11 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
       )}
       <hr className="my-8"></hr>
       <section className="p-2">
-        <H2>{event.title}</H2>
-        <ReactMarkdown className="my-4 leading-7">
+        <ReactMarkdown className="my-4 prose lg:prose-lg max-w-none">
           {event.abstract}
         </ReactMarkdown>
       </section>
-      <hr className="my-8"></hr>
-      {!isPast(event.date) && (
+      {!isPast(event.date) && event.type !== "cfp" && (
         <div className="my-8 text-center">
           <Register
             eventId={event.eventbriteId}
@@ -78,24 +78,28 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
           />
         </div>
       )}
-      <section className="px-2">
-        <H3>Programma dell&apos;evento</H3>
+      {event.type !== "cfp" && (
+        <>
+          <hr className="my-8"></hr>
+          <section className="px-2">
+            <H3>Programma dell&apos;evento</H3>
 
-        {!isPast(event.date) && (
-          <div>
-            <p className="bg-yellow-300 text-center lg:mx-36 text-xl">
-              Per la partecipazione è obbligatoria l&apos;iscrizione.
-            </p>
+            {!isPast(event.date) && (
+              <div>
+                <p className="bg-yellow-300 text-center lg:mx-36 text-xl">
+                  Per la partecipazione è obbligatoria l&apos;iscrizione.
+                </p>
 
-            <p className="text-center my-8">
-              I posti sono limitati, affrettati a prendere il tuo biglietto
-              gratuito
-            </p>
-          </div>
-        )}
-
-        <EventProgram event={event} />
-      </section>
+                <p className="text-center my-8">
+                  I posti sono limitati, affrettati a prendere il tuo biglietto
+                  gratuito
+                </p>
+              </div>
+            )}
+            <EventProgram event={event} />
+          </section>
+        </>
+      )}
       <hr className="mt-8"></hr>
       <p className="px-2 my-8">
         Se hai qualsiasi domanda, dubbio, proposta o feedback siamo lieti di
@@ -115,7 +119,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
         oppure organizzare una call. O anche tutti e tre, ci fa molto piacere
         sentirti e risponderti.
       </p>
-      {!isPast(event.date) && (
+      {!isPast(event.date) && event.type !== "cfp" && (
         <div className="my-8 text-center">
           <Register
             eventId={event.eventbriteId}

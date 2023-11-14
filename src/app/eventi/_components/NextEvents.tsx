@@ -3,14 +3,16 @@ import Event from "./Event";
 import { eventService } from "../lib/EventService";
 
 export default function NextEvents() {
-  const nextEvent = eventService.getNextEvent();
-  if (!nextEvent) {
+  const nextEvents = eventService.getNextEvents();
+  if (!nextEvents) {
     return null;
   }
   return (
     <section className="my-6 shadow-md p-2 bg-slate-50">
       <H3>I prossimi eventi</H3>
-      <Event event={nextEvent} />
+      {nextEvents.map((event) => (
+        <Event key={`event-${event.title}`} event={event} />
+      ))}
     </section>
   );
 }
