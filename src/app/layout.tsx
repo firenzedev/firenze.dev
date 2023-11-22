@@ -82,7 +82,7 @@ export default function RootLayout({
         <Header />
         <div className="mt-20">{children}</div>
         <Footer />
-        <Analytics /> 
+        <Analytics />
       </body>
     </html>
   );
