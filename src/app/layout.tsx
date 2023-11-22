@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/ui/Layout/Header/Header";
 import Footer from "@/components/ui/Layout/Footer/Footer";
 import { GTM_ID } from "@/lib/gtm";
+import Analytics from "@/components/Analytics/Analytics";
 
 const font = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 const domain = process.env.DOMAIN ?? "firenze.dev";
@@ -81,6 +82,7 @@ export default function RootLayout({
         <Header />
         <div className="mt-20">{children}</div>
         <Footer />
+        <Analytics /> 
       </body>
     </html>
   );
