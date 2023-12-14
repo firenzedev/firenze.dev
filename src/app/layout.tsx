@@ -72,7 +72,7 @@ export default function RootLayout({
         <meta name="twitter:data1" content="3 minuti" />
       </head>
       <body className={font.className}>
-        <GoogleTagManager gtmId={GTM_ID} />
+        {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
         <Header />
         <div className="mt-20">{children}</div>
         <Footer />
