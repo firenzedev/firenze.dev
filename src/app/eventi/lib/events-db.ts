@@ -29,6 +29,60 @@ import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
   {
+    title: "Open Mic Night 🎤",
+    subtitle:
+      "Preparatevi a mostrare il vostro talento e a godervi una serata di esibizioni dal vivo alla nostra fantastica Open Mic Night: è il vostro momento di brillare!",
+    icon: openMicNightIcon,
+    image: openMicNight,
+    abstract: `Open Mic Night, un evento speciale, organizzata da firenze.dev e Full Stack Florence, nella quale la community degli sviluppatori di Firenze si ritroverà per un evento che porterà sul palco quattro sviluppatori, che ci parleranno di quattro tecnologie appassionanti.
+
+Sarà un momento di incontro, scambio e networking tra le due tech community.
+
+Si terrà in presenza giovedi 14 dicembre alle 18:30 presso Impact Hub in Via Panciatichi, 16 - 50141 Firenze
+
+Ogni talk avrà una durata di 20 minuti, al termine seguirà il consueto aperitivo e momento di networking.
+
+
+Programma:
+
+🎫 18:30 Check-in e opening
+
+👨‍🎓 18:45 Open Mic Night
+
+👨‍🏫 1° talk: DSL per business logic - Marco Semplici
+
+
+Ti sei mai chiesto cosa mettere a fattor comune nel codice? Hai mai sentito parlare di Pipeline e Collection? La programmazione funzionale è troppo compicata? Hai mai sentito parlare di generatori e di yield?
+Beh, in questo talk riceverai qualche idea e spunto per unire il tutto in modo semplice!
+
+
+👨‍🏫 2° talk: Perchè non tutto JS è 💩 - Ranieri Innocenti Spada
+
+Esiste ancora qualcuno che non sopporta JavaScript, ed ha ragione! In questo talk si parlerà di node.js, ma non sarà una noiosa disamina tecnica. Vedremo altri aspetti più intriganti: il demultiplexing e l'event loop. Non ti sommergerò di dettagli noiosi, ma sfateremo il mito che l'intero ecosistema JS sia da buttare.
+
+
+👨‍🏫 3° talk: Sistemi più robusti e scalabili con l'Actor Model - Leonardo Falco
+
+Come garantire integrità e consistenza nei nostri sistemi quando siamo in un contesto di chiamate concorrenti e distribuite? L'Actor Model può dare una risposta a questa domanda e, tramite un'implementazione in Elixir, capiremo come funziona e come possa essere utilizzato per rendere le nostre applicazioni più robuste e scalabili.
+
+👨‍🏫 4° talk: Platformatic + OpenAPI - Leonardo Rossi
+
+OpenAPI è uno standard con il quale è possibile documentare le proprie API a prescindere dal linguaggio o framework utilizzato.
+Platformatic supporta OpenAPI nativamente e offre un tool che legge la specifica OpenAPI al posto tuo e genera un client pronto all'uso per consumare tali API, senza aver bisogno di scrivere alcuna richiesta HTTP.
+
+🍕 20:30 Aperitivo e networking
+`,
+    current: true,
+    date: dayjs("2023-12-14 18:30").toDate(),
+    sponsor: "",
+    place: "Impact Hub - Firenze",
+    address: "via panciatichi 16, 50141 Firenze",
+    eventbriteId: "770210007867",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-open-mic-night-770210007867",
+    type: "meetup",
+  },
+  {
     title: "🚀 Call for Papers: Open Mic Night 🎤",
     subtitle:
       "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
@@ -68,13 +122,13 @@ Compila quest form [https://forms.gle/qqNZGx9BCiAbVXds8](https://forms.gle/qqNZG
 Unisciti a noi e fai sentire la tua voce! 💪😎
 `,
     current: true,
-    date: dayjs("2023-12-14 18:30").toDate(),
+    date: dayjs("2023-12-01 18:30").toDate(),
     sponsor: "",
     place: null,
     address: "",
-    eventbriteId: "746333071307",
+    eventbriteId: "770210007867",
     eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+      "https://www.eventbrite.it/e/biglietti-open-mic-night-770210007867",
     type: "cfp",
   },
   {
