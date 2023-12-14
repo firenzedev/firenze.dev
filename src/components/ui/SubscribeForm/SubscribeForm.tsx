@@ -1,7 +1,13 @@
-"use client"
+"use client";
 import Script from "next/script";
+import { useEffect } from "react";
 
 export default function SubscribeForm() {
+  useEffect(() => {
+    if (window.senderForms) {
+      window.senderForms.render();
+    }
+  }, []);
   return (
     <div
       style={{
