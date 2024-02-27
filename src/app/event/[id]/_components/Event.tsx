@@ -19,6 +19,12 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
         type="text/javascript"
         async
       ></Script>
+      <Script
+        src="https://cdn.tickettailor.com/js/TTWidget.js"
+        id="tickettailor-import-script"
+        type="text/javascript"
+        async
+      ></Script>
       <div className="lg:border">
         <Image
           quality={90}
@@ -58,6 +64,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
             externalLink={event.externalLink}
+            ticketTailorId={event.ticketTailorId}
             buttonNumber={1}
           />
         </div>
@@ -74,6 +81,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
             externalLink={event.externalLink}
+            ticketTailorId={event.ticketTailorId}
             buttonNumber={2}
           />
         </div>
@@ -125,6 +133,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
             eventId={event.eventbriteId}
             eventLink={event.eventbriteLink}
             externalLink={event.externalLink}
+            ticketTailorId={event.ticketTailorId}
             buttonNumber={3}
           />
         </div>

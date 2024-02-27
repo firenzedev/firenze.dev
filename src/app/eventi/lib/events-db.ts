@@ -24,10 +24,43 @@ import workshopBlockchain101 from "./images/workshop-blockchain.png";
 import workshopBlockchain101Icon from "./images/thumb/workshop-blockchain-thumb.png";
 import openMicNightIcon from "./images/thumb/open-mic-night-icon.png";
 import openMicNight from "./images/open-mic-night.png";
+import dataAnalisisConIA from "./images/14Marzo_EventBrite_colors.png";
+import dataAnalisisConIAIcon from "./images/thumb/14Marzo_EventBrite_colors_thumb.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
+  {
+    title: " Data Analysis con l’IA 🐼",
+    subtitle:
+      "Un approccio innovativo all’analisi dei dati con l’IA generativa",
+    icon: dataAnalisisConIAIcon,
+    image: dataAnalisisConIA,
+    abstract: `
+Nell'era dei big data, l'analisi dei dati è diventata un pilastro fondamentale per l'innovazione aziendale.
+
+Tuttavia, il processo tradizionale di estrazione e elaborazione dei dati può essere laborioso e richiedere competenze specialistiche. 
+È qui che entra in gioco l'intelligenza artificiale (IA).
+
+In questo talk tecnico **Gabriele Baldi**, Head of Software Development in **Lotrèk**, 
+ci introdurrà al mondo della data analysis e ci mostrerà come sia possibile integrare l’IA generativa (quella in stile GPT, per capirci) con Pandas 🐼,
+uno dei tool di manipolazione e processamento dati più famosi e utilizzati.
+
+Partendo dalle basi dell'analisi dati, esamineremo come sfruttare le più recenti tecnologie di IA per creare sistemi di analisi dati intelligenti e adattivi.
+
+Attraverso esempi pratici scopriremo come trasformare l'analisi dati da un compito complesso a un processo fluido e potenziato dall'intelligenza artificiale.
+
+`,
+    current: true,
+    date: dayjs("2024-03-14 18:30").toDate(),
+    sponsor: "",
+    place: null,
+    address: "Impact Hub Firenze, Via Panciatichi, 1, 50141",
+    eventbriteId: "851089440427",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-data-analysis-con-lia-851089440427",
+    type: "meetup",
+  },
   {
     title: "🚀 Call for Papers: Open Mic Night 🎤",
     subtitle:

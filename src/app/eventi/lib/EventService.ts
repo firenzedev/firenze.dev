@@ -18,6 +18,7 @@ export interface FDevEvent {
   eventbriteId?: string;
   eventbriteLink?: string;
   externalLink?: string;
+  ticketTailorId?: number;
   type: eventType;
 }
 
