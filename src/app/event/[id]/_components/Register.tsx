@@ -5,12 +5,14 @@ interface RegisterProps {
   eventId?: string;
   eventLink?: string;
   externalLink?: string;
+  ticketTailorId?: number;
   buttonNumber: number;
 }
 
 declare global {
   interface Window {
     EBWidgets: any;
+    TTWidget: any;
   }
 }
 
@@ -18,6 +20,9 @@ export default function Register({
   eventId,
   eventLink,
   externalLink,
+
+  ticketTailorId,
+
   buttonNumber,
 }: Readonly<RegisterProps>) {
   const elementId = `eventbrite-widget-modal-trigger-${buttonNumber}`;
@@ -35,8 +40,11 @@ export default function Register({
         modalTriggerElementId: elementId,
         onOrderComplete: orderCallback,
       });
-    } else {
+    } else if (eventLink) {
       window.open(externalLink, "_blank");
+    } else if (ticketTailorId) {
+      window.TTWidget.loadEvent('firenzedev',ticketTailorId);
+      
     }
   }
 
