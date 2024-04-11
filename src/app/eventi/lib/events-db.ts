@@ -26,10 +26,46 @@ import openMicNightIcon from "./images/thumb/open-mic-night-icon.png";
 import openMicNight from "./images/open-mic-night.png";
 import dataAnalisisConIA from "./images/14Marzo_EventBrite_colors.png";
 import dataAnalisisConIAIcon from "./images/thumb/14Marzo_EventBrite_colors_thumb.png";
+import shapingYourFuture from "./images/9_Maggio_EventBrite_colors.png";
+import shapingYourFutureIcon from "./images/thumb/9_Maggio_thumb_colors.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Shaping Your Future: carriera e crescita nel mondo Dev",
+    subtitle:
+      "Esplora il futuro dello sviluppo con Simone Torrisi di TomorrowDevs! Tecnologie, crescita professionale e aziende di successo ti aspettano!",
+    icon: shapingYourFutureIcon,
+    image: shapingYourFuture,
+    abstract: `
+Hai mai immaginato dove potresti trovarti nel tuo percorso professionale tra 10 anni?
+Ti sei mai chiesto quali siano le scelte migliori per investire sul tuo futuro e ottenere 
+il lavoro dei tuoi sogni? Ti piacerebbe saper riconoscere le aziende che saranno 
+in grado di supportare la tua crescita e soddisfare le tue aspettative?
+
+A queste e ad altre domande risponderà [**Simone Torrisi**](https://www.linkedin.com/in/storrisi/), 
+Tech Mentor e Fondatore di **TomorrowDevs**, che, basandosi sulla sua esperienza sul campo, 
+ci offrirà una panoramica sugli ostacoli e sulle opportunità legate alla definizione
+di un solido percorso di carriera per gli sviluppatori.
+    
+Vedremo quali sono le maggiori difficoltà che si incontrano nel 
+definire una prospettiva a lungo termine, in un contesto che richiede personale tecnico sempre più specializzato, 
+ma che al tempo stesso è in grado di offrire solamente percorsi di carriera tradizionali e verticali. 
+Scopriremo quali sono gli aspetti da tenere in considerazione in questo processo di rinnovamento del 
+sistema e quali sono i punti chiave per consentire agli sviluppatori di percorrere una strada di crescita costante, 
+senza dover sacrificare i loro obiettivi professionali.
+`,
+    current: true,
+    date: dayjs("2024-05-9 18:30").toDate(),
+    sponsor: "",
+    place: null,
+    address: "Camplus, Via del romito 5/7, 50134 Firenze",
+    eventbriteId: "880064094397",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-shaping-your-future-carriera-e-crescita-nel-mondo-dev-880064094397",
+    type: "meetup",
+  },
   {
     title: " Data Analysis con l’IA 🐼",
     subtitle:
