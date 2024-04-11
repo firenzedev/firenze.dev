@@ -26,62 +26,44 @@ import openMicNightIcon from "./images/thumb/open-mic-night-icon.png";
 import openMicNight from "./images/open-mic-night.png";
 import dataAnalisisConIA from "./images/14Marzo_EventBrite_colors.png";
 import dataAnalisisConIAIcon from "./images/thumb/14Marzo_EventBrite_colors_thumb.png";
+import shapingYourFuture from "./images/9_Maggio_EventBrite_colors.png";
+import shapingYourFutureIcon from "./images/thumb/9_Maggio_thumb_colors.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
   {
-    title: "Open Mic Night 🎤",
+    title: "Shaping Your Future: carriera e crescita nel mondo Dev",
     subtitle:
-      "Preparatevi a mostrare il vostro talento e a godervi una serata di esibizioni dal vivo alla nostra fantastica Open Mic Night: è il vostro momento di brillare!",
-    icon: openMicNightIcon,
-    image: openMicNight,
-    abstract: `Open Mic Night, un evento speciale, organizzata da firenze.dev e Full Stack Florence, nella quale la community degli sviluppatori di Firenze si ritroverà per un evento che porterà sul palco quattro sviluppatori, che ci parleranno di quattro tecnologie appassionanti.
+      "Esplora il futuro dello sviluppo con Simone Torrisi di TomorrowDevs! Tecnologie, crescita professionale e aziende di successo ti aspettano!",
+    icon: shapingYourFutureIcon,
+    image: shapingYourFuture,
+    abstract: `
+Hai mai immaginato dove potresti trovarti nel tuo percorso professionale tra 10 anni?
+Ti sei mai chiesto quali siano le scelte migliori per investire sul tuo futuro e ottenere 
+il lavoro dei tuoi sogni? Ti piacerebbe saper riconoscere le aziende che saranno 
+in grado di supportare la tua crescita e soddisfare le tue aspettative?
 
-Sarà un momento di incontro, scambio e networking tra le due tech community.
-
-Si terrà in presenza giovedi 14 dicembre alle 18:30 presso Impact Hub in Via Panciatichi, 16 - 50141 Firenze
-
-Ogni talk avrà una durata di 20 minuti, al termine seguirà il consueto aperitivo e momento di networking.
-
-
-Programma:
-
-🎫 18:30 Check-in e opening
-
-👨‍🎓 18:45 Open Mic Night
-
-👨‍🏫 1° talk: DSL per business logic - Marco Semplici
-
-
-Ti sei mai chiesto cosa mettere a fattor comune nel codice? Hai mai sentito parlare di Pipeline e Collection? La programmazione funzionale è troppo compicata? Hai mai sentito parlare di generatori e di yield?
-Beh, in questo talk riceverai qualche idea e spunto per unire il tutto in modo semplice!
-
-
-👨‍🏫 2° talk: Perchè non tutto JS è 💩 - Ranieri Innocenti Spada
-
-Esiste ancora qualcuno che non sopporta JavaScript, ed ha ragione! In questo talk si parlerà di node.js, ma non sarà una noiosa disamina tecnica. Vedremo altri aspetti più intriganti: il demultiplexing e l'event loop. Non ti sommergerò di dettagli noiosi, ma sfateremo il mito che l'intero ecosistema JS sia da buttare.
-
-
-👨‍🏫 3° talk: Sistemi più robusti e scalabili con l'Actor Model - Leonardo Falco
-
-Come garantire integrità e consistenza nei nostri sistemi quando siamo in un contesto di chiamate concorrenti e distribuite? L'Actor Model può dare una risposta a questa domanda e, tramite un'implementazione in Elixir, capiremo come funziona e come possa essere utilizzato per rendere le nostre applicazioni più robuste e scalabili.
-
-👨‍🏫 4° talk: Platformatic + OpenAPI - Leonardo Rossi
-
-OpenAPI è uno standard con il quale è possibile documentare le proprie API a prescindere dal linguaggio o framework utilizzato.
-Platformatic supporta OpenAPI nativamente e offre un tool che legge la specifica OpenAPI al posto tuo e genera un client pronto all'uso per consumare tali API, senza aver bisogno di scrivere alcuna richiesta HTTP.
-
-🍕 20:30 Aperitivo e networking
+A queste e ad altre domande risponderà [**Simone Torrisi**](https://www.linkedin.com/in/storrisi/), 
+Tech Mentor e Fondatore di **TomorrowDevs**, che, basandosi sulla sua esperienza sul campo, 
+ci offrirà una panoramica sugli ostacoli e sulle opportunità legate alla definizione
+di un solido percorso di carriera per gli sviluppatori.
+    
+Vedremo quali sono le maggiori difficoltà che si incontrano nel 
+definire una prospettiva a lungo termine, in un contesto che richiede personale tecnico sempre più specializzato, 
+ma che al tempo stesso è in grado di offrire solamente percorsi di carriera tradizionali e verticali. 
+Scopriremo quali sono gli aspetti da tenere in considerazione in questo processo di rinnovamento del 
+sistema e quali sono i punti chiave per consentire agli sviluppatori di percorrere una strada di crescita costante, 
+senza dover sacrificare i loro obiettivi professionali.
 `,
     current: true,
-    date: dayjs("2023-12-14 18:30").toDate(),
+    date: dayjs("2024-05-9 18:30").toDate(),
     sponsor: "",
-    place: "Impact Hub - Firenze",
-    address: "via panciatichi 16, 50141 Firenze",
-    eventbriteId: "770210007867",
+    place: null,
+    address: "Camplus, Via del romito 5/7, 50134 Firenze",
+    eventbriteId: "880064094397",
     eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-open-mic-night-770210007867",
+      "https://www.eventbrite.it/e/biglietti-shaping-your-future-carriera-e-crescita-nel-mondo-dev-880064094397",
     type: "meetup",
   },
   {
@@ -93,10 +75,10 @@ Platformatic supporta OpenAPI nativamente e offre un tool che legge la specifica
     abstract: `
 Nell'era dei big data, l'analisi dei dati è diventata un pilastro fondamentale per l'innovazione aziendale.
 
-Tuttavia, il processo tradizionale di estrazione e elaborazione dei dati può essere laborioso e richiedere competenze specialistiche.
+Tuttavia, il processo tradizionale di estrazione e elaborazione dei dati può essere laborioso e richiedere competenze specialistiche. 
 È qui che entra in gioco l'intelligenza artificiale (IA).
 
-In questo talk tecnico **Gabriele Baldi**, Head of Software Development in **Lotrèk**,
+In questo talk tecnico **Gabriele Baldi**, Head of Software Development in **Lotrèk**, 
 ci introdurrà al mondo della data analysis e ci mostrerà come sia possibile integrare l’IA generativa (quella in stile GPT, per capirci) con Pandas 🐼,
 uno dei tool di manipolazione e processamento dati più famosi e utilizzati.
 
