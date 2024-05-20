@@ -28,10 +28,38 @@ import dataAnalisisConIA from "./images/14Marzo_EventBrite_colors.png";
 import dataAnalisisConIAIcon from "./images/thumb/14Marzo_EventBrite_colors_thumb.png";
 import shapingYourFuture from "./images/9_Maggio_EventBrite_colors.png";
 import shapingYourFutureIcon from "./images/thumb/9_Maggio_thumb_colors.png";
+import summerBeer2024Icon from "./images/thumb/beerGiugno.png";
+import summerBeer2024 from "./images/EventBrite_summerbeer.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Summer Beer Meetup 2024",
+    subtitle:
+      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    icon: summerBeer2024Icon,
+    image: summerBeer2024,
+    abstract: `
+Ci ritroviamo alle porte dell'estate per una serata informale in cui conoscerci meglio, 
+condividere idee e discutere insieme delle prossime attività della community, 
+
+il tutto accompagnato da una rinfrescante birretta offerta da noi!
+
+Ti aspettiamo mercoledì 5 giugno dalle 21:30 al Parc Bistrò, Piazzale delle Cascine, 50144 Firenze FI.
+
+La partecipazione è aperta a tutti, vieni con chi vuoi 😉
+`,
+    current: true,
+    date: dayjs("2024-06-5 21:30").toDate(),
+    sponsor: "",
+    place: "Parc Bistrò",
+    address: "Piazzale delle Cascine 50144 Firenze",
+    eventbriteId: "909339367527",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-909339367527?aff=ebdsoporgprofile&_gl=1*193px25*_up*MQ..*_ga*NDczMzI5MjIyLjE3MTYyMzU5MDE.*_ga_TQVES5V6SH*MTcxNjIzNTkwMS4xLjAuMTcxNjIzNTkwMS4wLjAuMA..",
+    type: "meetup",
+  },
   {
     title: "Shaping Your Future: carriera e crescita nel mondo Dev",
     subtitle:
