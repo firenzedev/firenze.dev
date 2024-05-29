@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import dayjs from "dayjs";
 import { events } from "./events-db";
 
-type eventType = "meetup" | "workshop" | "cfp";
+type eventType = "meetup" | "workshop" | "cfp" | "beer";
 
 export interface FDevEvent {
   title: string;

@@ -6,7 +6,9 @@ import {
   RocketLaunchIcon,
   ChatBubbleLeftRightIcon,
   WrenchScrewdriverIcon,
+  UsersIcon
 } from "@heroicons/react/24/solid";
+import dayjs from "dayjs";
 
 interface Props {
   event: FDevEvent;
@@ -15,11 +17,19 @@ interface Props {
 export default function EventProgram({ event }: Readonly<Props>) {
   return (
     <div>
-      <EventProgramStep
-        time="18:30 - 18:45"
-        text="Accoglienza e sistemazione"
-        Icon={RocketLaunchIcon}
-      />
+      {event.type !== "beer" && (
+        <EventProgramStep
+          time="18:30 - 18:45"
+          text="Accoglienza e sistemazione"
+          Icon={RocketLaunchIcon}
+        />
+      )}
+      {event.type === "beer" && ( <EventProgramStep
+          time={dayjs(event.date).format("HH:mm") + " - ?"}
+          text={`${event.title}`}
+          Icon={UsersIcon}
+          last
+        />)}
       {event.type === "meetup" && (
         <>
           <EventProgramStep

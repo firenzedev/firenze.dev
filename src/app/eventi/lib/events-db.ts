@@ -58,7 +58,7 @@ La partecipazione è aperta a tutti, vieni con chi vuoi 😉
     eventbriteId: "909339367527",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-909339367527?aff=ebdsoporgprofile&_gl=1*193px25*_up*MQ..*_ga*NDczMzI5MjIyLjE3MTYyMzU5MDE.*_ga_TQVES5V6SH*MTcxNjIzNTkwMS4xLjAuMTcxNjIzNTkwMS4wLjAuMA..",
-    type: "meetup",
+    type: "beer",
   },
   {
     title: "Shaping Your Future: carriera e crescita nel mondo Dev",
@@ -95,9 +95,9 @@ senza dover sacrificare i loro obiettivi professionali.
     type: "meetup",
   },
   {
-    title: " Data Analysis con l’IA 🐼",
+    title: " Data Analysis con l'IA 🐼",
     subtitle:
-      "Un approccio innovativo all’analisi dei dati con l’IA generativa",
+      "Un approccio innovativo all'analisi dei dati con l'IA generativa",
     icon: dataAnalisisConIAIcon,
     image: dataAnalisisConIA,
     abstract: `
@@ -107,7 +107,7 @@ Tuttavia, il processo tradizionale di estrazione e elaborazione dei dati può es
 È qui che entra in gioco l'intelligenza artificiale (IA).
 
 In questo talk tecnico **Gabriele Baldi**, Head of Software Development in **Lotrèk**, 
-ci introdurrà al mondo della data analysis e ci mostrerà come sia possibile integrare l’IA generativa (quella in stile GPT, per capirci) con Pandas 🐼,
+ci introdurrà al mondo della data analysis e ci mostrerà come sia possibile integrare l'IA generativa (quella in stile GPT, per capirci) con Pandas 🐼,
 uno dei tool di manipolazione e processamento dati più famosi e utilizzati.
 
 Partendo dalle basi dell'analisi dati, esamineremo come sfruttare le più recenti tecnologie di IA per creare sistemi di analisi dati intelligenti e adattivi.
@@ -266,7 +266,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     eventbriteId: "646533919357",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
-    type: "meetup",
+    type: "beer",
   },
   {
     title: "Dev Florence Meetup",
@@ -380,7 +380,7 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     eventbriteId: "482058017507",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
-    type: "meetup",
+    type: "beer",
   },
   {
     title: "Building a full-text search engine from scratch in TypeScript",
