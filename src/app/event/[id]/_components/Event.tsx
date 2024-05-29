@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 import Register from "./Register";
 import Script from "next/script";
 import EventProgram from "./EventProgram";
-import { H1, H2, H3 } from "@/components/ui/Heading";
+import { H1, H3 } from "@/components/ui/Heading";
 import { FDevEvent } from "@/app/eventi/lib/EventService";
 dayjs.locale("it");
 
