@@ -37,6 +37,6 @@ export function H3({ children }: Readonly<HeadingProps>) {
   );
 }
 
-export function H4({ children }: Readonly<HeadingProps>) {
-  return <h4 className="text-xl mb-4 tracking-wide">{children}</h4>;
+export function H4({ children, ...props }: Readonly<HeadingProps>) {
+  return <h4 className="text-xl mb-4 tracking-wide" {...props}>{children}</h4>;
 }

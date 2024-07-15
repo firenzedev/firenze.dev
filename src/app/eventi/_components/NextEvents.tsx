@@ -4,7 +4,7 @@ import { eventService } from "../lib/EventService";
 
 export default function NextEvents() {
   const nextEvents = eventService.getNextEvents();
-  if (!nextEvents) {
+  if (nextEvents.length === 0) {
     return null;
   }
   return (
