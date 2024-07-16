@@ -9,6 +9,8 @@ const description =
   "Eventi per programmatori a Firenze, organizzati dalla community di svilupaptori firenze.dev. Scopri i nostri eventi per svilupaptori";
 const title = "Eventi - firenze.dev";
 
+export const dynamic = "force-dynamic"
+
 export const metadata: Metadata = {
   title,
   description,
