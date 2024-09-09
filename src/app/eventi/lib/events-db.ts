@@ -33,11 +33,41 @@ import summerBeer2024 from "./images/EventBrite_summerbeer.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
+import supply_cahain from "./images/supply_cahain.png";
+import supply_cahainIcon from "./images/thumb/supply_chain.png";
+
 export const events: FDevEvent[] = [
+  {
+    title: "The unexpected attack: hacking the supply chain",
+    subtitle:
+      "Tanto prima o poi capita a tutti: impara a pensare come un hacker per anticipare gli attacchi",
+    icon: supply_cahainIcon,
+    image: supply_cahain,
+    abstract: `Che cosa si intende quando parliamo di supply chain? E perché potrebbe rappresentare un pericoloso punto d'ingresso per attaccare il nostro software?
+
+In questo talk, Edoardo Dusi, Senior Developer Relations Engineer @ Storyblok, ci accompagnerà in un viaggio alla scoperta delle software supply chain, spiegando in modo chiaro come questi concetti influenzino la costruzione e distribuzione delle nostre applicazioni.
+
+Vedremo come le vulnerabilità della supply chain possano essere sfruttate per condurre alcuni degli attacchi più comuni e discuteremo insieme le strategie per difendere efficacemente il nostro software.
+
+Parleremo inoltre della Open Source Security Foundation (OpenSSF), un'iniziativa collaborativa che mira a rafforzare la sicurezza del software open source e che può rivelarsi di fondamentale importanza per prevenire questo tipo di attacchi, perché anche se il nostro codice è privato, si basa su progetti e librerie open source.
+
+Alla fine del talk, avremo una visione nitida e completa di come funziona una supply chain e avremo a disposizione un insieme di best practices e strategie concrete per salvaguardare le nostre applicazioni.
+`,
+    current: true,
+    date: dayjs("2024-10-03 18:30").toDate(),
+    sponsor: "42 Firenze",
+    place: "42 Firenze",
+    address: "Piazzale delle Cascine 50144 Firenze",
+    eventbriteId: "1006661681187",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-the-unexpected-attack-hacking-the-supply-chain-1006661681187",
+    type: "meetup",
+  },
   {
     title: "Summer Beer Meetup 2024",
     subtitle:
       "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+
     icon: summerBeer2024Icon,
     image: summerBeer2024,
     abstract: `
@@ -178,7 +208,7 @@ Unisciti a noi e fai sentire la tua voce! 💪😎
     title: "Workshop: sviluppare una dApp su blockchain",
     subtitle:
       "Scopriremo insieme come scrivere uno smart contract, effettuare il deploy sulla blockchain e sviluppare una dApp",
-    icon: workshopBlockchain101Icon, 
+    icon: workshopBlockchain101Icon,
     image: workshopBlockchain101,
     abstract: `La blockchain è un argomento così vasto che, dopo il nostro ultimo evento, in molti ci avete chiesto di entrare maggiormente nel dettaglio di questa tecnologia. È proprio per passare dalla teoria alla pratica che abbiamo ideato il primo workshop di firenze.dev. In questo evento svilupperemo insieme un'applicazione decentralizzata basata sulla blockchain: partiremo dalla creazione di uno smart contract, vedremo come inviarlo sulla blockchain e infine come invocare le sue funzioni da un comune browser, sviluppando il codice di una dApp. Non è necessario avere conoscenze pregresse: vedremo insieme i concetti fondamentali che ci serviranno per scrivere il codice.
 
@@ -231,7 +261,7 @@ Le persone in lista d'attesa riceveranno il biglietto in caso qualcuno degli isc
     title: "Blockchain 101, from zero to developer",
     subtitle:
       "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
-    icon: blockchain101Icon, 
+    icon: blockchain101Icon,
     image: blockchain101,
     abstract: `Hai sempre considerato la blockchain un mistero insondabile? Sei ancora incerto sugli ambiti in cui può essere applicata? È ora di svelare i segreti di questa tecnologia rivoluzionaria!
 
@@ -252,7 +282,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     title: "Summer Beer Meetup",
     subtitle:
       "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
-    icon: summerBeerIcon, 
+    icon: summerBeerIcon,
     image: summerBeer,
     abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
     Ci piacerebbe approfittare dell' occasione per scambiare qualche chiacchiera informale e darvi la possibilità di suggerire gli argomenti che vi piacerebbe trattare nei prossimi eventi che organizzeremo.
@@ -272,7 +302,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     title: "Dev Florence Meetup",
     subtitle:
       "La community di developer fiorentina si ritrova a Firenze presso Impact Hub il 24 maggio 2023 per un meetup organizzato da Codemotion, Firenze.dev, Full Stack Florence e Schrodinger Hat",
-    icon: meetUpCodemotionIcon, 
+    icon: meetUpCodemotionIcon,
     image: meetUpCodemotion,
     abstract: `
 Ecco gli interventi della serata:
@@ -312,7 +342,7 @@ Firenze.dev - Tiziano Pessa, Co-founder @ firenze.dev
     title: "Dal monolite ai microservizi, una storia vera",
     subtitle:
       "Approcciare il cambiamento e le sue sfide in un sistema business critical di una grande realtà internazionale",
-    icon: monoliteIcon, 
+    icon: monoliteIcon,
     image: monolite,
     abstract: `A chi non è capitato di dover mettere in produzione un&apos;applicazione critica per sistemare un piccolo bug, con il rischio di bloccare tutta la produzione? E chi di noi non ha un&apos;applicazione che consuma moltissime risorse, ma ne sfrutta solo una piccola parte?
 
@@ -333,7 +363,7 @@ Scopriremo come è stato gestito il cambiamento e come una grande realtà intern
     title: "La Developer Experience nelle Big Tech",
     subtitle:
       "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
-    icon: devExpIcon, 
+    icon: devExpIcon,
     image: devExp,
     abstract: `Ogni developer ha pensato almeno una volta nella propria carriera a come sarebbe lavorare per una Big Company, su un progetto figo e in un contesto internazionale, con tecnologie all'avanguardia e modalità di lavoro innovative.
 
@@ -365,7 +395,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     title: "Christmas beer",
     subtitle:
       "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
-    icon: christmasBeerIcon, 
+    icon: christmasBeerIcon,
     image: christmasBeer,
     abstract: `Un evento informale per celebrare il primo anno di firenze.dev, ma anche per conoscerci meglio, bere una birra insieme e gettare uno sguardo al futuro della community.
 
