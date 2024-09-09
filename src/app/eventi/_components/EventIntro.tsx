@@ -5,7 +5,7 @@ import { H4 } from "@/components/ui/Heading";
 
 export default function EventIntro() {
   return (
-    <section>
+    <section className="max-w-3xl max-auto">
       <Image
         src={eventImage}
         alt="firenze.dev eventi"
