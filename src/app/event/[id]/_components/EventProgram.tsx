@@ -52,7 +52,9 @@ export default function EventProgram({ event }: Readonly<Props>) {
           <EventProgramStep
             time="20:15"
             text={`Networking e aperitivo ${
-              event.sponsor ? "offerto da " + event.sponsor : ""
+              event.sponsor && !event.hideSponsorInNetworking 
+              ? "offerto da " + event.sponsor 
+              : ""
             }`}
             Icon={ChatBubbleLeftRightIcon}
             last

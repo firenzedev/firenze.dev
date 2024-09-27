@@ -20,6 +20,7 @@ export interface FDevEvent {
   externalLink?: string;
   ticketTailorId?: number;
   type: eventType;
+  hideSponsorInNetworking?: boolean;
 }
 
 class EventService {
