@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <div className="sm:flex justify-evenly items-center p-2 lg:px-8">
-      <Link href="/" className="block text-black no-underline">
+      <Link href="/" className="block text-black dark:text-white no-underline">
         <div className="flex">
           <Image
             src={logo}
