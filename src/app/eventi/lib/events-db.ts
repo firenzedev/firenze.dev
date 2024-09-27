@@ -54,10 +54,11 @@ Parleremo inoltre della Open Source Security Foundation (OpenSSF), un'iniziativa
 Alla fine del talk, avremo una visione nitida e completa di come funziona una supply chain e avremo a disposizione un insieme di best practices e strategie concrete per salvaguardare le nostre applicazioni.
 `,
     current: true,
+    hideSponsorInNetworking: true,
     date: dayjs("2024-10-03 18:30").toDate(),
     sponsor: "42 Firenze",
     place: "42 Firenze",
-    address: "Piazzale delle Cascine 50144 Firenze",
+    address: "Via del Tiratoio, 1, 50124 Firenze",
     eventbriteId: "1006661681187",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-the-unexpected-attack-hacking-the-supply-chain-1006661681187",
