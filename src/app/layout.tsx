@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/ui/Layout/Header/Header";
 import Footer from "@/components/ui/Layout/Footer/Footer";
 import { GTM_ID } from "@/lib/gtm";
+import { GoogleTagManager } from '@next/third-parties/google'
+ import Analytics from "@/components/Analytics/Analytics";
 
 const font = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 const domain = process.env.DOMAIN ?? "firenze.dev";
@@ -70,17 +72,11 @@ export default function RootLayout({
         <meta name="twitter:data1" content="3 minuti" />
       </head>
       <body className={font.className}>
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+        {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
         <Header />
         <div className="mt-20">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
