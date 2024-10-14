@@ -2,17 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import eventImage from "./images/eventi.webp";
 import { H4 } from "@/components/ui/Heading";
+import { eventService } from "../lib/EventService";
+import { IntroText } from "./IntroText";
 
 export default function EventIntro() {
+  const nextEvents = eventService.getNextEvents();
   return (
     <section className="max-w-4xl p-4 mx-auto max-auto">
-      <p className="mt-8 text-xl">
-        Gli sviluppatori, più di qualsiasi altra figura professionale, hanno un
-        bisogno costante di aggiornare le proprie competenze e di mantenersi in
-        contatto con un mondo che cambia molto velocemente. E spesso questo
-        continuous learning richiede non solo l&apos;acquisizione di nuove
-        conoscenze, ma anche il confronto con altri programmatori.
-      </p>
+      {!!nextEvents.length && <IntroText />}{" "}
       <p className="mt-8">
         Se anche tu sei uno sviluppatore a cui piace imparare cose nuove ed
         entrare in contatto con altre persone come te, firenze.dev fa al caso
