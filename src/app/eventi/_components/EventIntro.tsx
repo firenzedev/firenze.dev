@@ -5,14 +5,8 @@ import { H4 } from "@/components/ui/Heading";
 
 export default function EventIntro() {
   return (
-    <section className="max-w-3xl max-auto">
-      <Image
-        src={eventImage}
-        alt="firenze.dev eventi"
-        width={1024}
-        height={627}
-      />
-      <p className="mt-8">
+    <section className="max-w-4xl p-4 mx-auto max-auto">
+      <p className="mt-8 text-xl">
         Gli sviluppatori, più di qualsiasi altra figura professionale, hanno un
         bisogno costante di aggiornare le proprie competenze e di mantenersi in
         contatto con un mondo che cambia molto velocemente. E spesso questo

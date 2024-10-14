@@ -89,12 +89,12 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
       {event.type !== "cfp" && (
         <>
           <hr className="my-8"></hr>
-          <section className="px-2">
+          <section className="px-2 text-center">
             <H3>Programma dell&apos;evento</H3>
 
             {!isPast(event.date) && (
               <div>
-                <p className="bg-yellow-300 text-center lg:mx-36 text-xl">
+                <p className="bg-yellow-300 p-2 rounded-2xl text-center lg:mx-36 text-xl">
                   Per la partecipazione è obbligatoria l&apos;iscrizione.
                 </p>
 
