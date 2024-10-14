@@ -8,7 +8,7 @@ export function Calendar(props: { date: Date }) {
       <span className="bg-blue-600 text-center text-white p-1 md:p-2">
         {dayjs(props.date).format("MMM")}
       </span>
-      <span className="text-2xl md:text-4xl text-blue-600 font-bold bg-white text-center px-3 pt-3 pb-2">
+      <span className="text-2xl md:text-4xl text-orange-800 font-bold bg-white text-center px-3 pt-3 pb-2">
         {dayjs(props.date).format("DD")}
       </span>
 
