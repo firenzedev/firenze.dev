@@ -25,7 +25,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
         type="text/javascript"
         async
       ></Script>
-      <div className="lg:border">
+      <div>
         <Image
           quality={90}
           src={event.image}
