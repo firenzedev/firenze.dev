@@ -45,7 +45,7 @@ export const events: FDevEvent[] = [
       "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
     icon: data_revolutionIcon,
     image: data_revolution,
-    abstract: `<b>Magari finora ha funzionato, ma il mondo della gestione dei dati si sta evolvendo rapidamente.</b>
+    abstract: `Magari finora ha funzionato, ma il mondo della gestione dei dati si sta evolvendo rapidamente.
 
 In questo incontro Samuele Cucchi e Lorenzo Pasco, Data Engineer @Seacom, ci guideranno nel passaggio dalle architetture tradizionali a soluzioni di nuova generazione.
 
