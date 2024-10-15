@@ -23,3 +23,14 @@ export function SecondaryButton({ children, ...props }: ButtonProps) {
     </button>
   );
 }
+
+export function MiniButton({ children, ...props }: ButtonProps) {
+  return (
+    <button
+      className="border-blue-900 bg-blue-200 text-blue-900 no-underline hover:bg-blue-900 hover:text-white transition-all px-6 p-2 border-2 rounded ml-auto mt-4 inline-flex duration-150 ease-in-out"
+      {...props}
+    >
+      {children}
+    </button>
+  );
+}

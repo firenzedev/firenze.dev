@@ -35,8 +35,34 @@ import dayjs from "dayjs";
 
 import supply_cahain from "./images/supply_cahain.png";
 import supply_cahainIcon from "./images/thumb/supply_chain.png";
+import data_revolution from "./images/data_Revolution_14_11_06.png";
+import data_revolutionIcon from "./images/thumb/data_Revolution_14_11_06.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Data Revolution: next-generation data architectures",
+    subtitle:
+      "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
+    icon: data_revolutionIcon,
+    image: data_revolution,
+    abstract: `Magari finora ha funzionato, ma il mondo della gestione dei dati si sta evolvendo rapidamente.
+
+In questo incontro Samuele Cucchi e Lorenzo Pasco, Data Engineer @Seacom, ci guideranno nel passaggio dalle architetture tradizionali a soluzioni di nuova generazione.
+
+Scopriremo i vantaggi di un approccio Data Mesh per snellire la gestione dei dati e come un Data Lakehouse con interazione git-like offra un controllo dinamico, con possibilità di rollback e commit dei dati.
+Un'occasione per esplorare nuovi orizzonti e assicurarti che i tuoi dati siano pronti per le sfide future!
+`,
+    current: true,
+    hideSponsorInNetworking: false,
+    date: dayjs("2024-11-06 18:30").toDate(),
+    sponsor: "Seacom",
+    place: "Murate Idea Park | MIP",
+    address: "8 Piazza della Madonna della Neve 50122 Firenze",
+    eventbriteId: "1045371031897",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-data-revolution-next-generation-data-architectures-1045371031897",
+    type: "meetup",
+  },
   {
     title: "The unexpected attack: hacking the supply chain",
     subtitle:
@@ -53,7 +79,7 @@ Parleremo inoltre della Open Source Security Foundation (OpenSSF), un'iniziativa
 
 Alla fine del talk, avremo una visione nitida e completa di come funziona una supply chain e avremo a disposizione un insieme di best practices e strategie concrete per salvaguardare le nostre applicazioni.
 `,
-    current: true,
+    current: false,
     hideSponsorInNetworking: true,
     date: dayjs("2024-10-03 18:30").toDate(),
     sponsor: "42 Firenze",

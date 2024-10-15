@@ -6,7 +6,7 @@ import {
   RocketLaunchIcon,
   ChatBubbleLeftRightIcon,
   WrenchScrewdriverIcon,
-  UsersIcon
+  UsersIcon,
 } from "@heroicons/react/24/solid";
 import dayjs from "dayjs";
 
@@ -24,12 +24,14 @@ export default function EventProgram({ event }: Readonly<Props>) {
           Icon={RocketLaunchIcon}
         />
       )}
-      {event.type === "beer" && ( <EventProgramStep
+      {event.type === "beer" && (
+        <EventProgramStep
           time={dayjs(event.date).format("HH:mm") + " - ?"}
           text={`${event.title}`}
           Icon={UsersIcon}
           last
-        />)}
+        />
+      )}
       {event.type === "meetup" && (
         <>
           <EventProgramStep
@@ -52,9 +54,9 @@ export default function EventProgram({ event }: Readonly<Props>) {
           <EventProgramStep
             time="20:15"
             text={`Networking e aperitivo ${
-              event.sponsor && !event.hideSponsorInNetworking 
-              ? "offerto da " + event.sponsor 
-              : ""
+              event.sponsor && !event.hideSponsorInNetworking
+                ? "offerto da " + event.sponsor
+                : ""
             }`}
             Icon={ChatBubbleLeftRightIcon}
             last
@@ -87,7 +89,7 @@ function EventProgramStep({
   last?: boolean;
 }>) {
   return (
-    <div className="relative">
+    <div className="relative text-left">
       {!last && (
         <div className="absolute left-7 top-14 h-14 w-[1px] bg-blue-800"></div>
       )}

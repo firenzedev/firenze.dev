@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FDevEvent, toSlug } from "../lib/EventService";
 import { H4 } from "@/components/ui/Heading";
-import dayjs from "dayjs";
+import { Calendar } from "@/components/ui/Calendar";
+import { MiniButton } from "@/components/ui/Button";
 
 interface EventProps {
   event: FDevEvent;
@@ -10,19 +11,25 @@ interface EventProps {
 
 export default function Event({ event }: Readonly<EventProps>) {
   return (
-    <div className="flex flex-col lg:flex-row py-8 border-b">
-      <div className="lg:border">
-        <Image src={event.icon} alt={event.title} width={150} height={150} />
+    <div className="flex align-items-start py-8 border-b">
+      <div className="flex items-start justify-center">
+        <Calendar date={event.date} />
       </div>
-      <div className="lg:ml-6">
+      {/* <Image src={event.icon} alt={event.title} width={150} height={150} /> */}
+      <div className="ml-6 flex-1">
         <Link
-          className="text-blue-600 underline"
+          className="text-blue-600 no-underline hover:underline"
           href={`/event/${toSlug(event.title)}`}
         >
-          <H4 className="mb-1 text-xl">{event.title}</H4>
-          <p className="mb-4">{dayjs( event.date).format("DD MMMM YYYY")}</p>
+          <H4 className="mb-1 text-2xl">{event.title}</H4>
+          <p className="mb-4">{}</p>
         </Link>
         <p>{event.subtitle}</p>
+        <div className="text-right">
+          <Link href={`/event/${toSlug(event.title)}`}>
+            <MiniButton>Scopri di più</MiniButton>
+          </Link>
+        </div>
       </div>
     </div>
   );

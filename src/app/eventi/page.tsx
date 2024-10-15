@@ -4,12 +4,13 @@ import EventIntro from "./_components/EventIntro";
 import PastEvents from "./_components/PastEvents";
 import { Metadata } from "next";
 import image from "./_components/images/eventi.webp";
+import { EventHero } from "./_components/EventHero";
 
 const description =
   "Eventi per programmatori a Firenze, organizzati dalla community di svilupaptori firenze.dev. Scopri i nostri eventi per svilupaptori";
 const title = "Eventi - firenze.dev";
 
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title,
@@ -29,18 +30,17 @@ const jsonLd = {
 
 export default function EventiPage() {
   return (
-    <main className="container mx-auto p-2 pt-6 lg:px-36">
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <H1>Eventi di firenze.dev</H1>
-      <NextEvents />
+      <EventHero />
       <EventIntro />
-      <hr className="my-8"></hr>
-      <NextEvents />
-      <hr className="my-8"></hr>
-      <PastEvents />
+      <div className="container mx-auto p-2 lg:px-36">
+        <NextEvents />
+        <PastEvents />
+      </div>
     </main>
   );
 }
