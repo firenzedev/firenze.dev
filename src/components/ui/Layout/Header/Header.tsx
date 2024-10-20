@@ -15,7 +15,7 @@ export default function Header() {
             <Link
               href={item.href}
               key={item.name}
-              className="text-xl no-underline uppercase text-black dark:text-white inline-block px-3 py-2 border rounded border-white hover:underline"
+              className="text-xl no-underline uppercase text-black dark:text-white inline-block px-3 py-2 rounded hover:underline"
             >
               {item.name}
             </Link>

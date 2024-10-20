@@ -4,7 +4,7 @@ import { H2 } from "@/components/ui/Heading";
 
 export default function WhatWeBelieve() {
   return (
-    <section className="my-8 bg-slate-100 shadow-lg p-4">
+    <section className="my-8 bg-slate-100 dark:bg-slate-800 shadow-lg p-4">
       <H2>In cosa crediamo</H2>
       <p className="mt-8">
         La nostra community è un’organizzazione senza scopo di lucro, animata da

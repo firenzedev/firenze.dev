@@ -8,7 +8,7 @@ import { IntroText } from "./IntroText";
 export function EventHero() {
   const nextEvents = eventService.getNextEvents();
   return (
-    <section className="lg:grid grid-cols-2 items-cente bg-slate-100">
+    <section className="lg:grid grid-cols-2 items-cente bg-slate-100 dark:bg-slate-800">
       <div className="flex">
         <Image
           src={eventImage}

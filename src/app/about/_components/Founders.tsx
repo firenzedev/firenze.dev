@@ -88,7 +88,7 @@ function Founder({
               className="inline"
             />
           </div>
-          <p className="italic inline-flex text-black">{founder.intro}</p>
+          <p className="italic inline-flex text-black dark:text-white">{founder.intro}</p>
           <div className="flex space-x-3 mt-4">
             <a href={founder.github} target="_blank" rel="noreferrer">
               <Image

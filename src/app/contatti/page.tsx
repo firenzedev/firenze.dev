@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="container mx-auto p-2 pt-6 lg:px-56">
+    <main className="container mx-auto p-2 py-12 lg:px-56">
       <H1>Contatta firenze.dev</H1>
       <p className="py-8">
         Puoi scriverci qualsiasi qualcosa, saremo molto felici di leggere e ti

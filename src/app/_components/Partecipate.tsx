@@ -35,7 +35,7 @@ export default function Partecipate() {
           altri membri e collaborare all’organizzazione degli eventi.
         </p>
       </div>
-      <div className="lg:w-1/2" id="subscribe">
+      <div className="lg:w-1/2 pt-12" id="subscribe">
         <SubscribeForm />
       </div>
     </section>

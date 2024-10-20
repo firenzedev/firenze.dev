@@ -7,7 +7,7 @@ interface FeatureProps {
 }
 export default function Feature({ feature }: Readonly<FeatureProps>) {
   return (
-    <div className="shadow-md flex p-3 bg-white items-start">
+    <div className="shadow-md flex p-3 bg-white dark:bg-zinc-900 items-start">
       <div className="print:hidden">
         <Image src={feature.icon} alt={feature.title} width={50} height={50} />
       </div>

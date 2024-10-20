@@ -50,7 +50,7 @@ export default function Home() {
           />
         }
       />
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 dark:bg-gray-800">
         <div className="container grid lg:grid-cols-2 gap-12 content-start mx-auto p-6 py-24 lg:px-36">
           <div>
             <h2 className="text-xl leading-8">
@@ -125,7 +125,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto p-2 py-12 lg:px-36 mt-8">
           <H2>Struttura di un evento</H2>
           <p className="my-4 text-xl">

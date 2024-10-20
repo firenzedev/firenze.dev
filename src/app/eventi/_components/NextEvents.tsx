@@ -10,7 +10,7 @@ export default function NextEvents(props: { disableBox?: boolean }) {
   return (
     <section
       className={
-        props.disableBox ? `pt-1` : `shadow-md my-5 px-5 pt-1 bg-slate-50`
+        props.disableBox ? `pt-1` : `shadow-md my-5 px-5 pt-1 bg-slate-50 dark:bg-slate-800`
       }
     >
       <H3>

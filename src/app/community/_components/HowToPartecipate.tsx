@@ -26,7 +26,7 @@ export default function HowToPartecipate() {
           ti stanno aspettando.
         </p>
       </div>
-      <div id="subscribe">
+      <div id="subscribe" className="py-12">
         <SubscribeForm />
       </div>
     </section>

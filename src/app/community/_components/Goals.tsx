@@ -36,7 +36,7 @@ const goals = [
 
 export default function Goals() {
   return (
-    <section className="my-8 p-2 lg:p-8 shadow-md bg-slate-100">
+    <section className="my-8 p-2 lg:p-8 shadow-md bg-slate-100 dark:bg-slate-800">
       <H3>I nostri obiettivi</H3>
       <ul>
         {goals.map((goal, index) => (

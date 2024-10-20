@@ -1,6 +1,8 @@
 import register from "./registerit_logo.png";
 import extendi from "./extendi_logo.svg";
 import gucci from "./gucci-logo.png";
+import _42firenze from "./42firenze.png";
+import seacom from "./seacom.png";
 import frameSchool from "./frame-school-logo.png";
 import Image from "next/image";
 import { H3 } from "@/components/ui/Heading";
@@ -25,6 +27,16 @@ const sponsors = [
     link: "https://www.frameschool.net/",
     logo: frameSchool,
   },
+  {
+    name: "42 Firenze",
+    link: "https://42firenze.it/",
+    logo: _42firenze,
+  },
+  {
+    name: "Seacom",
+    link: "https://seacom.it/",
+    logo: seacom,
+  },
 ];
 
 export default function PastSponsors() {
@@ -37,14 +49,13 @@ export default function PastSponsors() {
             href={sponsor.link}
             target="_blank"
             key={`sponsor-${sponsor.name}`}
-            className="m-4"
+            className="m-4 dark:shadow p-2 rounded"
             rel="noreferrer"
           >
             <Image
               src={sponsor.logo}
               alt={`${sponsor.name} logo`}
               width={128}
-              height={20}
               priority
             />
           </a>
