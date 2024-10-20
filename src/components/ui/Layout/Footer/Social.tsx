@@ -3,6 +3,7 @@ import facebookIcon from "./icons/facebook.svg";
 import discordIcon from "./icons/discord.svg";
 import xIcon from "./icons/x.svg";
 import linkedinIcon from "./icons/linkedin.svg";
+import openCollectiveIcon from "./icons/opencollective.svg";
 
 const socials = [
   {
@@ -14,6 +15,11 @@ const socials = [
     name: "Linkedin",
     url: "https://www.linkedin.com/company/firenzedev/?ref=website",
     icon: linkedinIcon,
+  },
+  {
+    name: "Open collective",
+    url: "https://opencollective.com/firenzedev",
+    icon: openCollectiveIcon,
   },
   {
     name: "X",
@@ -29,9 +35,9 @@ const socials = [
 
 export default function Social() {
   return (
-    <div className="text-center">
+    <div className="flex items-end">
       {socials.map((social) => (
-        <span key={`social-${social.name}`}>
+        <span key={`social-${social.name}`} title={social.name}>
           <a
             href={social.url}
             title={`${social.name}`}
@@ -41,9 +47,9 @@ export default function Social() {
           >
             <Image
               src={social.icon}
-              width={30}
-              height={30}
+              height={40}
               alt={social.name}
+              title={social.name}
               className="hover:bg-slate-300 hover:rounded p-1"
             />
           </a>

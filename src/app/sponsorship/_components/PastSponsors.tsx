@@ -42,8 +42,17 @@ const sponsors = [
 export default function PastSponsors() {
   return (
     <section className="mb-8 text-center">
-      <H3>Sponsor passati</H3>
-      <div className="flex justify-center">
+      <H3>I Nostri Sponsor Passati: Partner nella Crescita e Innovazione</H3>
+      <p className="text-left my-6">
+        Unisciti a chi ha già scommesso sul futuro. I nostri sponsor passati non
+        solo hanno supportato i nostri eventi, ma hanno anche abbracciato
+        un'opportunità unica per posizionarsi come leader nel settore
+        tecnologico. Sponsorizzare firenze.dev significa entrare a far parte di
+        una rete esclusiva di innovatori e professionisti, contribuendo
+        attivamente alla crescita di un ecosistema tech in continua evoluzione.
+        La tua azienda merita di essere parte di questa storia di successo.
+      </p>
+      <div className="flex flex-col xl:flex-row justify-center items-center">
         {sponsors.map((sponsor) => (
           <a
             href={sponsor.link}

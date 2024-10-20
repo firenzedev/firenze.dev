@@ -5,35 +5,39 @@ const FAQS = [
   {
     question: "Dove si svolgono gli eventi?",
     answer:
-      "Gli eventi si possono svolgere nella sede dell'azienda se è facilmente raggiungibile e ha spazi adeguati. Altrimenti è possibile noleggiare una sala della capienza adeguata, possiamo fornirti a richiesta maggiori dettagli sui costi",
+      "Gli eventi possono svolgersi presso la sede della tua azienda, a condizione che sia facilmente raggiungibile e disponga di spazi adeguati. In alternativa, possiamo organizzare il noleggio di una sala con la capienza necessaria. Siamo disponibili a fornirti maggiori dettagli sui costi e sulle opzioni disponibili su richiesta.",
   },
   {
-    question: "Posso sponsorizzare solo una parte dell'evento?",
+    question: "È possibile sponsorizzare solo una parte dell'evento?",
     answer:
-      "Puoi decidere di occuparti solo di una parte, ad esempio la sala, l'aperitivo, lo speaker. In questo caso verrai citato come sponsor della serata, ma non avrai diritto a uno spazio dedicato",
+      "Sì, hai la flessibilità di sponsorizzare specifici aspetti dell'evento, come la location, l'aperitivo o il relatore. In tal caso, verrai riconosciuto come sponsor della serata, ma non avrai diritto a uno spazio dedicato. Questa opzione consente di massimizzare l'impatto della tua sponsorizzazione secondo le tue esigenze.",
   },
   {
-    question: "Posso eseguire una donazione e pensate voi al resto?",
+    question: "Posso effettuare una donazione e lasciare a voi l'organizzazione?",
     answer:
-      "Si, puoi fare una donazione e penseremo noi all'organizzazione dell'evento. Per essere considerato sponsor, la donazione dovrà coprire i costi dell'evento",
+      "Assolutamente, è possibile effettuare una donazione e ci occuperemo noi dell'intera organizzazione dell'evento. Tuttavia, per essere riconosciuto come sponsor ufficiale, la donazione dovrà coprire i costi dell'evento. Questa è un'opzione ideale per chi desidera contribuire senza gestire direttamente i dettagli operativi.",
   },
   {
-    question:
-      "Posso ospitare firenze.dev nella mia azienda per un corso di formazione?",
+    question: "Come posso effettuare una donazione?",
     answer:
-      "Si, ci piace fare formazione, l'abbiamo già fatto in passato e siamo molto felici di farlo",
+      "Puoi fare una donazione tramite bonifico bancario, intestata alla Associazione culturale firenze.dev, associazione no profit. Oppure tramite opencollective.com",
+  },
+  {
+    question: "Posso ospitare firenze.dev nella mia azienda per un corso di formazione?",
+    answer:
+      "Sì, siamo entusiasti di offrire corsi di formazione e abbiamo già collaborato con altre aziende in passato con risultati positivi. Sarà un'opportunità per i tuoi dipendenti di accedere a contenuti di alta qualità e per la tua azienda di posizionarsi come promotore della crescita professionale.",
   },
   {
     question: "Avete dei tier di sponsorship?",
-    answer: "No",
+    answer: "Attualmente non disponiamo di tier di sponsorship. Ogni sponsor ha la possibilità di contribuire in modo unico e personalizzato, garantendo un'esperienza di sponsorizzazione flessibile e su misura.",
   },
   {
-    question:
-      "Come posso fare se ho delle altre domande a cui non ho trovato risposta in questa pagina?",
+    question: "Come posso fare se ho ulteriori domande che non sono state trattate in questa pagina?",
     answer:
-      "Scrivi una mail a staff@firenze.dev, saremo felici di fissare una call di approfondimento",
+      "Ti invitiamo a contattarci via email all'indirizzo staff@firenze.dev. Saremmo lieti di organizzare una call di approfondimento per rispondere a tutte le tue domande e fornirti ulteriori informazioni sui nostri eventi e opportunità di sponsorizzazione.",
   },
 ];
+
 
 export default function Faq() {
   return (
