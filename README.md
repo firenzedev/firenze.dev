@@ -9,9 +9,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
+# or
+npm run dev
+#prefer yarn
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -20,9 +21,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## scripts 
 
-```
-npm run pretty
-#yarn pretty
+```bash
+yarn pretty
+#npm run pretty
 ```
 
 format source code
@@ -39,21 +40,20 @@ The technolgies used in this project are:
 * Next.js
 * TypeScript
 * Tailwind css
-* Preact (only in production)
 
 ### Before commit
 
 Before committing run the command
 
-```
-npm run prettier
+```bash
+yarn prettier
 ```
 
 to format the source code.
 
 ### Deploy
 
-The branch develop is auto deployed to https://staging.firenze.dev 
+The branch main is automatically deployed to https://firenze.dev 
 
 when you open a Pull request, we make a preview deployement. So you can view anche check it from the pull request page.
 
