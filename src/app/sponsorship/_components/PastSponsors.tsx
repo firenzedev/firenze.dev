@@ -46,7 +46,7 @@ export default function PastSponsors() {
       <p className="text-left my-6">
         Unisciti a chi ha già scommesso sul futuro. I nostri sponsor passati non
         solo hanno supportato i nostri eventi, ma hanno anche abbracciato
-        un'opportunità unica per posizionarsi come leader nel settore
+        un&apos;opportunità unica per posizionarsi come leader nel settore
         tecnologico. Sponsorizzare firenze.dev significa entrare a far parte di
         una rete esclusiva di innovatori e professionisti, contribuendo
         attivamente alla crescita di un ecosistema tech in continua evoluzione.
