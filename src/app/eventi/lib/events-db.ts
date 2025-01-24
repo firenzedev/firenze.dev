@@ -48,17 +48,17 @@ export const events: FDevEvent[] = [
     icon: typescript_gennastic,
     image: typescript_gennastic,
     abstract: `
-    Il sistema di tipi di TypeScript non è solo uno strumento per intercettare errori: 
-    è un potente alleato per risolvere problemi complessi, scrivendo codice pulito e affidabile. 
-    Insieme a Luca Del Puppo, Senior Software Developer @Nearform, esploreremo tecniche
-    avanzate di TypeScript, come mapped types, conditional types e generics, 
-    che possono aiutarci ad affrontare anche le sfide più difficili legate ai tipi.
-    Scoprirai come queste tecniche possano aiutarti a estrarre, trasformare e validare i tipi, 
-    mantenendo il tuo codice semplice e facile da manutenere. 
-    Queste tecniche avanzate di TypeScript, infatti, non servono solo a stupire i tuoi amici: 
-    sono competenze pratiche che rendono i tuoi sistemi più robusti e facili da usare.
-    Al termine di questo talk saprai come sfruttare al massimo la flessibilità e la potenza di TypeScript,
-    per creare soluzioni sempre più efficaci, versatili e sicure.`,
+Il sistema di tipi di TypeScript non è solo uno strumento per intercettare errori: 
+è un potente alleato per risolvere problemi complessi, scrivendo codice pulito e affidabile. 
+Insieme a Luca Del Puppo, Senior Software Developer @Nearform, esploreremo tecniche
+avanzate di TypeScript, come mapped types, conditional types e generics, 
+che possono aiutarci ad affrontare anche le sfide più difficili legate ai tipi.
+Scoprirai come queste tecniche possano aiutarti a estrarre, trasformare e validare i tipi, 
+mantenendo il tuo codice semplice e facile da manutenere. 
+Queste tecniche avanzate di TypeScript, infatti, non servono solo a stupire i tuoi amici: 
+sono competenze pratiche che rendono i tuoi sistemi più robusti e facili da usare.
+Al termine di questo talk saprai come sfruttare al massimo la flessibilità e la potenza di TypeScript,
+per creare soluzioni sempre più efficaci, versatili e sicure.`,
     current: true,
     hideSponsorInNetworking: false,
     date: dayjs("2025-02-20 18:30").toDate(),
