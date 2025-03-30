@@ -37,10 +37,36 @@ import supply_cahain from "./images/supply_cahain.png";
 import supply_cahainIcon from "./images/thumb/supply_chain.png";
 import data_revolution from "./images/data_Revolution_14_11_06.png";
 import data_revolutionIcon from "./images/thumb/data_Revolution_14_11_06.png";
-
-import typescript_gennastic from "./images/typescript_gennastic20022025.png"
+import typescript_gennastic from "./images/typescript_gennastic20022025.png";
+import supercharging_with_rag from "./images/supercharging_your_app_with_rag.png";
+import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_with_rag.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Supercharging your App with a RAG: a real-world usecase",
+    subtitle:
+      "Come sfruttare la potenza dell'intelligenza artificiale per ottenere risultati sempre più accurati e personalizzati",
+    icon: supercharging_with_ragIcon,
+    image: supercharging_with_rag,
+    abstract: `
+👉 Ti è mai capitato di usare un LLM che generava risposte affascinanti...ma completamente sbagliate? Oppure di provare a far lavorare un Agent, solo per scoprire che si perdeva in un loop infinito di richieste?
+
+Nel mondo dello sviluppo, un’AI generativa priva di contesto rischia di essere poco utile. È qui che entrano in gioco i Retrieval-Augmented Generation (RAG), strumenti indispensabili per costruire sistemi intelligenti in grado di elaborare i dati giusti al momento giusto.
+
+In questo talk, Giuseppe Funicello, nomade digitale e youtuber, ci guiderà oltre i limiti dei modelli generativi tradizionali, ottimizzando i processi di ingestion e retrieval dei dati per ottenere risultati sempre più accurati. Con il supporto del motore Cheshire Cat, un framework open-source per la creazione di Agent di AI, esploreremo casi d’uso concreti e best practice che ci insegneranno come integrare al meglio questi strumenti nei nostri progetti.
+
+💡 Se vuoi progettare AI che non solo rispondono, ma ragionano, questo evento è per te.`,
+    current: true,
+    hideSponsorInNetworking: true,
+    date: dayjs("2025-04-02 18:30").toDate(),
+    sponsor: "42 Firenze",
+    place: "42 Firenze",
+    address: "Via del Tiratoio, 1, 50124 Firenze",
+    eventbriteId: "1273032487439",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-supercharging-your-app-with-a-rag-a-real-world-usecase-1273032487439",
+    type: "meetup",
+  },
   {
     title: "TypeScript Gymnastics: Why Are They So Powerful for You?",
     subtitle:
@@ -59,7 +85,7 @@ Queste tecniche avanzate di TypeScript, infatti, non servono solo a stupire i tu
 sono competenze pratiche che rendono i tuoi sistemi più robusti e facili da usare.
 Al termine di questo talk saprai come sfruttare al massimo la flessibilità e la potenza di TypeScript,
 per creare soluzioni sempre più efficaci, versatili e sicure.`,
-    current: true,
+    current: false,
     hideSponsorInNetworking: false,
     date: dayjs("2025-02-20 18:30").toDate(),
     sponsor: "Human Company",
@@ -72,8 +98,7 @@ per creare soluzioni sempre più efficaci, versatili e sicure.`,
   },
   {
     title: "Data Revolution: next-generation data architectures",
-    subtitle:
-      "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
+    subtitle: "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
     icon: data_revolutionIcon,
     image: data_revolution,
     abstract: `Magari finora ha funzionato, ma il mondo della gestione dei dati si sta evolvendo rapidamente.
@@ -96,8 +121,7 @@ Un'occasione per esplorare nuovi orizzonti e assicurarti che i tuoi dati siano p
   },
   {
     title: "The unexpected attack: hacking the supply chain",
-    subtitle:
-      "Tanto prima o poi capita a tutti: impara a pensare come un hacker per anticipare gli attacchi",
+    subtitle: "Tanto prima o poi capita a tutti: impara a pensare come un hacker per anticipare gli attacchi",
     icon: supply_cahainIcon,
     image: supply_cahain,
     abstract: `Che cosa si intende quando parliamo di supply chain? E perché potrebbe rappresentare un pericoloso punto d'ingresso per attaccare il nostro software?
@@ -123,8 +147,7 @@ Alla fine del talk, avremo una visione nitida e completa di come funziona una su
   },
   {
     title: "Summer Beer Meetup 2024",
-    subtitle:
-      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    subtitle: "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
 
     icon: summerBeer2024Icon,
     image: summerBeer2024,
@@ -184,8 +207,7 @@ senza dover sacrificare i loro obiettivi professionali.
   },
   {
     title: " Data Analysis con l'IA 🐼",
-    subtitle:
-      "Un approccio innovativo all'analisi dei dati con l'IA generativa",
+    subtitle: "Un approccio innovativo all'analisi dei dati con l'IA generativa",
     icon: dataAnalisisConIAIcon,
     image: dataAnalisisConIA,
     abstract: `
@@ -209,14 +231,12 @@ Attraverso esempi pratici scopriremo come trasformare l'analisi dati da un compi
     place: null,
     address: "Impact Hub Firenze, Via Panciatichi, 1, 50141",
     eventbriteId: "851089440427",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-data-analysis-con-lia-851089440427",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-data-analysis-con-lia-851089440427",
     type: "meetup",
   },
   {
     title: "🚀 Call for Papers: Open Mic Night 🎤",
-    subtitle:
-      "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
+    subtitle: "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
     icon: openMicNightIcon,
     image: openMicNight,
     abstract: `
@@ -258,8 +278,7 @@ Unisciti a noi e fai sentire la tua voce! 💪😎
     place: null,
     address: "",
     eventbriteId: "746333071307",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
     type: "cfp",
   },
   {
@@ -311,14 +330,12 @@ Le persone in lista d'attesa riceveranno il biglietto in caso qualcuno degli isc
     place: "Frame School",
     address: "via di Scandicci 88, Firenze, FI",
     eventbriteId: "746333071307",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
     type: "workshop",
   },
   {
     title: "Blockchain 101, from zero to developer",
-    subtitle:
-      "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
+    subtitle: "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
     icon: blockchain101Icon,
     image: blockchain101,
     abstract: `Hai sempre considerato la blockchain un mistero insondabile? Sei ancora incerto sugli ambiti in cui può essere applicata? È ora di svelare i segreti di questa tecnologia rivoluzionaria!
@@ -332,14 +349,12 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Frame School",
     address: "via di Scandicci 88, Firenze, FI",
     eventbriteId: "719618035917",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
     type: "meetup",
   },
   {
     title: "Summer Beer Meetup",
-    subtitle:
-      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    subtitle: "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
     icon: summerBeerIcon,
     image: summerBeer,
     abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
@@ -352,8 +367,7 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Fabbrica in Pedavena",
     address: "Via Generale C. A. dalla Chiesa, 1, 50136 Firenze FI",
     eventbriteId: "646533919357",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
     type: "beer",
   },
   {
@@ -413,14 +427,12 @@ Scopriremo come è stato gestito il cambiamento e come una grande realtà intern
     place: "Gucci ArtLab",
     address: "via delle nazioni unite 1, Scandicci, 50018",
     eventbriteId: "593998735207",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
     type: "meetup",
   },
   {
     title: "La Developer Experience nelle Big Tech",
-    subtitle:
-      "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
+    subtitle: "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
     icon: devExpIcon,
     image: devExp,
     abstract: `Ogni developer ha pensato almeno una volta nella propria carriera a come sarebbe lavorare per una Big Company, su un progetto figo e in un contesto internazionale, con tecnologie all'avanguardia e modalità di lavoro innovative.
@@ -444,15 +456,13 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     place: "Camplus Firenze",
     address: "via del Romito 5-7, 50134, Firenze",
     eventbriteId: "532054077067",
-    eventbriteLink:
-      "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
+    eventbriteLink: "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
     type: "meetup",
   },
 
   {
     title: "Christmas beer",
-    subtitle:
-      "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
+    subtitle: "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
     icon: christmasBeerIcon,
     image: christmasBeer,
     abstract: `Un evento informale per celebrare il primo anno di firenze.dev, ma anche per conoscerci meglio, bere una birra insieme e gettare uno sguardo al futuro della community.
@@ -466,8 +476,7 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     place: "Manifattura Tabacchi",
     address: "Manifattura Tabacchi, Via delle Cascine 35, 50144 Firenze",
     eventbriteId: "482058017507",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
     type: "beer",
   },
   {
@@ -555,8 +564,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     place: "Register.it",
     address: "Viale della giovine Italia 17, 50122 Firenze",
     eventbriteId: "324349707707",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
     date: dayjs("2022-05-11 18:30").toDate(),
     type: "meetup",
   },
@@ -574,8 +582,7 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     place: "Register.it",
     address: "Viale della giovine Italia 17, 50122 Firenze",
     eventbriteId: "204947703097",
-    eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
+    eventbriteLink: "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
     date: dayjs("2021-12-01 18:30").toDate(),
     type: "meetup",
   },
