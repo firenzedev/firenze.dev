@@ -40,8 +40,38 @@ import data_revolutionIcon from "./images/thumb/data_Revolution_14_11_06.png";
 import typescript_gennastic from "./images/typescript_gennastic20022025.png";
 import supercharging_with_rag from "./images/supercharging_your_app_with_rag.png";
 import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_with_rag.png";
+import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-request15052025.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Sopravvivere alle Pull Request",
+    subtitle:
+      "Come rendere il codice perfetto senza scatenare drammi in ufficio",
+    icon: sopravvivere_alle_pull_request,
+    image: sopravvivere_alle_pull_request,
+    abstract: `
+È una tranquilla giornata di lavoro, 
+finché improvvisamente arriva una nuova **Pull Request**. 
+La apri con un click e, in un attimo, ti assale una sensazione di panico. 
+Ti ritrovi a fissare linee e linee di codice che ti fanno pensare: 'Ma è una PR o una dichiarazione di guerra?' 
+Dopo il primo momento di shock, ti rimbocchi le maniche e ti butti nel codice: 
+il tuo obiettivo non è solo riscrivere tutto, ma fare in modo che una cosa del genere non accada mai più.
+
+In questo talk, vedremo insieme come funziona il processo di revisione: 
+dall'individuazione dei problemi al refactoring, fino alla chiacchierata con il povero malcapitato che ha scritto il codice. 
+Guardando un esempio concreto, scopriremo come ogni PR possa diventare un'opportunità per crescere e per migliorare il codice, 
+continuando a mantenere buoni rapporti con i colleghi (almeno fino al prossimo commit!).`,
+    current: true,
+    hideSponsorInNetworking: true,
+    date: dayjs("2025-05-15 18:30").toDate(),
+    sponsor: "sinerbit",
+    place: "Camplus Firenze",
+    address: "5 Via del Romito #7 50134 Firenze",
+    eventbriteId: "1330690263399",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-sopravvivere-alle-pull-request-1330690263399",
+    type: "meetup",
+  },
   {
     title: "Supercharging your App with a RAG: a real-world usecase",
     subtitle:

@@ -3,6 +3,8 @@ import extendi from "./extendi_logo.svg";
 import gucci from "./gucci-logo.png";
 import _42firenze from "./42firenze.png";
 import seacom from "./seacom.png";
+import sinerbit from "./sinerbit.png";
+import human_company from "./human-company.png";
 import frameSchool from "./frame-school-logo.png";
 import Image from "next/image";
 import { H3 } from "@/components/ui/Heading";
@@ -36,6 +38,16 @@ const sponsors = [
     name: "Seacom",
     link: "https://seacom.it/",
     logo: seacom,
+  },
+  {
+    name: "Human Company",
+    link: "https://humancompany.com/",
+    logo: human_company,
+  },
+  {
+    name: "sinerbit",
+    link: "https://sinerbit.com/",
+    logo: sinerbit,
   },
 ];
 
