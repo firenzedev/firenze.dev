@@ -1,8 +1,9 @@
 import { H3 } from "@/components/ui/Heading";
 import Event from "./Event";
-import { eventService } from "../lib/EventService";
+import { EventService } from "../lib/EventService";
 
-export default function NextEvents(props: { disableBox?: boolean }) {
+export default async function NextEvents(props: { disableBox?: boolean }) {
+  const eventService = await EventService.init();
   const nextEvents = eventService.getNextEvents();
   if (nextEvents.length === 0) {
     return null;

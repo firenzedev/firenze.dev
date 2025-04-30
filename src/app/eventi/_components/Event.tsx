@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FDevEvent, toSlug } from "../lib/EventService";
+import {  toSlug } from "../lib/EventService";
+import { FDevEvent } from "../lib/types";
 import { H4 } from "@/components/ui/Heading";
 import { Calendar } from "@/components/ui/Calendar";
 import { MiniButton } from "@/components/ui/Button";
