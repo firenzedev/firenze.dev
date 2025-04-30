@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import eventImage from "./images/eventi.webp";
 import { H4 } from "@/components/ui/Heading";
-import { eventService } from "../lib/EventService";
+import { EventService } from "../lib/EventService";
 import { IntroText } from "./IntroText";
 
-export default function EventIntro() {
+export default async function EventIntro() {
+  const eventService = await EventService.init();
   const nextEvents = eventService.getNextEvents();
   return (
     <section className="max-w-4xl p-4 mx-auto max-auto">

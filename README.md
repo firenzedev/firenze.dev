@@ -61,5 +61,30 @@ when you open a Pull request, we make a preview deployement. So you can view anc
 
 You should use conventional commit messages: https://www.conventionalcommits.org/en/v1.0.0/ 
 
+### Supabase
+[Supabase cli](https://supabase.com/docs/guides/local-development/cli/getting-started)
+Create migration 
 
+```bash
+supabase migration new migration_name
+```
 
+Start local db in docker
+
+```bash
+supabase start 
+```
+Test Migration in local Environment
+
+```bash
+supabase db reset
+```
+```bash
+supabase migration up
+```
+
+Push change to remote db 
+
+```bash
+supabase db push
+```

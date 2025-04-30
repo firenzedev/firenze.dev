@@ -1,18 +1,20 @@
-import { FDevEvent, eventService } from "@/app/eventi/lib/EventService";
+import {  EventService } from "@/app/eventi/lib/EventService";
+import { FDevEvent } from "@/app/eventi/lib/types";
 import Link from "next/link";
 import Event from "./_components/Event";
 import type { Metadata } from "next";
 import dayjs from "dayjs";
 import "dayjs/locale/it";
 dayjs.locale("it");
-import { StaticImageData } from "next/image";
+import { getPublicImageUrl } from "@/lib/storage";
 
 type Props = {
   params: { id: string };
 };
 
-export default function EventPage({ params }: Readonly<Props>) {
-  const event = eventService.getEvent(params.id);
+export default async function EventPage({ params }: Readonly<Props>) {
+  const eventService = await EventService.init();
+  const event = eventService.getEvent(params.id);;
   return (
     <main className="container mx-auto lg:pt-6 lg:px-44">
       {!event && (
@@ -27,19 +29,24 @@ export default function EventPage({ params }: Readonly<Props>) {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const event = eventService.getEvent(params.id);
+  const eventService = await EventService.init();
+  const event = eventService.getEvent(params.id);;
   if (!event) {
     return {
       title: "Non siamo riusciti a trovare questo evento",
     };
   }
-  const title = event?.title;
+  const { title, image } = event;
   const description = eventDescription(event);
+  const imageUrl = typeof image === "string" && !image.startsWith("http")
+    ? getPublicImageUrl(image)
+    : image as string;
+
   return {
     title,
     description,
     openGraph: {
-      images: [(event?.image as StaticImageData).src],
+      images: imageUrl,
       title,
       description,
       type: "article",

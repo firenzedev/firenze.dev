@@ -1,8 +1,9 @@
 import { H3 } from "@/components/ui/Heading";
 import Event from "./Event";
-import { eventService } from "../lib/EventService";
+import { EventService } from "../lib/EventService";
 
-export default function PastEvents() {
+export default async function PastEvents() {
+  const eventService = await EventService.init();
   const events = eventService.getPastEvents();
   return (
     <section className="my-10">

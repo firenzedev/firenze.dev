@@ -1,13 +1,14 @@
 "use client";
-import { eventService } from "@/app/eventi/lib/EventService";
+import { EventService } from "@/app/eventi/lib/EventService";
 import { H3 } from "@/components/ui/Heading";
 import { useSearchParams } from "next/navigation";
 
-export default function ConfermaPage() {
+export default async function ConfermaPage() {
   const params = useSearchParams();
   const confirm = params.get("confirm");
   const eventId = params.get("id");
 
+  const eventService = await EventService.init();
   const event = eventService.getEvent(eventId || "");
   return (
     <main className="container mx-auto lg:pt-6 lg:px-44">

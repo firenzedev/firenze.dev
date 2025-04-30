@@ -1,33 +1,19 @@
-import { StaticImageData } from "next/image";
 import dayjs from "dayjs";
-import { events } from "./events-db";
+import {fetchAllEvents} from "./supabase/events"
+import { FDevEvent } from "./types";
 
-type eventType = "meetup" | "workshop" | "cfp" | "beer";
 
-export interface FDevEvent {
-  title: string;
-  subtitle: string;
-  icon: string | StaticImageData;
-  image: string | StaticImageData;
-  current?: boolean;
-  abstract: string;
-  date: Date;
-  place: string | null;
-  sponsor?: string;
-  address: string;
-  eventbriteId?: string;
-  eventbriteLink?: string;
-  externalLink?: string;
-  ticketTailorId?: number;
-  type: eventType;
-  hideSponsorInNetworking?: boolean;
-}
 
 class EventService {
-  events: FDevEvent[];
+  private events: FDevEvent[] = [];
 
   constructor(events: FDevEvent[]) {
     this.events = events;
+  }
+
+  static async init(): Promise<EventService> {
+    const events = await fetchAllEvents();
+    return new EventService(events);
   }
 
   getEvents(): FDevEvent[] {
@@ -35,15 +21,13 @@ class EventService {
   }
 
   getPastEvents(): FDevEvent[] {
-    return this.events.filter((event) =>
-      dayjs(event.date).isBefore(new Date()),
-    );
+    return this.events.filter((event) => dayjs(event.date).isBefore(new Date()));
   }
 
   getNextEvents(): FDevEvent[] {
-    return this.events.filter(
-      (event) => dayjs(event.date).isAfter(new Date()),
-    ).sort(byDate);
+    return this.events
+      .filter((event) => dayjs(event.date).isAfter(new Date()))
+      .sort(byDate);
   }
 
   getEvent(slug: string): FDevEvent | undefined {
@@ -51,16 +35,16 @@ class EventService {
   }
 }
 
-export function toSlug(name: string) {
+function toSlug(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[\W_]+/g," ")
+    .replace(/[\W_]+/g, " ")
     .trim()
-    .replaceAll(" ", "-")
+    .replaceAll(" ", "-");
 }
 
-export const eventService = new EventService(events);
-
-function byDate(a: FDevEvent, b: FDevEvent) {
+function byDate(a: FDevEvent, b: FDevEvent): number {
   return dayjs(a.date).valueOf() - dayjs(b.date).valueOf();
 }
+
+export { EventService, toSlug };

@@ -7,7 +7,8 @@ import Register from "./Register";
 import Script from "next/script";
 import EventProgram from "./EventProgram";
 import { H1, H3 } from "@/components/ui/Heading";
-import { FDevEvent } from "@/app/eventi/lib/EventService";
+import { FDevEvent } from "@/app/eventi/lib/types";
+
 dayjs.locale("it");
 
 export default function Event({ event }: Readonly<{ event: FDevEvent }>) {

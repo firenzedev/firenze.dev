@@ -1,4 +1,4 @@
-import { FDevEvent } from "@/app/eventi/lib/EventService";
+import { FDevEvent } from "@/app/eventi/lib/types";
 import {
   MegaphoneIcon,
   MicrophoneIcon,

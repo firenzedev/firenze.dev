@@ -30,7 +30,7 @@ import shapingYourFuture from "./images/9_Maggio_EventBrite_colors.png";
 import shapingYourFutureIcon from "./images/thumb/9_Maggio_thumb_colors.png";
 import summerBeer2024Icon from "./images/thumb/beerGiugno.png";
 import summerBeer2024 from "./images/EventBrite_summerbeer.png";
-import { FDevEvent } from "./EventService";
+import { FDevEvent } from "./types";
 import dayjs from "dayjs";
 
 import supply_cahain from "./images/supply_cahain.png";
