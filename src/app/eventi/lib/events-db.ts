@@ -41,8 +41,68 @@ import typescript_gennastic from "./images/typescript_gennastic20022025.png";
 import supercharging_with_rag from "./images/supercharging_your_app_with_rag.png";
 import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_with_rag.png";
 import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-request15052025.png";
+import workshop_tdd_icon from "./images/workshop_tdd.png";
+import summer_beer_2025_icon from "./images/summer_beer_2025.png";
 
 export const events: FDevEvent[] = [
+    {
+        title: "Summer Beer Meetup 2025",
+        subtitle: "Una serata per ritrovarci come community, salutarci prima delle ferie e parlare delle prossime attività insieme!",
+        icon: summer_beer_2025_icon,
+        image: summer_beer_2025_icon,
+        abstract: `
+Una serata informale tra amici della community, con birrette e qualche gioco leggero per fare il punto insieme, raccogliere feedback in modo divertente e prepararci ai prossimi eventi, il tutto senza stress (niente review spietate!), prima delle ferie estive.
+
+Ti aspettiamo mercoledì 18 giugno dalle 21:30 al Parc Bistrò, Piazzale delle Cascine, 50144 Firenze FI.
+
+
+La partecipazione è aperta a tutti, vieni con chi vuoi 😉
+`,
+        current: false,
+        date: dayjs("2025-06-18 21:30").toDate(),
+        sponsor: "",
+        place: "Parc Bistrò",
+        address: "Piazzale delle Cascine 50144 Firenze",
+        eventbriteId: "1376100005159",
+        eventbriteLink:
+            "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-2025-1376100005159",
+        type: "beer",
+    },
+    {
+      title: "Workshop: Test Driven Development",
+        subtitle:"Un’occasione esclusiva pensata per la nostra community: un workshop pratico per scoprire insieme i principi del Test Driven Development",
+        icon: workshop_tdd_icon,
+        image: workshop_tdd_icon,
+        abstract: `
+Il TDD è per fare i test, giusto? Sbagliato!
+
+Il TDD è per scrivere codice migliore , i test sono solo un piacevole effetto collaterale. In un mondo in cui scrivere test è spesso visto come una formalità noiosa o un'attività da rimandare, il Test-Driven Development ribalta la prospettiva: non testiamo per verificare il codice, testiamo per progettarlo.
+
+Questo workshop è pensato per chi vuole migliorare davvero come sviluppatore: più chiarezza nei requisiti, design più pulito, codice più semplice da mantenere. Cosa ti porti a casa?
+
+Un nuovo mindset, una tecnica concreta e immediatamente applicabile, e una comprensione più profonda di cosa vuol dire scrivere codice di qualità. Nessuna esperienza TDD richiesta: ti guideremo passo dopo passo, con esempi reali e un kata dal vivo. In presenza, un’occasione per imparare, confrontarsi e crescere insieme.
+
+🎯 Cosa ti servirà:
+
+- Porta il tuo laptop
+
+- Node.js installato
+
+- Conoscenza minima di JavaScript
+    
+⚠️ I posti sono pochi: assicurati il tuo!
+
+👉 Iscrivendoti ti impegni a partecipare attivamente.`,
+        hideSponsorInNetworking: true,
+        date: dayjs("2025-06-11 18:30").toDate(),
+        sponsor: "sinerbit",
+        place: "Sinerbit HQ",
+        address: "Via Giuseppe Valentini, 7/entrata 01, 59100 Prato PO",
+        eventbriteId: "1376059403719",
+        eventbriteLink:
+            "https://www.eventbrite.it/e/biglietti-workshop-test-driven-development-1376059403719",
+        type: "cfp",
+    },
   {
     title: "Sopravvivere alle Pull Request",
     subtitle:
