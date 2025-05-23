@@ -42,12 +42,36 @@ import supercharging_with_rag from "./images/supercharging_your_app_with_rag.png
 import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_with_rag.png";
 import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-request15052025.png";
 import workshop_tdd_icon from "./images/workshop_tdd.png";
+import summer_beer_2025_icon from "./images/summer_beer_2025.png";
 
 export const events: FDevEvent[] = [
     {
+        title: "Summer Beer Meetup 2025",
+        subtitle: "Una serata per ritrovarci come community, salutarci prima delle ferie e parlare delle prossime attività insieme!",
+        icon: summer_beer_2025_icon,
+        image: summer_beer_2025_icon,
+        abstract: `
+Una serata informale tra amici della community, con birrette e qualche gioco leggero per fare il punto insieme, raccogliere feedback in modo divertente e prepararci ai prossimi eventi, il tutto senza stress (niente review spietate!), prima delle ferie estive.
+
+Ti aspettiamo mercoledì 18 giugno dalle 21:30 al Parc Bistrò, Piazzale delle Cascine, 50144 Firenze FI.
+
+
+La partecipazione è aperta a tutti, vieni con chi vuoi 😉
+`,
+        current: false,
+        date: dayjs("2025-06-18 21:30").toDate(),
+        sponsor: "",
+        place: "Parc Bistrò",
+        address: "Piazzale delle Cascine 50144 Firenze",
+        eventbriteId: "1376100005159",
+        eventbriteLink:
+            "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-2025-1376100005159",
+        type: "beer",
+    },
+    {
       title: "Workshop: Test Driven Development",
         subtitle:"Un’occasione esclusiva pensata per la nostra community: un workshop pratico per scoprire insieme i principi del Test Driven Development",
-    icon: workshop_tdd_icon,
+        icon: workshop_tdd_icon,
         image: workshop_tdd_icon,
         abstract: `
 Il TDD è per fare i test, giusto? Sbagliato!
