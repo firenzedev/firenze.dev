@@ -1,5 +1,5 @@
 {
-  "name": "firenze.dev.2",
+  "name": "firenze.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,5 +34,8 @@
     "sharp": "^0.32.6",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.x"
   }
 }
