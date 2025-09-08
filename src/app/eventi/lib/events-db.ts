@@ -43,14 +43,39 @@ import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_wi
 import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-request15052025.png";
 import workshop_tdd_icon from "./images/workshop_tdd.png";
 import summer_beer_2025_icon from "./images/summer_beer_2025.png";
+import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_locali_10_09_2025.png";
 
 export const events: FDevEvent[] = [
-    {
-        title: "Summer Beer Meetup 2025",
-        subtitle: "Una serata per ritrovarci come community, salutarci prima delle ferie e parlare delle prossime attività insieme!",
-        icon: summer_beer_2025_icon,
-        image: summer_beer_2025_icon,
-        abstract: `
+  {
+    title: "Modelli AI locali: quando usarli e quando non usarli (ancora)",
+    subtitle:
+      "Local LLMs vs cloud: pro e contro tra costi, dati e tooling MCP. Con esempi e demo, scopri quando scegliere locale, cloud o entrambi.",
+    icon: modelli_ai_locali_2025_icon,
+    image: modelli_ai_locali_2025_icon,
+    abstract: `
+  👉I modelli linguistici locali (Local LLMs) stanno guadagnando sempre più attenzione tra gli sviluppatori che realizzano applicazioni GenAI e assistenti di coding — ma portano con sé compromessi importanti.
+
+In questo intervento, Francesco Corti (Principal PM per l’AI in Docker) condividerà esperienze concrete maturate nell’uso di LLM sia locali sia cloud-based, come ChatGPT e Claude. Scoprirai i punti di forza dei modelli locali — dal controllo dei dati alla gestione dei costi — e i loro limiti, con un focus approfondito sul tooling MCP, oggi al centro di grande interesse.
+
+Attraverso esempi pratici e demo dal vivo, la sessione ti aiuterà a capire quando conviene puntare sul locale, quando sul cloud e come combinare entrambi per sviluppare in modo efficace applicazioni GenAI.
+  `,
+    current: false,
+    date: dayjs("2025-10-09 18:30").toDate(),
+    sponsor: "",
+    place: "Impact Hub Firenze",
+    address: "16 Via Panciatichi 50141 Firenze Italy",
+    eventbriteId: "1671686111159",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-modelli-ai-locali-quando-usarli-e-quando-non-usarli-ancora-1671686111159",
+    type: "meetup",
+  },
+  {
+    title: "Summer Beer Meetup 2025",
+    subtitle:
+      "Una serata per ritrovarci come community, salutarci prima delle ferie e parlare delle prossime attività insieme!",
+    icon: summer_beer_2025_icon,
+    image: summer_beer_2025_icon,
+    abstract: `
 Una serata informale tra amici della community, con birrette e qualche gioco leggero per fare il punto insieme, raccogliere feedback in modo divertente e prepararci ai prossimi eventi, il tutto senza stress (niente review spietate!), prima delle ferie estive.
 
 Ti aspettiamo mercoledì 18 giugno dalle 21:30 al Parc Bistrò, Piazzale delle Cascine, 50144 Firenze FI.
@@ -58,22 +83,23 @@ Ti aspettiamo mercoledì 18 giugno dalle 21:30 al Parc Bistrò, Piazzale delle C
 
 La partecipazione è aperta a tutti, vieni con chi vuoi 😉
 `,
-        current: false,
-        date: dayjs("2025-06-18 21:30").toDate(),
-        sponsor: "",
-        place: "Parc Bistrò",
-        address: "Piazzale delle Cascine 50144 Firenze",
-        eventbriteId: "1376100005159",
-        eventbriteLink:
-            "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-2025-1376100005159",
-        type: "beer",
-    },
-    {
-      title: "Workshop: Test Driven Development",
-        subtitle:"Un’occasione esclusiva pensata per la nostra community: un workshop pratico per scoprire insieme i principi del Test Driven Development",
-        icon: workshop_tdd_icon,
-        image: workshop_tdd_icon,
-        abstract: `
+    current: false,
+    date: dayjs("2025-06-18 21:30").toDate(),
+    sponsor: "",
+    place: "Parc Bistrò",
+    address: "Piazzale delle Cascine 50144 Firenze",
+    eventbriteId: "1376100005159",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-2025-1376100005159",
+    type: "beer",
+  },
+  {
+    title: "Workshop: Test Driven Development",
+    subtitle:
+      "Un’occasione esclusiva pensata per la nostra community: un workshop pratico per scoprire insieme i principi del Test Driven Development",
+    icon: workshop_tdd_icon,
+    image: workshop_tdd_icon,
+    abstract: `
 Il TDD è per fare i test, giusto? Sbagliato!
 
 Il TDD è per scrivere codice migliore , i test sono solo un piacevole effetto collaterale. In un mondo in cui scrivere test è spesso visto come una formalità noiosa o un'attività da rimandare, il Test-Driven Development ribalta la prospettiva: non testiamo per verificare il codice, testiamo per progettarlo.
@@ -93,16 +119,16 @@ Un nuovo mindset, una tecnica concreta e immediatamente applicabile, e una compr
 ⚠️ I posti sono pochi: assicurati il tuo!
 
 👉 Iscrivendoti ti impegni a partecipare attivamente.`,
-        hideSponsorInNetworking: true,
-        date: dayjs("2025-06-11 18:30").toDate(),
-        sponsor: "sinerbit",
-        place: "Sinerbit HQ",
-        address: "Via Giuseppe Valentini, 7/entrata 01, 59100 Prato PO",
-        eventbriteId: "1376059403719",
-        eventbriteLink:
-            "https://www.eventbrite.it/e/biglietti-workshop-test-driven-development-1376059403719",
-        type: "cfp",
-    },
+    hideSponsorInNetworking: true,
+    date: dayjs("2025-06-11 18:30").toDate(),
+    sponsor: "sinerbit",
+    place: "Sinerbit HQ",
+    address: "Via Giuseppe Valentini, 7/entrata 01, 59100 Prato PO",
+    eventbriteId: "1376059403719",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-workshop-test-driven-development-1376059403719",
+    type: "cfp",
+  },
   {
     title: "Sopravvivere alle Pull Request",
     subtitle:
@@ -188,7 +214,8 @@ per creare soluzioni sempre più efficaci, versatili e sicure.`,
   },
   {
     title: "Data Revolution: next-generation data architectures",
-    subtitle: "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
+    subtitle:
+      "Siamo sicuri che i tuoi dati stiano bene, lì ammucchiati in un vecchio DB?",
     icon: data_revolutionIcon,
     image: data_revolution,
     abstract: `Magari finora ha funzionato, ma il mondo della gestione dei dati si sta evolvendo rapidamente.
@@ -211,7 +238,8 @@ Un'occasione per esplorare nuovi orizzonti e assicurarti che i tuoi dati siano p
   },
   {
     title: "The unexpected attack: hacking the supply chain",
-    subtitle: "Tanto prima o poi capita a tutti: impara a pensare come un hacker per anticipare gli attacchi",
+    subtitle:
+      "Tanto prima o poi capita a tutti: impara a pensare come un hacker per anticipare gli attacchi",
     icon: supply_cahainIcon,
     image: supply_cahain,
     abstract: `Che cosa si intende quando parliamo di supply chain? E perché potrebbe rappresentare un pericoloso punto d'ingresso per attaccare il nostro software?
@@ -237,7 +265,8 @@ Alla fine del talk, avremo una visione nitida e completa di come funziona una su
   },
   {
     title: "Summer Beer Meetup 2024",
-    subtitle: "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    subtitle:
+      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
 
     icon: summerBeer2024Icon,
     image: summerBeer2024,
@@ -297,7 +326,8 @@ senza dover sacrificare i loro obiettivi professionali.
   },
   {
     title: " Data Analysis con l'IA 🐼",
-    subtitle: "Un approccio innovativo all'analisi dei dati con l'IA generativa",
+    subtitle:
+      "Un approccio innovativo all'analisi dei dati con l'IA generativa",
     icon: dataAnalisisConIAIcon,
     image: dataAnalisisConIA,
     abstract: `
@@ -321,12 +351,14 @@ Attraverso esempi pratici scopriremo come trasformare l'analisi dati da un compi
     place: null,
     address: "Impact Hub Firenze, Via Panciatichi, 1, 50141",
     eventbriteId: "851089440427",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-data-analysis-con-lia-851089440427",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-data-analysis-con-lia-851089440427",
     type: "meetup",
   },
   {
     title: "🚀 Call for Papers: Open Mic Night 🎤",
-    subtitle: "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
+    subtitle:
+      "👩‍💻👨‍💻 Non vediamo l'ora di scoprire le tue idee! Unisciti a noi e fai sentire la tua voce! 💪😎",
     icon: openMicNightIcon,
     image: openMicNight,
     abstract: `
@@ -368,7 +400,8 @@ Unisciti a noi e fai sentire la tua voce! 💪😎
     place: null,
     address: "",
     eventbriteId: "746333071307",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
     type: "cfp",
   },
   {
@@ -420,12 +453,14 @@ Le persone in lista d'attesa riceveranno il biglietto in caso qualcuno degli isc
     place: "Frame School",
     address: "via di Scandicci 88, Firenze, FI",
     eventbriteId: "746333071307",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-workshop-sviluppare-una-dapp-su-blockchain-746333071307",
     type: "workshop",
   },
   {
     title: "Blockchain 101, from zero to developer",
-    subtitle: "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
+    subtitle:
+      "Un percorso alla scoperta della blockchain, per comprenderne il funzionamento e le potenzialità",
     icon: blockchain101Icon,
     image: blockchain101,
     abstract: `Hai sempre considerato la blockchain un mistero insondabile? Sei ancora incerto sugli ambiti in cui può essere applicata? È ora di svelare i segreti di questa tecnologia rivoluzionaria!
@@ -439,12 +474,14 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Frame School",
     address: "via di Scandicci 88, Firenze, FI",
     eventbriteId: "719618035917",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-blockchain-101-from-zero-to-developer-719618035917",
     type: "meetup",
   },
   {
     title: "Summer Beer Meetup",
-    subtitle: "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
+    subtitle:
+      "L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?",
     icon: summerBeerIcon,
     image: summerBeer,
     abstract: `L'estate è finalmente alle porte, cosa c'è di meglio che condividere una birra fresca in compagnia?
@@ -457,7 +494,8 @@ Non preoccuparti se è la prima volta che ti avvicini a questo argomento, sarann
     place: "Fabbrica in Pedavena",
     address: "Via Generale C. A. dalla Chiesa, 1, 50136 Firenze FI",
     eventbriteId: "646533919357",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-646533919357",
     type: "beer",
   },
   {
@@ -517,12 +555,14 @@ Scopriremo come è stato gestito il cambiamento e come una grande realtà intern
     place: "Gucci ArtLab",
     address: "via delle nazioni unite 1, Scandicci, 50018",
     eventbriteId: "593998735207",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-dal-monolite-ai-microservizi-una-storia-vera-593998735207",
     type: "meetup",
   },
   {
     title: "La Developer Experience nelle Big Tech",
-    subtitle: "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
+    subtitle:
+      "Cosa dovresti sapere per lavorare in una grande azienda internazionale",
     icon: devExpIcon,
     image: devExp,
     abstract: `Ogni developer ha pensato almeno una volta nella propria carriera a come sarebbe lavorare per una Big Company, su un progetto figo e in un contesto internazionale, con tecnologie all'avanguardia e modalità di lavoro innovative.
@@ -546,13 +586,15 @@ Dopo il talk ci sarà il consueto aperitivo di networking.`,
     place: "Camplus Firenze",
     address: "via del Romito 5-7, 50134, Firenze",
     eventbriteId: "532054077067",
-    eventbriteLink: "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
+    eventbriteLink:
+      "https://www.eventbrite.com/e/biglietti-la-developer-experience-nelle-big-tech-532054077067",
     type: "meetup",
   },
 
   {
     title: "Christmas beer",
-    subtitle: "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
+    subtitle:
+      "Brindiamo al primo anno di firenze.dev e discutiamo delle prossime attività",
     icon: christmasBeerIcon,
     image: christmasBeer,
     abstract: `Un evento informale per celebrare il primo anno di firenze.dev, ma anche per conoscerci meglio, bere una birra insieme e gettare uno sguardo al futuro della community.
@@ -566,7 +608,8 @@ La serata è aperta a tutti i membri della community di firenze.dev e si svolger
     place: "Manifattura Tabacchi",
     address: "Manifattura Tabacchi, Via delle Cascine 35, 50144 Firenze",
     eventbriteId: "482058017507",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-christmas-beer-482058017507",
     type: "beer",
   },
   {
@@ -654,7 +697,8 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     place: "Register.it",
     address: "Viale della giovine Italia 17, 50122 Firenze",
     eventbriteId: "324349707707",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-next-level-api-con-graphql-324349707707",
     date: dayjs("2022-05-11 18:30").toDate(),
     type: "meetup",
   },
@@ -672,7 +716,8 @@ Dopo il talk ci sarà il consueto aperitivo di networking, offerto da Register.i
     place: "Register.it",
     address: "Viale della giovine Italia 17, 50122 Firenze",
     eventbriteId: "204947703097",
-    eventbriteLink: "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-e-solo-un-altro-if-204947703097",
     date: dayjs("2021-12-01 18:30").toDate(),
     type: "meetup",
   },
