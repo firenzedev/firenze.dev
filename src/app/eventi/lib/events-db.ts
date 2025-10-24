@@ -44,8 +44,31 @@ import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-requ
 import workshop_tdd_icon from "./images/workshop_tdd.png";
 import summer_beer_2025_icon from "./images/summer_beer_2025.png";
 import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_locali_10_09_2025.png";
+import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "How We Ship On Time",
+    subtitle:
+      'Come rispondere al tuo capo quando ti chiede "Quanto ci vuole?"',
+    icon: how_we_ship_on_time,
+    image: how_we_ship_on_time,
+    abstract: `
+  Se ti hanno mai chiesto "quanto ci metti?" e la tua risposta è stata "boh", questo talk è per te.
+
+Le stime nel software non sono magia nera, ma quasi. In questo meetup di firenze.dev, Alberto Colella, co-fondatore di Codever, ci spiegherà quali sono gli errori più comuni, come rendere il processo più umano e collaborativo, e perché il vero valore non è la precisione, ma la conversazione.
+
+E per chiudere, un Planning Poker dal vivo: niente soldi in palio, ma tanta esperienza condivisa (e qualche risata).`,
+    current: false,
+    date: dayjs("2025-11-13 18:30").toDate(),
+    sponsor: "Codever",
+    place: "Codever Srl",
+    address: "79 Via delle Panche 50141 Firenze Italy",
+    eventbriteId: "1854188500719",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-how-we-ship-on-time-1854188500719",
+    type: "meetup",
+  },
   {
     title: "Modelli AI locali: quando usarli e quando non usarli (ancora)",
     subtitle:
