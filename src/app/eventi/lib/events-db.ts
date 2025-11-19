@@ -68,7 +68,7 @@ Non puoi mancare!`,
     eventbriteId: "1974514889186",
     eventbriteLink:
       "https://www.eventbrite.it/e/biglietti-open-mic-night-2025-1974514889186?",
-    type: "cfp",
+    type: "meetup",
   },
 
   {
