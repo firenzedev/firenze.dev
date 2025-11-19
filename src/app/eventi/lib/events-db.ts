@@ -45,12 +45,35 @@ import workshop_tdd_icon from "./images/workshop_tdd.png";
 import summer_beer_2025_icon from "./images/summer_beer_2025.png";
 import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_locali_10_09_2025.png";
 import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.png";
+import open_mic_2025 from "./images/2025_open_mic.png";
 
 export const events: FDevEvent[] = [
   {
-    title: "How We Ship On Time",
+    title: "🚀 Open Mic Night 🎤",
     subtitle:
-      'Come rispondere al tuo capo quando ti chiede "Quanto ci vuole?"',
+      "It's your time to shine!",
+    icon: open_mic_2025,
+    image: open_mic_2025,
+    abstract: `
+  Open Mic Night 2025: tecnologie appassionanti e le voci più attive della community sul palco, it's your time to shine!
+Come ogni fine anno, la serata Open Mic Night riporta la community al centro: quattro speaker e altrettanti momenti in cui storie, idee e percorsi personali prendono forma sul palco.
+
+A seguire l'irreprensibile aperitivo, per conoscersi, chiacchierare e far vivere la community in modo spontaneo e genuino.
+
+Non puoi mancare!`,
+    current: false,
+    date: dayjs("2025-12-10 18:30").toDate(),
+    place: "Impact Hub Firenze",
+    address: "16 Via Panciatichi 50141 Firenze Italy",
+    eventbriteId: "1974514889186",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-open-mic-night-2025-1974514889186?",
+    type: "cfp",
+  },
+
+  {
+    title: "How We Ship On Time",
+    subtitle: 'Come rispondere al tuo capo quando ti chiede "Quanto ci vuole?"',
     icon: how_we_ship_on_time,
     image: how_we_ship_on_time,
     abstract: `
