@@ -46,12 +46,35 @@ import summer_beer_2025_icon from "./images/summer_beer_2025.png";
 import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_locali_10_09_2025.png";
 import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.png";
 import open_mic_2025 from "./images/2025_open_mic.png";
+import attacco_dei_mutanti from "./images/25_febbraio_attacco_dei_mutanti.png";
 
 export const events: FDevEvent[] = [
   {
+    title: "L'attacco dei mutanti",
+    subtitle: "Come scrivere test più efficaci",
+    icon: attacco_dei_mutanti,
+    image: attacco_dei_mutanti,
+    abstract: `Il sole è tramontato su un'altra dura giornata di lavoro per il nostro eroe: ha dovuto proteggersi dall'attacco di virus letali, uccidere processi zombie e scovare bug insidiosi, annidati nei branch più remoti dei suoi repository. Ma adesso, mentre si gode il meritato riposo, dall'ombra emerge una nuova razza di mutanti, pronti ad aggredire ogni singola riga del suo codice! Riuscirà la sua suite di test a proteggere il sistema anche da questo attacco?
+
+Per scoprirlo, non ci resta che addentrarci in questa nuova avventura, nella quale Tiziano Pessa, Director of Software Engineering in team.blue, cercherà di far crollare le nostre certezze più radicate:
+
+possiamo davvero fidarci dei test che scriviamo per le nostre applicazioni? O ci danno solo una falsa sensazione di sicurezza?
+
+Capiremo cosa sono i mutation test e in che modo possiamo utilizzare questo potente strumento per scrivere test più efficaci e migliorare la qualità del nostro codice.
+`,
+    current: false,
+    date: dayjs("2026-02-25 18:30").toDate(),
+    sponsor: "Codever",
+    place: "Codever Srl",
+    address: "79 Via delle Panche 50141 Firenze Italy",
+    eventbriteId: "1981999785713",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-lattacco-dei-mutanti-1981999785713",
+    type: "meetup",
+  },
+  {
     title: "🚀 Open Mic Night 🎤",
-    subtitle:
-      "It's your time to shine!",
+    subtitle: "It's your time to shine!",
     icon: open_mic_2025,
     image: open_mic_2025,
     abstract: `
@@ -70,7 +93,6 @@ Non puoi mancare!`,
       "https://www.eventbrite.it/e/biglietti-open-mic-night-2025-1974514889186?",
     type: "meetup",
   },
-
   {
     title: "How We Ship On Time",
     subtitle: 'Come rispondere al tuo capo quando ti chiede "Quanto ci vuole?"',
