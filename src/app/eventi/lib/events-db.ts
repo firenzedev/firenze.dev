@@ -47,8 +47,30 @@ import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_loc
 import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.png";
 import open_mic_2025 from "./images/2025_open_mic.png";
 import attacco_dei_mutanti from "./images/25_febbraio_attacco_dei_mutanti.png";
+import state_management_at_scale from "./images/state_management_at_scale.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "State Management at Scale",
+    subtitle: "Gestire efficacemente lo stato di applicazioni complesse",
+    icon: state_management_at_scale,
+    image: state_management_at_scale,
+    abstract: `Tutti usiamo uno state management nelle nostre applicazioni: ce ne sono tantissimi, e ognuno promette di essere migliore dell'altro.
+
+Ma quando un'applicazione diventa davvero complessa, con centinaia di dipendenze tra componenti e dati, trovare un approccio davvero solido non è banale.
+
+In questo talk Jacopo Scatizzi, Senior Software Engineer @Engeesoftware, racconterà come il suo team ha affrontato questo problema in un progetto reale, quali scelte architetturali hanno fatto lungo il percorso e come siano riusciti a trasformare il loro approccio innovativo in un motore efficiente e riutilizzabile in ogni contesto.`,
+    current: false,
+    date: dayjs("2026-04-09 18:30").toDate(),
+    sponsor: "Engeesoftware",
+    place: "Impact Hub Firenze",
+    address: "16 Via Panciatichi 50141 Firenze Italy",
+    eventbriteId: "1985159001011",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-state-management-at-scale-1985159001011",
+    type: "meetup",
+  },
+
   {
     title: "L'attacco dei mutanti",
     subtitle: "Come scrivere test più efficaci",
