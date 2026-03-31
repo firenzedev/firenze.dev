@@ -167,10 +167,10 @@ function AboutSection({
 
 function Quote({ content }: Readonly<{ content: ReactNode }>) {
   return (
-    <div className="flex bg-blue-900 text-white p-4 rounded-xl mb-16">
-      <div className="w-1/12 text-red-500 font-semibold text-5xl italic">{`{`}</div>
+    <div className="flex gap-4 bg-blue-900 text-white px-4 py-6 rounded-xl mb-16">
+      <div className=" -mt-3 text-red-500 font-semibold text-5xl italic">{`{`}</div>
       <div className="italic font-semibold">{content}</div>
-      <div className="w-1/12 text-red-500 font-semibold text-5xl italic flex items-end">{`}`}</div>
+      <div className=" -mb-3 text-red-500 font-semibold text-5xl italic flex items-end">{`}`}</div>
     </div>
   );
 }
