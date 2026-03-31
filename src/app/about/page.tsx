@@ -4,6 +4,7 @@ import Founders from "./_components/Founders";
 import Link from "next/link";
 import { PrimaryButton } from "@/components/ui/Button";
 import { Metadata } from "next";
+import CoreTeam from "./_components/CoreTeam";
 
 const description =
   "firenze.dev: Una community per appassionati di sviluppo e programmazione a Firenze. Unisciti a noi per scoprire eventi, formazione gratuita e un supporto professionale per programmatori di tutte le esperienze. Creato da due amici appassionati di tecnologia, Lorenzo Spinelli e Tiziano Pessa. Entra nella nostra comunità e cresci con noi!";
@@ -23,6 +24,7 @@ export default function AboutPage() {
       <H1>About firenze.dev</H1>
       <AboutMainContent />
       <Founders />
+      <CoreTeam />
       <section>
         <H2>Cosa facciamo</H2>
         <p className="py-8">
