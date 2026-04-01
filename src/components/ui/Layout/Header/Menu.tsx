@@ -29,37 +29,42 @@ export default function Menu({ navigation }: Readonly<Props>) {
     <>
       <div
         onKeyDown={handleKeyDown}
-        className="fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 m-3 rounded bg-white shadow print:hidden"
+        className={
+          "fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 m-3 rounded bg-white dark:bg-gray-900 shadow dark:shadow-gray-800 print:hidden transition-all transform" +
+          (isOpen ? " translate-x-36" : " translate-x-0")
+        }
         onClick={toggleOpen}
       >
-        <MenuIcon className="h-10 w-10 cursor-pointer mt-2 text-black " /> Menu
+        <MenuIcon className="h-10 w-10 cursor-pointer mt-2 text-black dark:text-white" />{" "}
+        Menu
       </div>
 
       <div
         className={
-          " fixed overflow-hidden z-50 bg-gray-100 bg-opacity-60 inset-0 transform ease-in-out " +
+          " fixed overflow-hidden z-50 bg-gray-100 dark:bg-gray-700 dark:bg-opacity-80 bg-opacity-60 inset-0 transform ease-in-out " +
           (isOpen
-            ? " transition-opacity opacity-100 duration-200 translate-x-0"
-            : " transition-all delay-300 opacity-0 translate-x-full")
+            ? " transition-opacity opacity-100 translate-x-0"
+            : " transition-all opacity-0 translate-x-full")
         }
       >
         <nav
           style={{ backdropFilter: "blur(4px)" }}
           className={
-            "w-screen max-w-lg left-0 absolute bg-white bg-opacity-25 h-screen shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
+            "w-screen left-0 absolute bg-white dark:bg-gray-700 dark:bg-opacity-25 bg-opacity-50 h-screen shadow-xl ease-in-out transition-all transform " +
             (isOpen ? " translate-x-0 " : " translate-x-full ")
           }
         >
-          <div className="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
+          <div className="relative w-screen pb-10 flex flex-col space-y-4 overflow-y-scroll h-full">
             <div
-              className="z-10 flex justify-end m-2"
+              className="z-10 flex justify-between m-2"
               onClick={toggleOpen}
               onKeyDown={handleKeyDown}
             >
+              <Logo />
               <CloseIcon className="h-10 w-10 cursor-pointer mt-1 lg:m-10" />
             </div>
-            <Logo />
-            <div className="p-2 h-full">
+
+            <div className="p-2 flex items-end h-full">
               <nav className="text-3xl font-bold">
                 <div>
                   {navigation.map((item) => (
@@ -86,7 +91,7 @@ function MenuLink({
   return (
     <Link
       href={item.href}
-      className="text-2xl text-black uppercase block p-3 my-5 underline"
+      className="text-2xl text-black dark:text-white uppercase block p-3 my-5 underline underline-offset-8"
       onClick={onClick}
     >
       {item.name}
