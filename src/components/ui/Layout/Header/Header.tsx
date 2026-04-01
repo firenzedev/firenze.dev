@@ -7,7 +7,6 @@ import Logo from "./Logo";
 export default function Header() {
   return (
     <>
-      <Menu navigation={navigation} />
       <header className="fixed top-0 left-0 right-0 z-20 bg-white dark:bg-gray-900 flex w-full shadow dark:shadow-gray-700 lg:min-h-[80px] p-2">
         <Logo />
         <div className="hidden sm:flex justify-evenly items-center flex-grow">
@@ -22,6 +21,7 @@ export default function Header() {
           ))}
         </div>
       </header>
+      <Menu navigation={navigation} />
     </>
   );
 }

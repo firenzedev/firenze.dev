@@ -1,11 +1,16 @@
 import logo from "./logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { ComponentPropsWithoutRef } from "react";
 
-export default function Logo() {
+export default function Logo(props: Readonly<ComponentPropsWithoutRef<"div">>) {
   return (
-    <div className="sm:flex justify-evenly items-center p-2 lg:px-8">
-      <Link href="/" className="flex text-black dark:text-white no-underline">
+    <div className="sm:flex justify-evenly items-center p-2 lg:px-8" {...props}>
+      <Link
+        href="/"
+        className="flex text-black dark:text-white no-underline"
+        tabIndex={props.tabIndex}
+      >
         <div className="flex">
           <Image
             className="dark:bg-white dark:rounded-md"
