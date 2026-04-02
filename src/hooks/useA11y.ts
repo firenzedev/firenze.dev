@@ -1,21 +1,23 @@
 import { escKeyClose, trapFocus } from "@/utils/a11y";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useCallback } from "react";
 
 export function useA11y({ onClose }: { onClose: () => void }) {
   const menuRef = useRef<HTMLElement | null>(null);
 
-  function handleEscKeyClose(e: KeyboardEvent) {
-    escKeyClose(e, () => {
-      onClose();
-    });
-  }
+  const handleEscKeyClose = useCallback(
+    (e: KeyboardEvent) => {
+      escKeyClose(e, onClose);
+    },
+    [onClose]
+  );
 
   useEffect(() => {
-    menuRef.current?.addEventListener("keydown", handleEscKeyClose);
+    const node = menuRef.current;
+    node?.addEventListener("keydown", handleEscKeyClose);
     return () => {
-      menuRef.current?.removeEventListener("keydown", handleEscKeyClose);
+      node?.removeEventListener("keydown", handleEscKeyClose);
     };
-  }, []);
+  }, [handleEscKeyClose]);
 
   return {
     menuRef,
