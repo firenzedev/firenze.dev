@@ -8,7 +8,7 @@ export function useA11y({ onClose }: { onClose: () => void }) {
     (e: KeyboardEvent) => {
       escKeyClose(e, onClose);
     },
-    [onClose]
+    [onClose],
   );
 
   useEffect(() => {
