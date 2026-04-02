@@ -23,7 +23,7 @@ export default function Menu({ navigation }: Readonly<Props>) {
   const { menuRef, trapFocus } = useA11y({ onClose: () => setIsOpen(false) });
 
   return (
-    <nav ref={menuRef}>
+    <nav ref={menuRef} tabIndex={-1}>
       <button
         className={
           "fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 m-3 rounded bg-white dark:bg-gray-900 shadow dark:shadow-gray-800 print:hidden transition-all transform" +
