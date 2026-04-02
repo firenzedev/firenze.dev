@@ -1,12 +1,13 @@
 "use client";
-import Link from "next/link";
+import { useA11y } from "@/hooks/useA11y";
 import {
   XMarkIcon as CloseIcon,
   Bars3BottomLeftIcon as MenuIcon,
 } from "@heroicons/react/24/outline";
-import { SiteLink } from "./Navigation";
-import Logo from "./Logo";
+import Link from "next/link";
 import { ComponentPropsWithoutRef, useState } from "react";
+import Logo from "./Logo";
+import { SiteLink } from "./Navigation";
 
 interface Props {
   navigation: SiteLink[];
@@ -19,16 +20,10 @@ export default function Menu({ navigation }: Readonly<Props>) {
     setIsOpen((open) => !open);
   }
 
-  function handleBlur(
-    e: React.FocusEvent<HTMLButtonElement | HTMLAnchorElement>,
-  ) {
-    if (isOpen) {
-      e.preventDefault();
-    }
-  }
+  const { menuRef, trapFocus } = useA11y({ onClose: () => setIsOpen(false) });
 
   return (
-    <nav onBlur={handleBlur}>
+    <nav ref={menuRef}>
       <button
         className={
           "fixed z-30 top-0 right-2 flex items-center sm:hidden px-2 m-3 rounded bg-white dark:bg-gray-900 shadow dark:shadow-gray-800 print:hidden transition-all transform" +
@@ -74,6 +69,7 @@ export default function Menu({ navigation }: Readonly<Props>) {
                       item={item}
                       onClick={toggleOpen}
                       tabIndex={isOpen ? 0 : -1}
+                      onKeyDown={trapFocus}
                     />
                   </li>
                 ))}
