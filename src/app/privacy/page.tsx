@@ -46,8 +46,8 @@ export default function Home() {
       <H4>Cookie Policy</H4>
       <p className="pb-10">
         Questo sito utilizza cookies, anche di terze parti, per migliorare
-        l&apos;esperienza di navigazione, consentire a chi naviga di usufruire di
-        eventuali servizi online e monitorare la navigazione nel sito.
+        l&apos;esperienza di navigazione, consentire a chi naviga di usufruire
+        di eventuali servizi online e monitorare la navigazione nel sito.
       </p>
       <H4>Gestione dei Cookies</H4>
       <p className="pb-4">
@@ -66,8 +66,8 @@ export default function Home() {
       <p className="font-bold">Attività di salvataggio delle preferenze</p>
       <p className="pb-4">
         Questi cookie permettono di ricordare le preferenze selezionate
-        dall&apos;utente durante la navigazione, ad esempio, consentono di impostare
-        la lingua.
+        dall&apos;utente durante la navigazione, ad esempio, consentono di
+        impostare la lingua.
       </p>
       <p className="font-bold">
         Attività statistiche e di misurazione dell&apos;audience

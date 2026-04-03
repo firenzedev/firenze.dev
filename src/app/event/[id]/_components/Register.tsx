@@ -43,8 +43,7 @@ export default function Register({
     } else if (eventLink) {
       window.open(externalLink, "_blank");
     } else if (ticketTailorId) {
-      window.TTWidget.loadEvent('firenzedev',ticketTailorId);
-      
+      window.TTWidget.loadEvent("firenzedev", ticketTailorId);
     }
   }
 

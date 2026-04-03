@@ -71,7 +71,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
       )}
       <hr className="my-8"></hr>
       <section className="p-2">
-        <ReactMarkdown className="my-4 prose lg:prose-lg max-w-none">
+        <ReactMarkdown className="my-4 prose dark:text-gray-300 lg:prose-lg max-w-none">
           {event.abstract}
         </ReactMarkdown>
       </section>
@@ -94,7 +94,7 @@ export default function Event({ event }: Readonly<{ event: FDevEvent }>) {
 
             {!isPast(event.date) && (
               <div>
-                <p className="bg-yellow-300 p-2 rounded-2xl text-center lg:mx-36 text-xl">
+                <p className="bg-yellow-300 dark:text-gray-900 p-2 rounded-2xl text-center lg:mx-36 text-xl">
                   Per la partecipazione è obbligatoria l&apos;iscrizione.
                 </p>
 

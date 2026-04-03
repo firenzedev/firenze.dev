@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Script from "next/script";
 
 export function runningInProduction(): boolean {

@@ -94,8 +94,8 @@ function EventProgramStep({
         <div className="absolute left-7 top-14 h-14 w-[1px] bg-blue-800"></div>
       )}
       <div className="flex mb-8 relative">
-        <div className="flex justify-center items-center border-2 border-blue-800 rounded-full w-14 h-14 bg-white">
-          <Icon className="w-10 h-10 text-orange-900 font-extrabold " />
+        <div className="flex justify-center items-center border-2 border-blue-800 rounded-full w-14 h-14 bg-white dark:bg-gray-900">
+          <Icon className="w-6 h-6 text-orange-900 dark:text-white font-extrabold " />
         </div>
         <div className="ml-4">
           <h4 className="font-bold text-xl">{time}</h4>

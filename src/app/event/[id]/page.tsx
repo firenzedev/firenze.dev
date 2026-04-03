@@ -49,7 +49,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function eventDescription(event: FDevEvent) {
   const place = event.place ? ` presso ${event.place}` : "";
-  const intro = event.type === "meetup" ? "firenze.dev presenta l'evento: " : "";
+  const intro =
+    event.type === "meetup" ? "firenze.dev presenta l'evento: " : "";
   return `${intro}${event.title} - ${
     event.subtitle
   }. Il ${dayjs(event.date).format("DD MMMM, ore HH:mm")}${place}`;

@@ -138,17 +138,17 @@ export default function Home() {
         <ul className="list-outside ml-4 list-disc my-4">
           <li className="mb-4">
             È fondamentale disporre di un <strong>luogo adeguato</strong> per
-            l&apos;evento, che può essere una sala in affitto o, se compatibile, la
-            sede dell&apos;azienda sponsor. Questa scelta riflette la professionalità
-            e l&apos;impegno nella creazione di un ambiente propizio per il
-            networking e l&apos;interazione.
+            l&apos;evento, che può essere una sala in affitto o, se compatibile,
+            la sede dell&apos;azienda sponsor. Questa scelta riflette la
+            professionalità e l&apos;impegno nella creazione di un ambiente
+            propizio per il networking e l&apos;interazione.
           </li>
           <li className="mb-4">
             Il networking rappresenta un elemento chiave dei nostri eventi. Per
             facilitare le interazioni tra i partecipanti, offriamo un{" "}
-            <strong>aperitivo di benvenuto</strong>. L&apos;azienda sponsor avrà la
-            responsabilità di coprire i costi del catering, contribuendo così a
-            creare un&apos;atmosfera accogliente e stimolante.
+            <strong>aperitivo di benvenuto</strong>. L&apos;azienda sponsor avrà
+            la responsabilità di coprire i costi del catering, contribuendo così
+            a creare un&apos;atmosfera accogliente e stimolante.
           </li>
           <li className="mb-4">
             Siamo in contatto con relatori di prestigio a livello nazionale e
@@ -156,8 +156,8 @@ export default function Home() {
             organizzare un evento di grande richiamo. In questo caso, lo sponsor
             sarà responsabile dei costi di{" "}
             <strong>trasporto e alloggio per il relatore</strong>, garantendo
-            così un livello di qualità e un&apos;attrattiva che porteranno valore
-            all&apos;evento e all&apos;immagine dell&apos;azienda.
+            così un livello di qualità e un&apos;attrattiva che porteranno
+            valore all&apos;evento e all&apos;immagine dell&apos;azienda.
           </li>
         </ul>
       </section>
@@ -168,22 +168,21 @@ export default function Home() {
         className="p-16 lg:px-24 mt-16 mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 md:rounded-md scroll-py-24"
       >
         <div className="container mx-auto">
-
-        <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide">
-          {" "}
-          Come diventare sponsor{" "}
-        </h3>
-        <p className="text-white">
-          Scrivici a{" "}
-          <a className="text-white" href="mailto:staff@firenze.dev">
-            <b>staff@firenze.dev</b>
-          </a>{" "}
-          o visita la{" "}
-          <a className="text-white" href="/contatti">
-            <b>pagina dei contatti</b>
-          </a>{" "}
-          per maggiori informazioni o per fissare una call con il nostro team.
-        </p>
+          <h3 className="text-white font-serif font-semibold text-3xl mb-6 tracking-wide">
+            {" "}
+            Come diventare sponsor{" "}
+          </h3>
+          <p className="text-white">
+            Scrivici a{" "}
+            <a className="text-white" href="mailto:staff@firenze.dev">
+              <b>staff@firenze.dev</b>
+            </a>{" "}
+            o visita la{" "}
+            <a className="text-white" href="/contatti">
+              <b>pagina dei contatti</b>
+            </a>{" "}
+            per maggiori informazioni o per fissare una call con il nostro team.
+          </p>
         </div>
       </div>
       <section className="lg:px-36 ">

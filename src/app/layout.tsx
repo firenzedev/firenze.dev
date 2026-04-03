@@ -4,8 +4,8 @@ import "./globals.css";
 import Header from "@/components/ui/Layout/Header/Header";
 import Footer from "@/components/ui/Layout/Footer/Footer";
 import { GTM_ID } from "@/lib/gtm";
-import { GoogleTagManager } from '@next/third-parties/google'
- import Analytics from "@/components/Analytics/Analytics";
+import { GoogleTagManager } from "@next/third-parties/google";
+import Analytics from "@/components/Analytics/Analytics";
 
 const font = Roboto({ subsets: ["latin"], weight: ["300", "400", "700"] });
 const domain = process.env.DOMAIN ?? "firenze.dev";
