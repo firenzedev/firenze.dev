@@ -25,7 +25,7 @@ export default function AboutPage() {
       <AboutMainContent />
       <Founders />
       <CoreTeam />
-      <section>
+      <section className="mx-2">
         <H2>Cosa facciamo</H2>
         <p className="py-8">
           Le idee che hanno dato origine alla community si concretizzano nelle

@@ -24,7 +24,7 @@ export default function AboutMainContent() {
         title="La confraternita dei programmatori"
         image={flagImage}
         mainText={
-          <p className="p-2">
+          <p>
             Esistono già altre realtà sul territorio di Firenze che organizzano
             eventi dedicati al mondo dello sviluppo: si tratta sempre di
             iniziative interessanti e stimolanti, ma a volte manca un momento di
@@ -61,7 +61,7 @@ export default function AboutMainContent() {
         title="L'unione fa la forza"
         image={communityImage}
         mainText={
-          <p className="p-2">
+          <p>
             Ma <strong>firenze.dev</strong> non nasce solo come punto di
             aggregazione, sin dall&apos;inizio si pone come luogo di{" "}
             <strong>crescita personale e professionale</strong>: organizzando
@@ -92,7 +92,7 @@ export default function AboutMainContent() {
         title="Mentoring"
         image={mentorshipImage}
         mainText={
-          <p className="p-2">
+          <p>
             Ultimo punto, ma non meno importante: <strong>firenze.dev</strong>{" "}
             vuole essere un solido elemento di <strong>supporto</strong> per i
             neofiti, per chi si sta avvicinando al mondo della programmazione,
@@ -150,12 +150,17 @@ function AboutSection({
   quoteText,
 }: Readonly<AboutSectionProps>) {
   return (
-    <section className="mt-16">
+    <section className="mt-16 mx-4">
       <H2>{title}</H2>
-      <div className="my-8 lg:flex">
-        <div className="lg:w-1/3">
-          <Image src={image} width={160} height={160} alt="section icon" />
-        </div>
+      <div className="my-8 md:flex gap-6 items-start">
+        <Image
+          className="dark:bg-slate-300 dark:rounded-md mx-auto mb-8 md:mb-auto md:mx-0 xl:p-3 flex-1"
+          src={image}
+          width={160}
+          height={160}
+          alt="section icon"
+        />
+
         <div>{mainText}</div>
       </div>
       {secondaryText}
