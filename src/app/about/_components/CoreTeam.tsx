@@ -32,6 +32,8 @@ const coreTeam = [
     email: "michele@firenze.dev",
     linkedin: "https://www.linkedin.com/in/palamidessimichele/",
     image: michele,
+    intro:
+      "Cresciuto tra i cabinati degli stabilimenti balneari, tra picchiaduro e rpg ho velocemente abbracciato i primi giochi online negli anni 2000. Proprio grazie ad uno di questi ho avuto la mia prima esperienza di programmazione e da lì ciò che era nato per gioco è diventato ben presto la mia passione e il mio lavoro.",
   },
   {
     anchor: "matteo",
@@ -59,11 +61,13 @@ export default function CoreTeam() {
     <section className="my-16 md:px-0 px-4">
       <H2 className="text-center md:text-start mb-2">Il Core Team</H2>
       <hr />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        {coreTeam.map((member) => (
-          <Member key={`core-${member.name}`} member={member} column />
-        ))}
-      </div>
+      {coreTeam.map((member, i) => (
+        <Member
+          key={`core-${member.name}`}
+          member={member}
+          reverse={i % 2 !== 0}
+        />
+      ))}
     </section>
   );
 }
