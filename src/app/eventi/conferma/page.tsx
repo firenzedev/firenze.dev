@@ -15,12 +15,15 @@ export default function ConfermaPage() {
         {confirm === "yes" ? (
           <>
             <H3>😊 Grazie</H3>
-            <p className="m-5">per aver confermato la tua partecipazione all&apos;evento</p>
+            <p className="m-5">
+              per aver confermato la tua partecipazione all&apos;evento
+            </p>
             {event && (
               <>
                 <p className="font-bold">&ldquo;{event.title}&rdquo;</p>
                 <p className="m-10 mb-20">
-                  Ti aspettiamo il giorno <strong>{event.date.toLocaleDateString("it-IT")}</strong>
+                  Ti aspettiamo il giorno{" "}
+                  <strong>{event.date.toLocaleDateString("it-IT")}</strong>
                   <br />
                   presso <strong>{event.place}</strong> in {event.address}
                 </p>

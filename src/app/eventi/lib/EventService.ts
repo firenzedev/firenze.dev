@@ -41,9 +41,9 @@ class EventService {
   }
 
   getNextEvents(): FDevEvent[] {
-    return this.events.filter(
-      (event) => dayjs(event.date).isAfter(new Date()),
-    ).sort(byDate);
+    return this.events
+      .filter((event) => dayjs(event.date).isAfter(new Date()))
+      .sort(byDate);
   }
 
   getEvent(slug: string): FDevEvent | undefined {
@@ -54,9 +54,9 @@ class EventService {
 export function toSlug(name: string) {
   return name
     .toLowerCase()
-    .replace(/[\W_]+/g," ")
+    .replace(/[\W_]+/g, " ")
     .trim()
-    .replaceAll(" ", "-")
+    .replaceAll(" ", "-");
 }
 
 export const eventService = new EventService(events);
