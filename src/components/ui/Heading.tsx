@@ -27,19 +27,19 @@ export function H2({ children, className }: Readonly<HeadingProps>) {
   );
 }
 
-export function H3({ children }: Readonly<HeadingProps>) {
+export function H3({ children, className }: Readonly<HeadingProps>) {
   return (
     <h3
-      className={`${gelasio.variable} font-serif font-semibold text-2xl mt-6 mb-2 tracking-wide`}
+      className={`${gelasio.variable} font-serif font-semibold text-2xl mt-6 mb-2 tracking-wide ${className}`}
     >
       {children}
     </h3>
   );
 }
 
-export function H4({ children, ...props }: Readonly<HeadingProps>) {
+export function H4({ children, className, ...props }: Readonly<HeadingProps>) {
   return (
-    <h4 className="text-xl mb-4 tracking-wide" {...props}>
+    <h4 className={`text-xl mb-4 tracking-wide ${className}`} {...props}>
       {children}
     </h4>
   );

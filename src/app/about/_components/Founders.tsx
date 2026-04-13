@@ -1,12 +1,8 @@
-import Image from "next/image";
-import quoteImage from "./images/quote_open.svg";
-import tiziano from "./images/tiziano-300x300.jpg";
 import lorenzo from "./images/lorenzo-300x300.png";
-import github from "./images/github.svg";
-import medium from "./images/medium.svg";
-import linkedin from "./images/linkedin.svg";
-import email from "./images/email.svg";
-import { H2, H3 } from "@/components/ui/Heading";
+import tiziano from "./images/tiziano-300x300.jpg";
+
+import { H2 } from "@/components/ui/Heading";
+import Member from "./Member";
 
 const founders = [
   {
@@ -35,114 +31,16 @@ const founders = [
 
 export default function Founders() {
   return (
-    <section className="my-16">
-      <H2>I fondatori di firenze.dev</H2>
+    <section className="my-16 md:px-0 px-4">
+      <H2 className="mb-2">I fondatori di firenze.dev</H2>
       <hr></hr>
       {founders.map((founder, i) => (
-        <Founder
+        <Member
           key={`founder-${founder.name}`}
-          founder={founder}
+          member={founder}
           reverse={i === 1}
         />
       ))}
     </section>
-  );
-}
-
-interface FounderProps {
-  name: string;
-  intro: string;
-  github: string;
-  linkedin: string;
-  medium: string;
-  email: string;
-  image: any;
-  anchor: string;
-}
-
-function Founder({
-  founder,
-  reverse,
-}: Readonly<{
-  founder: FounderProps;
-  reverse: boolean;
-}>) {
-  const imageSize = 48;
-  return (
-    <div
-      id={founder.anchor}
-      className={
-        "lg:flex flex-wrap border-b-2 py-6 " +
-        (reverse ? "flex-row-reverse" : "")
-      }
-    >
-      <div className="lg:w-3/4">
-        <H3>{founder.name}</H3>
-        <div>
-          <div className="inline-flex">
-            <Image
-              src={quoteImage}
-              alt="Quote open"
-              width={60}
-              height={48}
-              className="inline"
-            />
-          </div>
-          <p className="italic inline-flex text-black dark:text-white">
-            {founder.intro}
-          </p>
-          <div className="flex space-x-3 mt-4">
-            <a href={founder.github} target="_blank" rel="noreferrer">
-              <Image
-                decoding="async"
-                src={github}
-                alt="github"
-                width={imageSize}
-                height={imageSize}
-              />
-            </a>
-
-            <a href={founder.linkedin} target="_blank" rel="noreferrer">
-              <Image
-                decoding="async"
-                src={linkedin}
-                alt="linkedin"
-                width={imageSize}
-                height={imageSize}
-              />
-            </a>
-
-            <a href={founder.medium} target="_blank" rel="noreferrer">
-              <Image
-                decoding="async"
-                src={medium}
-                alt="medium"
-                width={imageSize}
-                height={imageSize}
-              />
-            </a>
-
-            <a href={"mailto:" + founder.email}>
-              <Image
-                decoding="async"
-                src={email}
-                alt="medium"
-                width={imageSize}
-                height={imageSize}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/4 p-2">
-        <Image
-          src={founder.image}
-          alt={founder.name}
-          width={300}
-          height={300}
-          className="inline"
-        />
-      </div>
-    </div>
   );
 }
