@@ -48,8 +48,31 @@ import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.pn
 import open_mic_2025 from "./images/2025_open_mic.png";
 import attacco_dei_mutanti from "./images/25_febbraio_attacco_dei_mutanti.png";
 import state_management_at_scale from "./images/state_management_at_scale.png";
+import aidd_from_spec_to_app from "./images/aidd_from_spec_to_app.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "AIDD From Spec to App",
+    subtitle: "Frameworkless web apps with AI agents",
+    icon: aidd_from_spec_to_app,
+    image: aidd_from_spec_to_app,
+    abstract: `Come integrare l'AI nello sviluppo senza perdere controllo tecnico né trasformare il codice in una “slot machine”? In questo talk Emiliano Pisu ci presenta un workflow concreto basato su ai-coding-template: dalle specifiche all’implementazione con step verificabili, diff minimi e risultati ripetibili.
+
+UI sviluppata con Vanilla JavaScript (ES Modules) e Custom Elements v1, senza dipendenze runtime: meno complessità e lock-in, senza sacrificare performance e manutenibilità. Lo stesso approccio viene esteso a un’app Electron: packaging, gestione asset, IPC sicuro e integrazione con il file system.
+
+Approfondiremo regole multi-agent, micro-step planning e quality gate automatizzati (lint + E2E) in locale e CI.
+
+Un talk pratico per trasformare specifiche in funzionalità reali con un processo misurabile, governabile e scalabile.`,
+    current: false,
+    date: dayjs("2026-05-27 18:30").toDate(),
+    sponsor: "Copyworld S.p.A.",
+    place: "Copyworld S.p.A.",
+    address: "23C Via del Padule 50018 Scandicci",
+    eventbriteId: "1987953013979",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-aidd-from-spec-to-app-1987953013979",
+    type: "meetup",
+  },
   {
     title: "State Management at Scale",
     subtitle: "Gestire efficacemente lo stato di applicazioni complesse",
@@ -70,7 +93,6 @@ In questo talk Jacopo Scatizzi, Senior Software Engineer @Engeesoftware, raccont
       "https://www.eventbrite.it/e/biglietti-state-management-at-scale-1985159001011",
     type: "meetup",
   },
-
   {
     title: "L'attacco dei mutanti",
     subtitle: "Come scrivere test più efficaci",
