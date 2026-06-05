@@ -43,6 +43,7 @@ import supercharging_with_ragIcon from "./images/thumb/supercharging_your_app_wi
 import sopravvivere_alle_pull_request from "./images/sopravvivere-alle-pull-request15052025.png";
 import workshop_tdd_icon from "./images/workshop_tdd.png";
 import summer_beer_2025_icon from "./images/summer_beer_2025.png";
+import summer_beer_2026_icon from "./images/summer_2026.png";
 import modelli_ai_locali_2025_icon from "./images/francesco_corti_modelli_ai_locali_10_09_2025.png";
 import how_we_ship_on_time from "./images/alberto_colella_how_we_ship_on_time.png";
 import open_mic_2025 from "./images/2025_open_mic.png";
@@ -51,6 +52,29 @@ import state_management_at_scale from "./images/state_management_at_scale.png";
 import aidd_from_spec_to_app from "./images/aidd_from_spec_to_app.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Summer Beer Meetup 2026",
+    subtitle:
+      "Una serata per ritrovarci come community, salutarci prima delle ferie e parlare delle prossime attività insieme!",
+    icon: summer_beer_2026_icon,
+    image: summer_beer_2026_icon,
+    abstract: `
+Prima delle ferie estive facciamo una rimpatriata🍻🍻
+
+Una serata tranquilla tra persone della community, per bere qualcosa insieme, fare due chiacchiere e raccogliere idee su quello che potremmo organizzare nei prossimi mesi.
+
+Ti aspettiamo! 
+`,
+    current: false,
+    date: dayjs("2026-06-18 21:30").toDate(),
+    sponsor: "",
+    place: "Parc Bistrò",
+    address: "Piazzale delle Cascine 50144 Firenze",
+    eventbriteId: "1991180880615",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-summer-beer-meetup-2026-1991180880615",
+    type: "beer",
+  },
   {
     title: "AIDD From Spec to App",
     subtitle: "Frameworkless web apps with AI agents",
