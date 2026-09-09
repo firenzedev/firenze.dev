@@ -30,6 +30,7 @@ import shapingYourFuture from "./images/9_Maggio_EventBrite_colors.png";
 import shapingYourFutureIcon from "./images/thumb/9_Maggio_thumb_colors.png";
 import summerBeer2024Icon from "./images/thumb/beerGiugno.png";
 import summerBeer2024 from "./images/EventBrite_summerbeer.png";
+import belleLeDemoAi from "./images/belle_le_demo_ai.png";
 import { FDevEvent } from "./EventService";
 import dayjs from "dayjs";
 
@@ -52,6 +53,32 @@ import state_management_at_scale from "./images/state_management_at_scale.png";
 import aidd_from_spec_to_app from "./images/aidd_from_spec_to_app.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Belle le demo AI.",
+    subtitle: "Ma poi, nel lavoro vero?",
+    icon: belleLeDemoAi,
+    image: belleLeDemoAi,
+    abstract: `Ormai usare l'AI per programmare è facile... finchè non bisogna pagarla, stabilire regole condivise e farla usare bene a tutto il team.
+
+Come evitare che l’adozione dell’AI trasformi uno strumento pensato per semplificare il lavoro in una nuova fonte di complessità?
+
+In questo talk Leonardo Montini racconta i problemi che emergono quando l’AI entra davvero nei processi di sviluppo: dai costi dei token alle licenze, dalla sicurezza alle competenze necessarie, fino alla continua rincorsa a nuovi modelli e strumenti.
+
+Affronteremo gli aspetti che spesso rimangono fuori dalle demo: cosa succede quando bisogna gestire questi strumenti nel mondo reale, integrarli nei processi esistenti e mantenere sotto controllo costi, sicurezza e competenze.
+
+Vedremo attraverso esempi pratici quali sono le strade percorse e sperimentate per affrontare queste criticità, con un approccio pragmatico e senza ricette magiche.
+
+Un talk per capire come sfruttare l’AI senza lasciare che sia l’AI a prendere il controllo.`,
+    current: false,
+    date: dayjs("2026-10-08 18:30").toDate(),
+    sponsor: "Extendi",
+    place: "Impact Hub Firenze",
+    address: "16 Via Panciatichi 50141 Firenze Italy",
+    eventbriteId: "2000173125662",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-aidd-from-spec-to-app-1987953013979",
+    type: "meetup",
+  },
   {
     title: "Summer Beer Meetup 2026",
     subtitle:
