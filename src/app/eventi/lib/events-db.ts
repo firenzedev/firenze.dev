@@ -76,7 +76,7 @@ Un talk per capire come sfruttare l’AI senza lasciare che sia l’AI a prender
     address: "16 Via Panciatichi 50141 Firenze Italy",
     eventbriteId: "2000173125662",
     eventbriteLink:
-      "https://www.eventbrite.it/e/biglietti-aidd-from-spec-to-app-1987953013979",
+      "https://www.eventbrite.com/e/biglietti-belle-le-demo-ai-ma-poi-nel-lavoro-vero-2000173125662",
     type: "meetup",
   },
   {
