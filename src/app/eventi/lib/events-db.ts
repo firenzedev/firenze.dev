@@ -51,8 +51,33 @@ import open_mic_2025 from "./images/2025_open_mic.png";
 import attacco_dei_mutanti from "./images/25_febbraio_attacco_dei_mutanti.png";
 import state_management_at_scale from "./images/state_management_at_scale.png";
 import aidd_from_spec_to_app from "./images/aidd_from_spec_to_app.png";
+import theCognitiveDept from "./images/the_cognitive_debt.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "The Cognitive Debt.",
+    subtitle: "Il costo nascosto dell'AI",
+    icon: theCognitiveDept,
+    image: theCognitiveDept,
+    abstract: `Gli assistenti AI scrivono il codice per noi, ma come restare al posto di guida quando nessuno nel team sa più davvero spiegarlo?
+
+Nel 2025 alcuni ricercatori del MIT hanno chiesto a un gruppo di persone di scrivere un saggio con l'aiuto di un assistente AI. Pochi minuti dopo, la maggior parte dei partecipanti faticava a ricordare cosa aveva appena scritto.
+
+Ora sostituite "saggio" con "la feature che avete rilasciato martedì scorso".
+
+Il debito tecnico sappiamo come gestirlo. Sta nel codice, lo vediamo e possiamo pianificare uno sprint per ripagarlo. Il debito cognitivo sta in noi. È la distanza tra il codice che esiste e il codice che qualcuno nel team sa davvero spiegare. Non ricordiamo più davvero cosa fa il nostro codice, e insieme alla memoria si atrofizzano la capacità di giudizio e la conoscenza di un sistema che, tecnicamente, abbiamo scritto noi.
+
+Gli assistenti AI ci battono già nello scrivere codice. In questo talk Simone Sanfratello affronta la domanda aperta: come restare al posto di guida, dove automatizzare senza rimpianti, dove continuare a sporcarsi le mani e come mantenere il controllo del nostro software.`,
+    current: false,
+    date: dayjs("2026-11-12 18:30").toDate(),
+    sponsor: "Kodify",
+    place: "Impact Hub Firenze",
+    address: "16 Via Panciatichi 50141 Firenze Italy",
+    eventbriteId: "2003629625145",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/biglietti-the-cognitive-debt-il-costo-nascosto-dellai-2003629625145",
+    type: "meetup",
+  },
   {
     title: "Belle le demo AI.",
     subtitle: "Ma poi, nel lavoro vero?",
