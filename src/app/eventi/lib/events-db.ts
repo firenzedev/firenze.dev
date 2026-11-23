@@ -52,8 +52,30 @@ import attacco_dei_mutanti from "./images/25_febbraio_attacco_dei_mutanti.png";
 import state_management_at_scale from "./images/state_management_at_scale.png";
 import aidd_from_spec_to_app from "./images/aidd_from_spec_to_app.png";
 import theCognitiveDept from "./images/the_cognitive_debt.png";
+import openMic2026 from "./images/open_mic_2026.png";
 
 export const events: FDevEvent[] = [
+  {
+    title: "Openmic firenze.dev 2026",
+    subtitle: "",
+    icon: openMic2026,
+    image: openMic2026,
+    abstract: `Quattro speaker sul palco, quindici minuti a testa. A fine serata è il pubblico a scegliere il vincitore.
+
+La community di firenze.dev crede fortemente nell'aggregazione, nello scambio di idee e nella condivisione, da parte di chiunque sia un appassionato dello sviluppo software e di tutti gli argomenti che orbitano intorno a questo fantastico mondo! 🌍
+
+Ti piacerebbe parlare della tecnologia per cui stai in fissa in questo momento, raccontare un progetto che ti ha appassionato o semplicemente condividere un'esperienza, ma non hai ancora trovato l'occasione giusta per farlo? Bene, allora l'Open Mic Night potrebbe proprio fare al caso tuo! 💪
+
+Il 9 dicembre 2026 arriva la quarta edizione dell'Open Mic Night: una serata dedicata a chi sviluppa a Firenze e dintorni. Quattro speaker salgono sul palco, quindici minuti a testa — e a fine serata è il pubblico a scegliere il vincitore. Il tutto accompagnato da un clima chill e amichevole, e per finire il famoso aperitivo con birra e pizzette. L'ambiente ideale per chi vuole fare il suo primo talk, ma anche per chi ha già solcato palchi piccoli e grandi.`,
+    current: false,
+    date: dayjs("2026-12-09 18:30").toDate(),
+    place: "Murate Idea Park",
+    address: "8 Piazza della Madonna della Neve 50122 Firenze",
+    eventbriteId: "2005072732518",
+    eventbriteLink:
+      "https://www.eventbrite.it/e/openmic-firenzedev-2026-tickets-2005072732518",
+    type: "meetup",
+  },
   {
     title: "The Cognitive Debt.",
     subtitle: "Il costo nascosto dell'AI",
