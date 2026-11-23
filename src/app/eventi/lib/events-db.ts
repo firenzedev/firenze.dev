@@ -57,11 +57,11 @@ import openMic2026 from "./images/open_mic_2026.png";
 export const events: FDevEvent[] = [
   {
     title: "Openmic firenze.dev 2026",
-    subtitle: "",
+    subtitle:
+      "Quattro speaker sul palco, quindici minuti a testa. A fine serata è il pubblico a scegliere il vincitore.",
     icon: openMic2026,
     image: openMic2026,
-    abstract: `Quattro speaker sul palco, quindici minuti a testa. A fine serata è il pubblico a scegliere il vincitore.
-
+    abstract: `
 La community di firenze.dev crede fortemente nell'aggregazione, nello scambio di idee e nella condivisione, da parte di chiunque sia un appassionato dello sviluppo software e di tutti gli argomenti che orbitano intorno a questo fantastico mondo! 🌍
 
 Ti piacerebbe parlare della tecnologia per cui stai in fissa in questo momento, raccontare un progetto che ti ha appassionato o semplicemente condividere un'esperienza, ma non hai ancora trovato l'occasione giusta per farlo? Bene, allora l'Open Mic Night potrebbe proprio fare al caso tuo! 💪
